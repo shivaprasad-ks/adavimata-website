@@ -1,0 +1,21 @@
+# Node.js dependencies
+node_modules/
+
+# Vendor folder (if libraries are managed via npm)
+assets/vendor/
+
+# OS-specific files
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE-specific files
+.vscode/
+*.code-workspace
+
+# Build output
+dist/
+build/
