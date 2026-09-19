@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kn">
+<html lang="kn" data-lang="kn">
 
 <head>
   <meta charset="utf-8">
@@ -7,6 +7,16 @@
   <title>ಫೋಟೋ ಗ್ಯಾಲರಿ | ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು</title>
   <meta content="ಶ್ರೀ ಅಡವಿಮಠದ ಪವಿತ್ರ ಗದ್ದುಗೆ, ಬಸವನ ಬಾಗಿಲು, ಪುಷ್ಕರಣಿ, ಮಹಾಮನೆ ಶಾಲೆ, ಹಿರಿಯರ ಮನೆ ಹಾಗೂ ಗೋಶಾಲೆಯ ಸುಂದರ ಛಾಯಾಚಿತ್ರಗಳು." name="description">
   <meta content="Adavimata Gallery, Gaddige photos, Mahamane photos, Paduguru pictures, temple gallery" name="keywords">
+
+  <!-- Immediate Language Check -->
+  <script>
+    (function() {
+      var savedLang = 'kn';
+      try { savedLang = localStorage.getItem('adavimata_lang') || 'kn'; } catch (e) {}
+      document.documentElement.setAttribute('data-lang', savedLang);
+      document.documentElement.lang = savedLang;
+    })();
+  </script>
 
   <!-- Favicons -->
   <link href="assets/img/logo1a.jpg" rel="icon" type="image/jpeg">
@@ -25,7 +35,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="lang-kn">
 
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-none d-md-block">
@@ -33,11 +43,26 @@
       <div class="contact-info d-flex align-items-center">
         <a href="tel:+91-9448602867"><i class="bi bi-telephone-fill"></i> +91-9448602867</a>
         <a href="mailto:adavimata@gmail.com"><i class="bi bi-envelope-fill"></i> adavimata@gmail.com</a>
-        <span class="badge-temple ms-2"><i class="bi bi-geo-alt-fill"></i> ಪಡುಗೂರು, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು</span>
+        <span class="badge-temple ms-2">
+          <i class="bi bi-geo-alt-fill"></i> 
+          <span class="lang-kn">ಪಡುಗೂರು, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು</span>
+          <span class="lang-en">Paduguru, Gundlupete Taluk</span>
+        </span>
       </div>
-      <div class="d-flex align-items-center">
-        <span class="badge-temple me-3"><i class="bi bi-clock-fill"></i> ದರ್ಶನ ಸಮಯ: 6:00 AM - 8:30 PM</span>
-        <div class="social-links d-flex align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <span class="badge-temple">
+          <i class="bi bi-clock-fill"></i> 
+          <span class="lang-kn">ದರ್ಶನ ಸಮಯ: 6:00 AM - 8:30 PM</span>
+          <span class="lang-en">Darshan: 6:00 AM - 8:30 PM</span>
+        </span>
+
+        <!-- Language Switcher -->
+        <div class="lang-switcher-pill" aria-label="Language Selector">
+          <button class="lang-btn active" data-lang="kn">ಕನ್ನಡ</button>
+          <button class="lang-btn" data-lang="en">English</button>
+        </div>
+
+        <div class="social-links d-flex align-items-center ms-2">
           <a href="#" title="Facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" title="Instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
           <a href="#" title="YouTube" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
@@ -54,23 +79,41 @@
         <a href="index.html">
           <img src="assets/img/logo1a.jpg" alt="ಶ್ರೀ ಅಡವಿಮಠ ಲಾಂಛನ" width="50" height="50">
           <div class="logo-text">
-            <span class="logo-title">ಶ್ರೀ ಅಡವಿಮಠ</span>
-            <span class="logo-subtitle">ಪಡುಗೂರು | ಶ್ರೀ ಕ್ಷೇತ್ರ</span>
+            <span class="logo-title lang-kn">ಶ್ರೀ ಅಡವಿಮಠ</span>
+            <span class="logo-title lang-en">Sri Adavimatha</span>
+            <span class="logo-subtitle lang-kn">ಪಡುಗೂರು | ಶ್ರೀ ಕ್ಷೇತ್ರ</span>
+            <span class="logo-subtitle lang-en">Paduguru | Holy Shrine</span>
           </div>
         </a>
       </div>
 
-      <!-- Navigation Bar -->
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">ಮುಖಪುಟ</a></li>
-          <li><a href="about.html">ಇತಿಹಾಸ & ಪರಂಪರೆ</a></li>
-          <li><a href="our-instituitions.html">ಸಂಸ್ಥೆಗಳು</a></li>
-          <li><a href="social-services.html">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</a></li>
-          <li><a href="activities.html">ಚಟುವಟಿಕೆಗಳು</a></li>
-          <li><a class="active" href="gallery.html">ಗ್ಯಾಲರಿ</a></li>
-          <li><a href="contact.html">ಸಂಪರ್ಕಿಸಿ</a></li>
-          <li><a href="contact.html" class="btn-nav-highlight"><i class="bi bi-heart-fill me-1"></i> ದಾಸೋಹ ಸೇವೆ</a></li>
+          <li><a href="index.html"><span class="lang-kn">ಮುಖಪುಟ</span><span class="lang-en">Home</span></a></li>
+          <li><a href="about.html"><span class="lang-kn">ಇತಿಹಾಸ & ಪರಂಪರೆ</span><span class="lang-en">History & Heritage</span></a></li>
+          <li><a href="our-instituitions.html"><span class="lang-kn">ಸಂಸ್ಥೆಗಳು</span><span class="lang-en">Institutions</span></a></li>
+          <li><a href="social-services.html"><span class="lang-kn">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</span><span class="lang-en">Social Services</span></a></li>
+          <li><a href="activities.html"><span class="lang-kn">ಚಟುವಟಿಕೆಗಳು</span><span class="lang-en">Activities</span></a></li>
+          <li><a class="active" href="gallery.html"><span class="lang-kn">ಗ್ಯಾಲರಿ</span><span class="lang-en">Gallery</span></a></li>
+          <li><a href="contact.html"><span class="lang-kn">ಸಂಪರ್ಕಿಸಿ</span><span class="lang-en">Contact</span></a></li>
+          <li>
+            <a href="contact.html" class="btn-nav-highlight">
+              <i class="bi bi-heart-fill me-1"></i> 
+              <span class="lang-kn">ದಾಸೋಹ ಸೇವೆ</span>
+              <span class="lang-en">Dasoha Seva</span>
+            </a>
+          </li>
+
+          <!-- Mobile Switcher -->
+          <li class="d-lg-none mt-3 pt-3 border-top border-light">
+            <div class="d-flex align-items-center justify-content-between px-3">
+              <span class="text-muted fw-bold">ಭಾಷೆ / Language:</span>
+              <div class="lang-switcher-pill">
+                <button class="lang-btn active" data-lang="kn">ಕನ್ನಡ</button>
+                <button class="lang-btn" data-lang="en">English</button>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav>
 
@@ -83,11 +126,13 @@
   <!-- ======= Page Hero Banner ======= -->
   <section class="page-hero-banner">
     <div class="container">
-      <h1>ಶ್ರೀ ಕ್ಷೇತ್ರದ ಛಾಯಾಂಕಣ</h1>
+      <h1 class="lang-kn">ಶ್ರೀ ಕ್ಷೇತ್ರದ ಛಾಯಾಂಕಣ</h1>
+      <h1 class="lang-en">Sri Kshetra Photo Gallery</h1>
       <div class="breadcrumbs-nav">
-        <a href="index.html">ಮುಖಪುಟ</a>
+        <a href="index.html"><span class="lang-kn">ಮುಖಪುಟ</span><span class="lang-en">Home</span></a>
         <i class="bi bi-chevron-right"></i>
-        <span>ಗ್ಯಾಲರಿ</span>
+        <span class="lang-kn">ಗ್ಯಾಲರಿ</span>
+        <span class="lang-en">Gallery</span>
       </div>
     </div>
   </section>
@@ -100,201 +145,251 @@
 
         <!-- Category Filter Buttons -->
         <div class="gallery-filter-nav">
-          <button class="filter-btn active" data-filter="*">ಎಲ್ಲಾ ಚಿತ್ರಗಳು (All)</button>
-          <button class="filter-btn" data-filter=".cat-temple">ಶ್ರೀ ಮಠ ಮತ್ತು ಗದ್ದುಗೆ</button>
-          <button class="filter-btn" data-filter=".cat-education">ವಿದ್ಯಾಸಂಸ್ಥೆಗಳು & ಮಹಾಮನೆ</button>
-          <button class="filter-btn" data-filter=".cat-seva">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು & ಪರಿಸರ</button>
+          <button class="filter-btn active" data-filter="*">
+            <span class="lang-kn">ಎಲ್ಲಾ ಚಿತ್ರಗಳು</span>
+            <span class="lang-en">All Photos</span>
+          </button>
+          <button class="filter-btn" data-filter=".cat-temple">
+            <span class="lang-kn">ಶ್ರೀ ಮಠ ಮತ್ತು ಗದ್ದುಗೆ</span>
+            <span class="lang-en">Temple & Shrines</span>
+          </button>
+          <button class="filter-btn" data-filter=".cat-education">
+            <span class="lang-kn">ವಿದ್ಯಾಸಂಸ್ಥೆಗಳು & ಮಹಾಮನೆ</span>
+            <span class="lang-en">Institutions & Mahamane</span>
+          </button>
+          <button class="filter-btn" data-filter=".cat-seva">
+            <span class="lang-kn">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು & ಪರಿಸರ</span>
+            <span class="lang-en">Services & Environment</span>
+          </button>
         </div>
 
         <!-- Gallery Grid -->
         <div class="gallery-grid">
 
           <!-- Item: Basavana Bagilu -->
-          <div class="gallery-item cat-temple" data-title="ಬಸವನ ಬಾಗಿಲು (ಮುಖ್ಯ ಪ್ರವೇಶದ್ವಾರ)">
+          <div class="gallery-item cat-temple" data-title="ಬಸವನ ಬಾಗಿಲು (ಮುಖ್ಯ ಪ್ರವೇಶದ್ವಾರ) / Basavana Bagilu">
             <img src="assets/img/portfolio/BasavanaBagilu.jpg" alt="ಬಸವನ ಬಾಗಿಲು" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಬಸವನ ಬಾಗಿಲು</div>
-              <div class="gallery-item-cat">ಮುಖ್ಯ ಪ್ರವೇಶದ್ವಾರ</div>
+              <div class="gallery-item-title lang-kn">ಬಸವನ ಬಾಗಿಲು</div>
+              <div class="gallery-item-title lang-en">Basavana Bagilu</div>
+              <div class="gallery-item-cat lang-kn">ಮುಖ್ಯ ಪ್ರವೇಶದ್ವಾರ</div>
+              <div class="gallery-item-cat lang-en">Main Gateway</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: Gaddige 1 -->
-          <div class="gallery-item cat-temple" data-title="ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರ ಪವಿತ್ರ ಗದ್ದುಗೆ">
+          <div class="gallery-item cat-temple" data-title="ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರ ಪವಿತ್ರ ಗದ್ದುಗೆ / Holy Shrine">
             <img src="assets/img/portfolio/Gaddige1.jpg" alt="ಪವಿತ್ರ ಗದ್ದುಗೆ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರ ಗದ್ದುಗೆ</div>
-              <div class="gallery-item-cat">ಜಾಗೃತ ಸನ್ನಿಧಿ</div>
+              <div class="gallery-item-title lang-kn">ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರ ಗದ್ದುಗೆ</div>
+              <div class="gallery-item-title lang-en">Sri Maddaneshwara Gaddige</div>
+              <div class="gallery-item-cat lang-kn">ಜಾಗೃತ ಸನ್ನಿಧಿ</div>
+              <div class="gallery-item-cat lang-en">Holy Shrine</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: Gaddige 2 -->
-          <div class="gallery-item cat-temple" data-title="ಗದ್ದುಗೆಯ ಒಳಾಂಗಣ ಪೂಜಾ ಸನ್ನಿಧಿ">
+          <div class="gallery-item cat-temple" data-title="ಗದ್ದುಗೆಯ ಒಳಾಂಗಣ ಪೂಜಾ ಸನ್ನಿಧಿ / Inner Sanctum">
             <img src="assets/img/portfolio/Gaddige2.jpg" alt="ಗದ್ದುಗೆ ಒಳಾಂಗಣ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಗದ್ದುಗೆ ಒಳಾಂಗಣ</div>
-              <div class="gallery-item-cat">ಪೂಜಾ ಮಂಟಪ</div>
+              <div class="gallery-item-title lang-kn">ಗದ್ದುಗೆ ಒಳಾಂಗಣ</div>
+              <div class="gallery-item-title lang-en">Inner Sanctum</div>
+              <div class="gallery-item-cat lang-kn">ಪೂಜಾ ಮಂಟಪ</div>
+              <div class="gallery-item-cat lang-en">Pooja Mandapa</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: Gaddige 3 -->
-          <div class="gallery-item cat-temple" data-title="ಮಹಾ ಗದ್ದುಗೆ ಸನ್ನಿಧಾನ">
+          <div class="gallery-item cat-temple" data-title="ಮಹಾ ಗದ್ದುಗೆ ಸನ್ನಿಧಾನ / Sanctum Sanctorum">
             <img src="assets/img/portfolio/Gaddige3.jpg" alt="ಮಹಾ ಗದ್ದುಗೆ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಮಹಾ ಗದ್ದುಗೆ ಸನ್ನಿಧಾನ</div>
-              <div class="gallery-item-cat">ಧಾರ್ಮಿಕ ಕ್ಷೇತ್ರ</div>
+              <div class="gallery-item-title lang-kn">ಮಹಾ ಗದ್ದುಗೆ ಸನ್ನಿಧಾನ</div>
+              <div class="gallery-item-title lang-en">Maha Gaddige Shrine</div>
+              <div class="gallery-item-cat lang-kn">ಧಾರ್ಮಿಕ ಕ್ಷೇತ್ರ</div>
+              <div class="gallery-item-cat lang-en">Spiritual Seat</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: Gaddige 4 -->
-          <div class="gallery-item cat-temple" data-title="ಶ್ರೀ ಮಠದ ಗದ್ದುಗೆಯ ನೋಟ">
+          <div class="gallery-item cat-temple" data-title="ಶ್ರೀ ಮಠದ ಗದ್ದುಗೆಯ ನೋಟ / Temple View">
             <img src="assets/img/portfolio/Gaddige4.jpg" alt="ಗದ್ದುಗೆ ನೋಟ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಶ್ರೀ ಮಠದ ಗದ್ದುಗೆಯ ನೋಟ</div>
-              <div class="gallery-item-cat">ಪವಿತ್ರ ಆವರಣ</div>
+              <div class="gallery-item-title lang-kn">ಶ್ರೀ ಮಠದ ಗದ್ದುಗೆಯ ನೋಟ</div>
+              <div class="gallery-item-title lang-en">Shrine Campus View</div>
+              <div class="gallery-item-cat lang-kn">ಪವಿತ್ರ ಆವರಣ</div>
+              <div class="gallery-item-cat lang-en">Sacred Courtyard</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: New Gaddige -->
-          <div class="gallery-item cat-temple" data-title="ನೂತನವಾಗಿ ಜೀರ್ಣೋದ್ಧಾರಗೊಂಡ ಗದ್ದುಗೆ">
+          <div class="gallery-item cat-temple" data-title="ನೂತನವಾಗಿ ಜೀರ್ಣೋದ್ಧಾರಗೊಂಡ ಗದ್ದುಗೆ / Restored Shrine">
             <img src="assets/img/portfolio/NewGaddige1.jpg" alt="ನೂತನ ಗದ್ದುಗೆ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಜೀರ್ಣೋದ್ಧಾರಗೊಂಡ ಗದ್ದುಗೆ</div>
-              <div class="gallery-item-cat">ನೂತನ ಸನ್ನಿಧಿ</div>
+              <div class="gallery-item-title lang-kn">ಜೀರ್ಣೋದ್ಧಾರಗೊಂಡ ಗದ್ದುಗೆ</div>
+              <div class="gallery-item-title lang-en">Restored Shrine Complex</div>
+              <div class="gallery-item-cat lang-kn">ನೂತನ ಸನ್ನಿಧಿ</div>
+              <div class="gallery-item-cat lang-en">Renovated Structure</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: Puskarani -->
-          <div class="gallery-item cat-temple" data-title="ಪವಿತ್ರ ಕಲ್ಯಾಣಿ (ಪುಷ್ಕರಣಿ)">
+          <div class="gallery-item cat-temple" data-title="ಪವಿತ್ರ ಕಲ್ಯಾಣಿ (ಪುಷ್ಕರಣಿ) / Holy Pond">
             <img src="assets/img/portfolio/Puskarani.jpg" alt="ಪುಷ್ಕರಣಿ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಪವಿತ್ರ ಕಲ್ಯಾಣಿ (ಪುಷ್ಕರಣಿ)</div>
-              <div class="gallery-item-cat">ತೀರ್ಥ ಸರೋವರ</div>
+              <div class="gallery-item-title lang-kn">ಪವಿತ್ರ ಕಲ್ಯಾಣಿ (ಪುಷ್ಕರಣಿ)</div>
+              <div class="gallery-item-title lang-en">Holy Pond (Puskarani)</div>
+              <div class="gallery-item-cat lang-kn">ತೀರ್ಥ ಸರೋವರ</div>
+              <div class="gallery-item-cat lang-en">Sacred Stepped Lake</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: Dyana Mantapa -->
-          <div class="gallery-item cat-temple" data-title="ಧ್ಯಾನ ಮಂಟಪ">
+          <div class="gallery-item cat-temple" data-title="ಧ್ಯಾನ ಮಂಟಪ / Dyana Mantapa">
             <img src="assets/img/portfolio/DyanaMantapa.jpg" alt="ಧ್ಯಾನ ಮಂಟಪ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಧ್ಯಾನ ಮಂಟಪ</div>
-              <div class="gallery-item-cat">ಪ್ರಾರ್ಥನಾ ಸ್ಥಳ</div>
+              <div class="gallery-item-title lang-kn">ಧ್ಯಾನ ಮಂಟಪ</div>
+              <div class="gallery-item-title lang-en">Meditation Hall</div>
+              <div class="gallery-item-cat lang-kn">ಪ್ರಾರ್ಥನಾ ಸ್ಥಳ</div>
+              <div class="gallery-item-cat lang-en">Prayer Sanctuary</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: Mahadimane 1 -->
-          <div class="gallery-item cat-temple" data-title="ಮಹಾದಿಮನೆ - ಐತಿಹಾಸಿಕ ಕಟ್ಟಡ">
+          <div class="gallery-item cat-temple" data-title="ಮಹಾದಿಮನೆ - ಐತಿಹಾಸಿಕ ಕಟ್ಟಡ / Historic Residence">
             <img src="assets/img/portfolio/mahadimane1.jpg" alt="ಮಹಾದಿಮನೆ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಮಹಾದಿಮನೆ</div>
-              <div class="gallery-item-cat">ಐತಿಹಾಸಿಕ ವಾಸ್ತುಶಿಲ್ಪ</div>
+              <div class="gallery-item-title lang-kn">ಮಹಾದಿಮನೆ</div>
+              <div class="gallery-item-title lang-en">Mahadimane</div>
+              <div class="gallery-item-cat lang-kn">ಐತಿಹಾಸಿಕ ವಾಸ್ತುಶಿಲ್ಪ</div>
+              <div class="gallery-item-cat lang-en">Heritage Architecture</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: Mahadimane 2 -->
-          <div class="gallery-item cat-temple" data-title="ಮಹಾದಿಮನೆ ಮುಂಭಾಗ">
+          <div class="gallery-item cat-temple" data-title="ಮಹಾದಿಮನೆ ಮುಂಭಾಗ / Mahadimane Frontage">
             <img src="assets/img/portfolio/Mahadimane2.jpg" alt="ಮಹಾದಿಮನೆ ಮುಂಭಾಗ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಮಹಾದಿಮನೆ ಮುಂಭಾಗ</div>
-              <div class="gallery-item-cat">ಮಠದ ನಿವಾಸ</div>
+              <div class="gallery-item-title lang-kn">ಮಹಾದಿಮನೆ ಮುಂಭಾಗ</div>
+              <div class="gallery-item-title lang-en">Mahadimane Courtyard</div>
+              <div class="gallery-item-cat lang-kn">ಮಠದ ನಿವಾಸ</div>
+              <div class="gallery-item-cat lang-en">Pontifical Abode</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: Kattada 1 -->
-          <div class="gallery-item cat-temple" data-title="ಮಠದ ಸಂಕೀರ್ಣ">
+          <div class="gallery-item cat-temple" data-title="ಮಠದ ಸಂಕೀರ್ಣ / Matha Complex">
             <img src="assets/img/portfolio/Kattada.jpg" alt="ಮಠದ ಸಂಕೀರ್ಣ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಮಠದ ಸಂಕೀರ್ಣ</div>
-              <div class="gallery-item-cat">ಪವಿತ್ರ ಆವರಣ</div>
+              <div class="gallery-item-title lang-kn">ಮಠದ ಸಂಕೀರ್ಣ</div>
+              <div class="gallery-item-title lang-en">Matha Complex</div>
+              <div class="gallery-item-cat lang-kn">ಪವಿತ್ರ ಆವರಣ</div>
+              <div class="gallery-item-cat lang-en">Campus Premises</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: Kattada 2 -->
-          <div class="gallery-item cat-temple" data-title="ಶ್ರೀ ಮಠದ ನೂತನ ಭವನ">
+          <div class="gallery-item cat-temple" data-title="ಶ್ರೀ ಮಠದ ನೂತನ ಭವನ / New Hall">
             <img src="assets/img/portfolio/Kattada1.jpg" alt="ನೂತನ ಭವನ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಶ್ರೀ ಮಠದ ನೂತನ ಭವನ</div>
-              <div class="gallery-item-cat">ವಾಸ್ತು ವಿನ್ಯಾಸ</div>
+              <div class="gallery-item-title lang-kn">ಶ್ರೀ ಮಠದ ನೂತನ ಭವನ</div>
+              <div class="gallery-item-title lang-en">New Community Block</div>
+              <div class="gallery-item-cat lang-kn">ವಾಸ್ತು ವಿನ್ಯಾಸ</div>
+              <div class="gallery-item-cat lang-en">Modern Architecture</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: Mahamane Main -->
-          <div class="gallery-item cat-education" data-title="ಮಹಾಮನೆ ಉಚಿತ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆ ಕಟ್ಟಡ">
+          <div class="gallery-item cat-education" data-title="ಮಹಾಮನೆ ಉಚಿತ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆ ಕಟ್ಟಡ / Mahamane School">
             <img src="assets/img/portfolio/Mahamane.jpg" alt="ಮಹಾಮನೆ ಕಟ್ಟಡ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಮಹಾಮನೆ ವಿದ್ಯಾಸಂಸ್ಥೆ</div>
-              <div class="gallery-item-cat">ಉಚಿತ ವಸತಿ ಶಾಲೆ</div>
+              <div class="gallery-item-title lang-kn">ಮಹಾಮನೆ ವಿದ್ಯಾಸಂಸ್ಥೆ</div>
+              <div class="gallery-item-title lang-en">Mahamane Free School</div>
+              <div class="gallery-item-cat lang-kn">ಉಚಿತ ವಸತಿ ಶಾಲೆ</div>
+              <div class="gallery-item-cat lang-en">Residential School</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: Mahamane 1a -->
-          <div class="gallery-item cat-education" data-title="ಮಹಾಮನೆ ಮುಖ್ಯ ಪ್ರವೇಶ ದ್ವಾರ">
+          <div class="gallery-item cat-education" data-title="ಮಹಾಮನೆ ಮುಖ್ಯ ಪ್ರವೇಶ ದ್ವಾರ / Mahamane Entrance">
             <img src="assets/img/portfolio/mahamane1a.jpg" alt="ಮಹಾಮನೆ ಮುಖ್ಯ ಪ್ರವೇಶ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಮಹಾಮನೆ ಮುಖ್ಯ ದ್ವಾರ</div>
-              <div class="gallery-item-cat">ವಿದ್ಯಾ ಕೇಂದ್ರ</div>
+              <div class="gallery-item-title lang-kn">ಮಹಾಮನೆ ಮುಖ್ಯ ದ್ವಾರ</div>
+              <div class="gallery-item-title lang-en">Mahamane Main Entrance</div>
+              <div class="gallery-item-cat lang-kn">ವಿದ್ಯಾ ಕೇಂದ್ರ</div>
+              <div class="gallery-item-cat lang-en">Learning Center</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: School -->
-          <div class="gallery-item cat-education" data-title="ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರ ಶಾಲೆ, ಗುಂಡ್ಲುಪೇಟೆ">
+          <div class="gallery-item cat-education" data-title="ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರ ಶಾಲೆ, ಗುಂಡ್ಲುಪೇಟೆ / School Campus">
             <img src="assets/img/portfolio/school.jpg" alt="ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರ ಶಾಲೆ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರ ಶಾಲೆ</div>
-              <div class="gallery-item-cat">ಗುಂಡ್ಲುಪೇಟೆ ಶಾಲೆ</div>
+              <div class="gallery-item-title lang-kn">ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರ ಶಾಲೆ</div>
+              <div class="gallery-item-title lang-en">Sri Maddaneshwara School</div>
+              <div class="gallery-item-cat lang-kn">ಗುಂಡ್ಲುಪೇಟೆ ಶಾಲೆ</div>
+              <div class="gallery-item-cat lang-en">Gundlupete Campus</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: School 1 -->
-          <div class="gallery-item cat-education" data-title="ಶಾಲಾ ಆವರಣ ಮತ್ತು ತರಗತಿ ಕೊಠಡಿಗಳು">
+          <div class="gallery-item cat-education" data-title="ಶಾಲಾ ಆವರಣ ಮತ್ತು ತರಗತಿ ಕೊಠಡಿಗಳು / Classrooms">
             <img src="assets/img/portfolio/school1.jpg" alt="ಶಾಲಾ ಆವರಣ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಶಾಲಾ ಆವರಣ</div>
-              <div class="gallery-item-cat">ತರಗತಿ ಕಟ್ಟಡ</div>
+              <div class="gallery-item-title lang-kn">ಶಾಲಾ ಆವರಣ</div>
+              <div class="gallery-item-title lang-en">School Classrooms</div>
+              <div class="gallery-item-cat lang-kn">ತರಗತಿ ಕಟ್ಟಡ</div>
+              <div class="gallery-item-cat lang-en">Academic Block</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: Old Age Home -->
-          <div class="gallery-item cat-seva" data-title="ಹಿರಿಯರ ಮನೆ (ವೃದ್ಧಾಶ್ರಮ)">
+          <div class="gallery-item cat-seva" data-title="ಹಿರಿಯರ ಮನೆ (ವೃದ್ಧಾಶ್ರಮ) / Elder Care Home">
             <img src="assets/img/portfolio/OldAgeHome.jpg" alt="ಹಿರಿಯರ ಮನೆ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಹಿರಿಯರ ಮನೆ</div>
-              <div class="gallery-item-cat">ವೃದ್ಧಾಶ್ರಮ ಸೇವೆ</div>
+              <div class="gallery-item-title lang-kn">ಹಿರಿಯರ ಮನೆ</div>
+              <div class="gallery-item-title lang-en">Hiriyara Mane</div>
+              <div class="gallery-item-cat lang-kn">ವೃದ್ಧಾಶ್ರಮ ಸೇವೆ</div>
+              <div class="gallery-item-cat lang-en">Elder Care Home</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: Dasoha Bhavana -->
-          <div class="gallery-item cat-seva" data-title="ದಾಸೋಹ ಭವನ (ಅನ್ನದಾನ ಕ್ಷೇತ್ರ)">
+          <div class="gallery-item cat-seva" data-title="ದಾಸೋಹ ಭವನ (ಅನ್ನದಾನ ಕ್ಷೇತ್ರ) / Dasoha Hall">
             <img src="assets/img/portfolio/DasohaBhavana.jpg" alt="ದಾಸೋಹ ಭವನ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ದಾಸೋಹ ಭವನ</div>
-              <div class="gallery-item-cat">ನಿತ್ಯ ಅನ್ನದಾನ</div>
+              <div class="gallery-item-title lang-kn">ದಾಸೋಹ ಭವನ</div>
+              <div class="gallery-item-title lang-en">Dasoha Dining Hall</div>
+              <div class="gallery-item-cat lang-kn">ನಿತ್ಯ ಅನ್ನದಾನ</div>
+              <div class="gallery-item-cat lang-en">Free Daily Meals</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
 
           <!-- Item: Farming -->
-          <div class="gallery-item cat-seva" data-title="ಮಠದ ಸಾವಯವ ಕೃಷಿ ಮತ್ತು ಗೋ ಸಂಪತ್ತು">
+          <div class="gallery-item cat-seva" data-title="ಮಠದ ಸಾವಯವ ಕೃಷಿ ಮತ್ತು ಗೋ ಸಂಪತ್ತು / Goshala & Agriculture">
             <img src="assets/img/portfolio/farming.jpeg" alt="ಸಾವಯವ ಕೃಷಿ" loading="lazy">
             <div class="gallery-overlay">
-              <div class="gallery-item-title">ಸಾವಯವ ಕೃಷಿ & ಗೋಶಾಲೆ</div>
-              <div class="gallery-item-cat">ಪ್ರಕೃತಿ & ಗೋ ಸಂರಕ್ಷಣೆ</div>
+              <div class="gallery-item-title lang-kn">ಸಾವಯವ ಕೃಷಿ & ಗೋಶಾಲೆ</div>
+              <div class="gallery-item-title lang-en">Organic Farm & Goshala</div>
+              <div class="gallery-item-cat lang-kn">ಪ್ರಕೃತಿ & ಗೋ ಸಂರಕ್ಷಣೆ</div>
+              <div class="gallery-item-cat lang-en">Nature & Cow Welfare</div>
             </div>
             <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
           </div>
@@ -313,10 +408,16 @@
         <div class="col-lg-4 col-md-6">
           <div class="d-flex align-items-center gap-2 mb-3">
             <img src="assets/img/logo1a.jpg" alt="ಶ್ರೀ ಅಡವಿಮಠ" class="rounded-circle border border-warning" width="45" height="45">
-            <h3 class="mb-0 text-white fs-4">ಶ್ರೀ ಅಡವಿಮಠ</h3>
+            <h3 class="mb-0 text-white fs-4">
+              <span class="lang-kn">ಶ್ರೀ ಅಡವಿಮಠ</span>
+              <span class="lang-en">Sri Adavimatha</span>
+            </h3>
           </div>
-          <p class="text-white-50">
+          <p class="text-white-50 lang-kn">
             ಪಡುಗೂರು ಗ್ರಾಮ, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ. ೫೦೦ ವರ್ಷಗಳ ಐತಿಹಾಸಿಕ ವೀರಶೈವ ಪರಂಪರೆಯ ಪವಿತ್ರ ತಾಣ, ಉಚಿತ ಶಿಕ್ಷಣ ಹಾಗೂ ನಿತ್ಯ ದಾಸೋಹದ ಕ್ಷೇತ್ರ.
+          </p>
+          <p class="text-white-50 lang-en">
+            Paduguru Village, Gundlupete Taluk, Chamarajanagar District. A sacred 500-year-old spiritual seat dedicated to free education and daily Dasoha.
           </p>
           <div class="footer-social mt-3">
             <a href="#" title="Facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
@@ -327,27 +428,33 @@
         </div>
 
         <div class="col-lg-4 col-md-6 footer-links">
-          <h4>ಉಪಯುಕ್ತ ಕೊಂಡಿಗಳು</h4>
+          <h4 class="lang-kn">ಉಪಯುಕ್ತ ಕೊಂಡಿಗಳು</h4>
+          <h4 class="lang-en">Quick Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="index.html">ಮುಖಪುಟ</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="about.html">ಇತಿಹಾಸ ಮತ್ತು ಪರಂಪರೆ</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="our-instituitions.html">ವಿದ್ಯಾಸಂಸ್ಥೆಗಳು & ಮಹಾಮನೆ</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="social-services.html">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="activities.html">ಚಟುವಟಿಕೆಗಳು & ಉತ್ಸವಗಳು</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="gallery.html">ಫೋಟೋ ಗ್ಯಾಲರಿ</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="contact.html">ಸಂಪರ್ಕಿಸಿ & ವಿಳಾಸ</a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="index.html"><span class="lang-kn">ಮುಖಪುಟ</span><span class="lang-en">Home</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="about.html"><span class="lang-kn">ಇತಿಹಾಸ ಮತ್ತು ಪರಂಪರೆ</span><span class="lang-en">History & Lineage</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="our-instituitions.html"><span class="lang-kn">ವಿದ್ಯಾಸಂಸ್ಥೆಗಳು & ಮಹಾಮನೆ</span><span class="lang-en">Institutions & Mahamane</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="social-services.html"><span class="lang-kn">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</span><span class="lang-en">Social Services</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="activities.html"><span class="lang-kn">ಚಟುವಟಿಕೆಗಳು & ಉತ್ಸವಗಳು</span><span class="lang-en">Activities & Festivals</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="gallery.html"><span class="lang-kn">ಫೋಟೋ ಗ್ಯಾಲರಿ</span><span class="lang-en">Photo Gallery</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="contact.html"><span class="lang-kn">ಸಂಪರ್ಕಿಸಿ & ವಿಳಾಸ</span><span class="lang-en">Contact & Location</span></a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-6 footer-contact">
-          <h4>ಸಂಪರ್ಕ ವಿಳಾಸ</h4>
+          <h4 class="lang-kn">ಸಂಪರ್ಕ ವಿಳಾಸ</h4>
+          <h4 class="lang-en">Contact Details</h4>
           <p>
-            <strong>ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು</strong><br>
-            ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ<br>
-            ಕರ್ನಾಟಕ - ೫೭೧೧೨೩<br><br>
-            <strong>ದೂರವಾಣಿ:</strong> <a href="tel:+91-9448602867" class="text-white">+91-9448602867</a><br>
-            <strong>ಇ-ಮೇಲ್:</strong> <a href="mailto:adavimata@gmail.com" class="text-white">adavimata@gmail.com</a><br>
-            <strong>ವೆಬ್‌ಸೈಟ್:</strong> <span class="text-warning">www.adavimata.com</span>
+            <strong class="lang-kn">ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು</strong>
+            <strong class="lang-en">Sri Adavimatha, Paduguru</strong><br>
+            <span class="lang-kn">ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ<br>ಕರ್ನಾಟಕ - ೫೭೧೧೨೩</span>
+            <span class="lang-en">Gundlupete Taluk, Chamarajanagar District<br>Karnataka - 571123</span><br><br>
+            <strong class="lang-kn">ದೂರವಾಣಿ:</strong><strong class="lang-en">Phone:</strong> 
+            <a href="tel:+91-9448602867" class="text-white">+91-9448602867</a><br>
+            <strong class="lang-kn">ಇ-ಮೇಲ್:</strong><strong class="lang-en">Email:</strong> 
+            <a href="mailto:adavimata@gmail.com" class="text-white">adavimata@gmail.com</a><br>
+            <strong class="lang-kn">ವೆಬ್‌ಸೈಟ್:</strong><strong class="lang-en">Website:</strong> 
+            <span class="text-warning">www.adavimata.com</span>
           </p>
         </div>
       </div>

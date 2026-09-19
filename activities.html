@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kn">
+<html lang="kn" data-lang="kn">
 
 <head>
   <meta charset="utf-8">
@@ -7,6 +7,16 @@
   <title>ಧಾರ್ಮಿಕ ಮತ್ತು ಸಾಮಾಜಿಕ ಚಟುವಟಿಕೆಗಳು | ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು</title>
   <meta content="ಶ್ರೀ ಅಡವಿಮಠದಲ್ಲಿ ವರ್ಷವಿಡೀ ನಡೆಯುವ ಮಹಾ ಶಿವರಾತ್ರಿ, ಗುರು ಪೂರ್ಣಿಮಾ, ಜಾತ್ರಾ ಮಹೋತ್ಸವ, ನಿತ್ಯ ಇಷ್ಟಲಿಂಗ ಪೂಜೆ ಹಾಗೂ ಶಾಲಾ ವಾರ್ಷಿಕೋತ್ಸವಗಳು." name="description">
   <meta content="Adavimata Activities, Shivaratri Paduguru, Guru Poornima, Jathra Mahotsava, Lingapooja, Gundlupete Festivals" name="keywords">
+
+  <!-- Immediate Language Check -->
+  <script>
+    (function() {
+      var savedLang = 'kn';
+      try { savedLang = localStorage.getItem('adavimata_lang') || 'kn'; } catch (e) {}
+      document.documentElement.setAttribute('data-lang', savedLang);
+      document.documentElement.lang = savedLang;
+    })();
+  </script>
 
   <!-- Favicons -->
   <link href="assets/img/logo1a.jpg" rel="icon" type="image/jpeg">
@@ -25,7 +35,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="lang-kn">
 
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-none d-md-block">
@@ -33,11 +43,26 @@
       <div class="contact-info d-flex align-items-center">
         <a href="tel:+91-9448602867"><i class="bi bi-telephone-fill"></i> +91-9448602867</a>
         <a href="mailto:adavimata@gmail.com"><i class="bi bi-envelope-fill"></i> adavimata@gmail.com</a>
-        <span class="badge-temple ms-2"><i class="bi bi-geo-alt-fill"></i> ಪಡುಗೂರು, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು</span>
+        <span class="badge-temple ms-2">
+          <i class="bi bi-geo-alt-fill"></i> 
+          <span class="lang-kn">ಪಡುಗೂರು, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು</span>
+          <span class="lang-en">Paduguru, Gundlupete Taluk</span>
+        </span>
       </div>
-      <div class="d-flex align-items-center">
-        <span class="badge-temple me-3"><i class="bi bi-clock-fill"></i> ದರ್ಶನ ಸಮಯ: 6:00 AM - 8:30 PM</span>
-        <div class="social-links d-flex align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <span class="badge-temple">
+          <i class="bi bi-clock-fill"></i> 
+          <span class="lang-kn">ದರ್ಶನ ಸಮಯ: 6:00 AM - 8:30 PM</span>
+          <span class="lang-en">Darshan: 6:00 AM - 8:30 PM</span>
+        </span>
+
+        <!-- Language Switcher -->
+        <div class="lang-switcher-pill" aria-label="Language Selector">
+          <button class="lang-btn active" data-lang="kn">ಕನ್ನಡ</button>
+          <button class="lang-btn" data-lang="en">English</button>
+        </div>
+
+        <div class="social-links d-flex align-items-center ms-2">
           <a href="#" title="Facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" title="Instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
           <a href="#" title="YouTube" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
@@ -54,23 +79,41 @@
         <a href="index.html">
           <img src="assets/img/logo1a.jpg" alt="ಶ್ರೀ ಅಡವಿಮಠ ಲಾಂಛನ" width="50" height="50">
           <div class="logo-text">
-            <span class="logo-title">ಶ್ರೀ ಅಡವಿಮಠ</span>
-            <span class="logo-subtitle">ಪಡುಗೂರು | ಶ್ರೀ ಕ್ಷೇತ್ರ</span>
+            <span class="logo-title lang-kn">ಶ್ರೀ ಅಡವಿಮಠ</span>
+            <span class="logo-title lang-en">Sri Adavimatha</span>
+            <span class="logo-subtitle lang-kn">ಪಡುಗೂರು | ಶ್ರೀ ಕ್ಷೇತ್ರ</span>
+            <span class="logo-subtitle lang-en">Paduguru | Holy Shrine</span>
           </div>
         </a>
       </div>
 
-      <!-- Navigation Bar -->
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">ಮುಖಪುಟ</a></li>
-          <li><a href="about.html">ಇತಿಹಾಸ & ಪರಂಪರೆ</a></li>
-          <li><a href="our-instituitions.html">ಸಂಸ್ಥೆಗಳು</a></li>
-          <li><a href="social-services.html">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</a></li>
-          <li><a class="active" href="activities.html">ಚಟುವಟಿಕೆಗಳು</a></li>
-          <li><a href="gallery.html">ಗ್ಯಾಲರಿ</a></li>
-          <li><a href="contact.html">ಸಂಪರ್ಕಿಸಿ</a></li>
-          <li><a href="contact.html" class="btn-nav-highlight"><i class="bi bi-heart-fill me-1"></i> ದಾಸೋಹ ಸೇವೆ</a></li>
+          <li><a href="index.html"><span class="lang-kn">ಮುಖಪುಟ</span><span class="lang-en">Home</span></a></li>
+          <li><a href="about.html"><span class="lang-kn">ಇತಿಹಾಸ & ಪರಂಪರೆ</span><span class="lang-en">History & Heritage</span></a></li>
+          <li><a href="our-instituitions.html"><span class="lang-kn">ಸಂಸ್ಥೆಗಳು</span><span class="lang-en">Institutions</span></a></li>
+          <li><a href="social-services.html"><span class="lang-kn">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</span><span class="lang-en">Social Services</span></a></li>
+          <li><a class="active" href="activities.html"><span class="lang-kn">ಚಟುವಟಿಕೆಗಳು</span><span class="lang-en">Activities</span></a></li>
+          <li><a href="gallery.html"><span class="lang-kn">ಗ್ಯಾಲರಿ</span><span class="lang-en">Gallery</span></a></li>
+          <li><a href="contact.html"><span class="lang-kn">ಸಂಪರ್ಕಿಸಿ</span><span class="lang-en">Contact</span></a></li>
+          <li>
+            <a href="contact.html" class="btn-nav-highlight">
+              <i class="bi bi-heart-fill me-1"></i> 
+              <span class="lang-kn">ದಾಸೋಹ ಸೇವೆ</span>
+              <span class="lang-en">Dasoha Seva</span>
+            </a>
+          </li>
+
+          <!-- Mobile Switcher -->
+          <li class="d-lg-none mt-3 pt-3 border-top border-light">
+            <div class="d-flex align-items-center justify-content-between px-3">
+              <span class="text-muted fw-bold">ಭಾಷೆ / Language:</span>
+              <div class="lang-switcher-pill">
+                <button class="lang-btn active" data-lang="kn">ಕನ್ನಡ</button>
+                <button class="lang-btn" data-lang="en">English</button>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav>
 
@@ -83,11 +126,13 @@
   <!-- ======= Page Hero Banner ======= -->
   <section class="page-hero-banner">
     <div class="container">
-      <h1>ಧಾರ್ಮಿಕ ಮತ್ತು ಸಾಮಾಜಿಕ ಚಟುವಟಿಕೆಗಳು</h1>
+      <h1 class="lang-kn">ಧಾರ್ಮಿಕ ಮತ್ತು ಸಾಮಾಜಿಕ ಚಟುವಟಿಕೆಗಳು</h1>
+      <h1 class="lang-en">Religious & Cultural Activities</h1>
       <div class="breadcrumbs-nav">
-        <a href="index.html">ಮುಖಪುಟ</a>
+        <a href="index.html"><span class="lang-kn">ಮುಖಪುಟ</span><span class="lang-en">Home</span></a>
         <i class="bi bi-chevron-right"></i>
-        <span>ಚಟುವಟಿಕೆಗಳು</span>
+        <span class="lang-kn">ಚಟುವಟಿಕೆಗಳು</span>
+        <span class="lang-en">Activities</span>
       </div>
     </div>
   </section>
@@ -99,14 +144,22 @@
       <div class="container">
 
         <div class="section-title-wrap">
-          <span class="section-badge"><i class="bi bi-calendar-event"></i> ನಿತ್ಯೋತ್ಸವ & ವಾರ್ಷಿಕೋತ್ಸವ</span>
-          <h2 class="section-title">ಶ್ರೀ ಮಠದ ಪ್ರಮುಖ ಆಚರಣೆಗಳು</h2>
+          <span class="section-badge">
+            <i class="bi bi-calendar-event"></i> 
+            <span class="lang-kn">ನಿತ್ಯೋತ್ಸವ & ವಾರ್ಷಿಕೋತ್ಸವ</span>
+            <span class="lang-en">Annual & Daily Observances</span>
+          </span>
+          <h2 class="section-title">
+            <span class="lang-kn">ಶ್ರೀ ಮಠದ ಪ್ರಮುಖ ಆಚರಣೆಗಳು</span>
+            <span class="lang-en">Major Celebrations & Festivals</span>
+          </h2>
           <div class="section-divider">
             <span></span>
             <i class="bi bi-gem"></i>
             <span></span>
           </div>
-          <p class="section-subtitle">ವರ್ಷವಿಡೀ ಭಕ್ತಿ, ಶ್ರದ್ಧೆ ಹಾಗೂ ಜನಜಾಗೃತಿಯೊಂದಿಗೆ ಜರುಗುವ ಆಧ್ಯಾತ್ಮಿಕ ಹಾಗೂ ಸಾಂಸ್ಕೃತಿಕ ಮಹೋತ್ಸವಗಳು</p>
+          <p class="section-subtitle lang-kn">ವರ್ಷವಿಡೀ ಭಕ್ತಿ, ಶ್ರದ್ಧೆ ಹಾಗೂ ಜನಜಾಗೃತಿಯೊಂದಿಗೆ ಜರುಗುವ ಆಧ್ಯಾತ್ಮಿಕ ಹಾಗೂ ಸಾಂಸ್ಕೃತಿಕ ಮಹೋತ್ಸವಗಳು</p>
+          <p class="section-subtitle lang-en">Sacred rituals, devotional gatherings, and cultural milestones celebrated throughout the year with piety and enthusiasm</p>
         </div>
 
         <!-- Activity Cards Grid -->
@@ -115,17 +168,36 @@
           <!-- Activity 1: Shivaratri -->
           <div class="col-lg-6">
             <div class="institution-hero-card h-100">
-              <span class="badge-tag"><i class="bi bi-moon-stars-fill me-1"></i> ವಾರ್ಷಿಕ ಮಹೋತ್ಸವ</span>
-              <h3 class="fw-bold mb-3">ಮಹಾ ಶಿವರಾತ್ರಿ ಜಾಗರಣೆ & ರುದ್ರಾಭಿಷೇಕ</h3>
-              <p>
-                ಪ್ರತಿ ವರ್ಷದ ಮಹಾ ಶಿವರಾತ್ರಿಯಂದು ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರ ಪವಿತ್ರ ಗದ್ದುಗೆಗೆ ಮಹಾ ರುದ್ರಾಭಿಷೇಕ, ಬಿಲ್ವಾರ್ಚನೆ ಹಾಗೂ ವಿಶೇಷ ಅಲಂಕಾರಗಳನ್ನು ನೆರವೇರಿಸಲಾಗುತ್ತದೆ.
-              </p>
-              <p class="text-muted">
-                ಸಾವಿರಾರು ಭಕ್ತಾದಿಗಳು ರಾತ್ರಿಯಿಡೀ ಜಾಗರಣೆಯಿದ್ದು ಭಜನೆ, ಶಿವನಾಮ ಸಂಕೀರ್ತನೆ, ವಚನ ಗಾಯನ ಹಾಗೂ ಧಾರ್ಮಿಕ ಚಿಂತನ-ಗೋಷ್ಠಿಗಳಲ್ಲಿ ಪಾಲ್ಗೊಳ್ಳುತ್ತಾರೆ. ಮರುದಿನ ಮುಂಜಾನೆ ಮಹಾದಾಸೋಹ ಜರುಗುತ್ತದೆ.
-              </p>
+              <span class="badge-tag">
+                <i class="bi bi-moon-stars-fill me-1"></i> 
+                <span class="lang-kn">ವಾರ್ಷಿಕ ಮಹೋತ್ಸವ</span>
+                <span class="lang-en">Annual Celebration</span>
+              </span>
+
+              <div class="lang-kn">
+                <h3 class="fw-bold mb-3">ಮಹಾ ಶಿವರಾತ್ರಿ ಜಾಗರಣೆ & ರುದ್ರಾಭಿಷೇಕ</h3>
+                <p>
+                  ಪ್ರತಿ ವರ್ಷದ ಮಹಾ ಶಿವರಾತ್ರಿಯಂದು ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರ ಪವಿತ್ರ ಗದ್ದುಗೆಗೆ ಮಹಾ ರುದ್ರಾಭಿಷೇಕ, ಬಿಲ್ವಾರ್ಚನೆ ಹಾಗೂ ವಿಶೇಷ ಅಲಂಕಾರಗಳನ್ನು ನೆರವೇರಿಸಲಾಗುತ್ತದೆ.
+                </p>
+                <p class="text-muted">
+                  ಸಾವಿರಾರು ಭಕ್ತಾದಿಗಳು ರಾತ್ರಿಯಿಡೀ ಜಾಗರಣೆಯಿದ್ದು ಭಜನೆ, ಶಿವನಾಮ ಸಂಕೀರ್ತನೆ, ವಚನ ಗಾಯನ ಹಾಗೂ ಧಾರ್ಮಿಕ ಚಿಂತನ-ಗೋಷ್ಠಿಗಳಲ್ಲಿ ಪಾಲ್ಗೊಳ್ಳುತ್ತಾರೆ. ಮರುದಿನ ಮುಂಜಾನೆ ಮಹಾದಾಸೋಹ ಜರುಗುತ್ತದೆ.
+                </p>
+              </div>
+
+              <div class="lang-en">
+                <h3 class="fw-bold mb-3">Maha Shivaratri Jagaran & Rudrabhisheka</h3>
+                <p>
+                  Observed annually with deep spiritual fervor, featuring continuous Rudrabhisheka, sacred Bilva offerings, and special decorative adornments for the holy Gaddige.
+                </p>
+                <p class="text-muted">
+                  Thousands of devotees observe night-long vigil (Jagaran) participating in devotional hymns, Vachana chanting, and philosophical discourses, followed by grand Mahadasoha feasts.
+                </p>
+              </div>
+
               <div class="d-flex align-items-center gap-2 text-warning fw-bold">
                 <i class="bi bi-check-circle-fill"></i>
-                <span>ವಿಶೇಷ ಪೂಜೆ, ಬಿಲ್ವಾರ್ಚನೆ & ಸಾಮೂಹಿಕ ಪ್ರಸಾದ</span>
+                <span class="lang-kn">ವಿಶೇಷ ಪೂಜೆ, ಬಿಲ್ವಾರ್ಚನೆ & ಸಾಮೂಹಿಕ ಪ್ರಸಾದ</span>
+                <span class="lang-en">Special Pooja, Bilva Archana & Feast</span>
               </div>
             </div>
           </div>
@@ -133,17 +205,36 @@
           <!-- Activity 2: Guru Poornima & Jathra -->
           <div class="col-lg-6">
             <div class="institution-hero-card h-100">
-              <span class="badge-tag"><i class="bi bi-sun-fill me-1"></i> ಗುರು ಪರಂಪರೆ ಉತ್ಸವ</span>
-              <h3 class="fw-bold mb-3">ಗುರು ಪೂರ್ಣಿಮಾ & ಜಾತ್ರಾ ಮಹೋತ್ಸವ</h3>
-              <p>
-                ಗುರು ಪೂರ್ಣಿಮೆಯ ಸಂದರ್ಭದಲ್ಲಿ ಶ್ರೀ ಮಠದ ಆದಿ ಗುರುಗಳು ಹಾಗೂ ಲಿಂಗೈಕ್ಯ ಶ್ರೀ ಶಿವಕುಮಾರಸ್ವಾಮಿಗಳವರ ಸ್ಮರಣಾರ್ಥ ಗುರು ಪೂಜೆ ಮತ್ತು ವಿಶೇಷ ಧರ್ಮಸಭೆಯನ್ನು ಆಯೋಜಿಸಲಾಗುತ್ತದೆ.
-              </p>
-              <p class="text-muted">
-                ನಾಡಿನ ಹಿರಿಯ ಮಠಾಧೀಶರು, ಪಂಡಿತರು ಹಾಗೂ ಗಣ್ಯ ವ್ಯಕ್ತಿಗಳು ಭಾಗವಹಿಸಿ ಧರ್ಮ ಸಂದೇಶ ನೀಡುತ್ತಾರೆ. ಗ್ರಾಮಸ್ಥರ ಹಾಗೂ ಸುತ್ತಮುತ್ತಲಿನ ಭಕ್ತರ ಸಹಯೋಗದಲ್ಲಿ ಅದ್ಧೂರಿ ರಥೋತ್ಸವ ಹಾಗೂ ಸಾಂಸ್ಕೃತಿಕ ಉತ್ಸವಗಳು ಜರುಗುತ್ತವೆ.
-              </p>
+              <span class="badge-tag">
+                <i class="bi bi-sun-fill me-1"></i> 
+                <span class="lang-kn">ಗುರು ಪರಂಪರೆ ಉತ್ಸವ</span>
+                <span class="lang-en">Guru Lineage Festival</span>
+              </span>
+
+              <div class="lang-kn">
+                <h3 class="fw-bold mb-3">ಗುರು ಪೂರ್ಣಿಮಾ & ಜಾತ್ರಾ ಮಹೋತ್ಸವ</h3>
+                <p>
+                  ಗುರು ಪೂರ್ಣಿಮೆಯ ಸಂದರ್ಭದಲ್ಲಿ ಶ್ರೀ ಮಠದ ಆದಿ ಗುರುಗಳು ಹಾಗೂ ಲಿಂಗೈಕ್ಯ ಶ್ರೀ ಶಿವಕುಮಾರಸ್ವಾಮಿಗಳವರ ಸ್ಮರಣಾರ್ಥ ಗುರು ಪೂಜೆ ಮತ್ತು ವಿಶೇಷ ಧರ್ಮಸಭೆಯನ್ನು ಆಯೋಜಿಸಲಾಗುತ್ತದೆ.
+                </p>
+                <p class="text-muted">
+                  ನಾಡಿನ ಹಿರಿಯ ಮಠಾಧೀಶರು, ಪಂಡಿತರು ಹಾಗೂ ಗಣ್ಯ ವ್ಯಕ್ತಿಗಳು ಭಾಗವಹಿಸಿ ಧರ್ಮ ಸಂದೇಶ ನೀಡುತ್ತಾರೆ. ಗ್ರಾಮಸ್ಥರ ಹಾಗೂ ಸುತ್ತಮುತ್ತಲಿನ ಭಕ್ತರ ಸಹಯೋಗದಲ್ಲಿ ಅದ್ಧೂರಿ ರಥೋತ್ಸವ ಹಾಗೂ ಸಾಂಸ್ಕೃತಿಕ ಉತ್ಸವಗಳು ಜರುಗುತ್ತವೆ.
+                </p>
+              </div>
+
+              <div class="lang-en">
+                <h3 class="fw-bold mb-3">Guru Poornima & Jathra Fair</h3>
+                <p>
+                  Held in homage to the founding saints and Late Sri Shivakumara Swamiji, featuring elaborate Guru worship rituals and prestigious spiritual assemblies.
+                </p>
+                <p class="text-muted">
+                  Eminent seers, scholars, and public dignitaries attend to share spiritual discourses, accompanied by grand chariot processions (Rathotsava) and colorful community fairs.
+                </p>
+              </div>
+
               <div class="d-flex align-items-center gap-2 text-warning fw-bold">
                 <i class="bi bi-check-circle-fill"></i>
-                <span>ಗುರು ವಂದನೆ, ಧರ್ಮಸಭೆ & ರಥೋತ್ಸವ</span>
+                <span class="lang-kn">ಗುರು ವಂದನೆ, ಧರ್ಮಸಭೆ & ರಥೋತ್ಸವ</span>
+                <span class="lang-en">Guru Vandana, Chariot & Spiritual Meet</span>
               </div>
             </div>
           </div>
@@ -151,28 +242,62 @@
           <!-- Activity 3: Daily Worship -->
           <div class="col-lg-6">
             <div class="institution-hero-card h-100">
-              <span class="badge-tag"><i class="bi bi-flower1 me-1"></i> ನಿತ್ಯ ಕಾಯಕ</span>
-              <h3 class="fw-bold mb-3">ನಿತ್ಯ ಶಿವಪೂಜೆ, ಧ್ಯಾನ & ಲಿಂಗಾನುಷ್ಠಾನ</h3>
-              <p>
-                ಶ್ರೀ ಮಠದಲ್ಲಿ ಪ್ರತಿದಿನವೂ ಮುಂಜಾನೆ ೬:೦೦ ಗಂಟೆಗೆ ಹಾಗೂ ಸಂಜೆ ೬:೩೦ಕ್ಕೆ ಶಾಸ್ತ್ರೋಕ್ತವಾಗಿ ಇಷ್ಟಲಿಂಗಾರ್ಚನೆ, ರುದ್ರಾಭಿಷೇಕ, ಮಂಗಳಾರತಿ ಹಾಗೂ ಭಕ್ತರಿಗೆ ತೀರ್ಥ-ಪ್ರಸಾದ ವಿನಿಯೋಗ ನಡೆಯುತ್ತದೆ.
-              </p>
-              <p class="text-muted">
-                ಧ್ಯಾನ ಮಂಟಪ ಹಾಗೂ ಪ್ರಶಾಂತ ಗದ್ದುಗೆ ಸನ್ನಿಧಿಯಲ್ಲಿ ಭಕ್ತಾದಿಗಳು ಶಾಂತಿ, ನೆಮ್ಮದಿಯಿಂದ ಧ್ಯಾನ ಹಾಗೂ ಪ್ರಾರ್ಥನೆ ಸಲ್ಲಿಸಲು ಸೂಕ್ತ ವಾತಾವರಣ ಕಲ್ಪಿಸಲಾಗಿದೆ.
-              </p>
+              <span class="badge-tag">
+                <i class="bi bi-flower1 me-1"></i> 
+                <span class="lang-kn">ನಿತ್ಯ ಕಾಯಕ</span>
+                <span class="lang-en">Daily Routine</span>
+              </span>
+
+              <div class="lang-kn">
+                <h3 class="fw-bold mb-3">ನಿತ್ಯ ಶಿವಪೂಜೆ, ಧ್ಯಾನ & ಲಿಂಗಾನುಷ್ಠಾನ</h3>
+                <p>
+                  ಶ್ರೀ ಮಠದಲ್ಲಿ ಪ್ರತಿದಿನವೂ ಮುಂಜಾನೆ ೬:೦೦ ಗಂಟೆಗೆ ಹಾಗೂ ಸಂಜೆ ೬:೩೦ಕ್ಕೆ ಶಾಸ್ತ್ರೋಕ್ತವಾಗಿ ಇಷ್ಟಲಿಂಗಾರ್ಚನೆ, ರುದ್ರಾಭಿಷೇಕ, ಮಂಗಳಾರತಿ ಹಾಗೂ ಭಕ್ತರಿಗೆ ತೀರ್ಥ-ಪ್ರಸಾದ ವಿನಿಯೋಗ ನಡೆಯುತ್ತದೆ.
+                </p>
+                <p class="text-muted">
+                  ಧ್ಯಾನ ಮಂಟಪ ಹಾಗೂ ಪ್ರಶಾಂತ ಗದ್ದುಗೆ ಸನ್ನಿಧಿಯಲ್ಲಿ ಭಕ್ತಾದಿಗಳು ಶಾಂತಿ, ನೆಮ್ಮದಿಯಿಂದ ಧ್ಯಾನ ಹಾಗೂ ಪ್ರಾರ್ಥನೆ ಸಲ್ಲಿಸಲು ಸೂಕ್ತ ವಾತಾವರಣ ಕಲ್ಪಿಸಲಾಗಿದೆ.
+                </p>
+              </div>
+
+              <div class="lang-en">
+                <h3 class="fw-bold mb-3">Daily Linga Pooja, Meditation & Chanting</h3>
+                <p>
+                  Canonical Ishtalinga worship, Rudrabhisheka, and Mangalarati take place every morning at 6:00 AM and evening at 6:30 PM, conferring sacred Teertha-Prasada to visitors.
+                </p>
+                <p class="text-muted">
+                  The peaceful Dyana Mantapa (meditation hall) offers a serene oasis for pilgrims seeking silence, prayer, and inner reflection amidst nature.
+                </p>
+              </div>
             </div>
           </div>
 
           <!-- Activity 4: School Day & Cultural Events -->
           <div class="col-lg-6">
             <div class="institution-hero-card h-100">
-              <span class="badge-tag"><i class="bi bi-mortarboard-fill me-1"></i> ಶಿಕ್ಷಣೋತ್ಸವ</span>
-              <h3 class="fw-bold mb-3">ಶಾಲಾ ವಾರ್ಷಿಕೋತ್ಸವ & ಪ್ರತಿಭಾ ಪುರಸ್ಕಾರ</h3>
-              <p>
-                ಮಹಾಮನೆ ಹಾಗೂ ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರ ವಿದ್ಯಾಸಂಸ್ಥೆಯ ಮಕ್ಕಳ ವಾರ್ಷಿಕೋತ್ಸವವನ್ನು ಪ್ರತಿ ವರ್ಷ ಅದ್ಧೂರಿಯಾಗಿ ಆಚರಿಸಲಾಗುತ್ತದೆ.
-              </p>
-              <p class="text-muted">
-                ವಿದ್ಯಾರ್ಥಿಗಳಿಂದ ವಚನ ನೃತ್ಯ, ನಾಟಕ, ಯೋಗ ಪ್ರದರ್ಶನ ಹಾಗೂ ಜಾನಪದ ಕಲಾ ಪ್ರದರ್ಶನಗಳು ನಡೆಯುತ್ತವೆ. ಉತ್ತಮ ಅಂಕ ಗಳಿಸಿದ ಹಾಗೂ ಪ್ರತಿಭಾನ್ವಿತ ಗ್ರಾಮೀಣ ಮಕ್ಕಳಿಗೆ ಪ್ರತಿಭಾ ಪುರಸ್ಕಾರ ನೀಡಿ ಪ್ರೋತ್ಸಾಹಿಸಲಾಗುತ್ತದೆ.
-              </p>
+              <span class="badge-tag">
+                <i class="bi bi-mortarboard-fill me-1"></i> 
+                <span class="lang-kn">ಶಿಕ್ಷಣೋತ್ಸವ</span>
+                <span class="lang-en">School Celebrations</span>
+              </span>
+
+              <div class="lang-kn">
+                <h3 class="fw-bold mb-3">ಶಾಲಾ ವಾರ್ಷಿಕೋತ್ಸವ & ಪ್ರತಿಭಾ ಪುರಸ್ಕಾರ</h3>
+                <p>
+                  ಮಹಾಮನೆ ಹಾಗೂ ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರ ವಿದ್ಯಾಸಂಸ್ಥೆಯ ಮಕ್ಕಳ ವಾರ್ಷಿಕೋತ್ಸವವನ್ನು ಪ್ರತಿ ವರ್ಷ ಅದ್ಧೂರಿಯಾಗಿ ಆಚರಿಸಲಾಗುತ್ತದೆ.
+                </p>
+                <p class="text-muted">
+                  ವಿದ್ಯಾರ್ಥಿಗಳಿಂದ ವಚನ ನೃತ್ಯ, ನಾಟಕ, ಯೋಗ ಪ್ರದರ್ಶನ ಹಾಗೂ ಜಾನಪದ ಕಲಾ ಪ್ರದರ್ಶನಗಳು ನಡೆಯುತ್ತವೆ. ಉತ್ತಮ ಅಂಕ ಗಳಿಸಿದ ಹಾಗೂ ಪ್ರತಿಭಾನ್ವಿತ ಗ್ರಾಮೀಣ ಮಕ್ಕಳಿಗೆ ಪ್ರತಿಭಾ ಪುರಸ್ಕಾರ ನೀಡಿ ಪ್ರೋತ್ಸಾಹಿಸಲಾಗುತ್ತದೆ.
+                </p>
+              </div>
+
+              <div class="lang-en">
+                <h3 class="fw-bold mb-3">School Annual Day & Talent Honors</h3>
+                <p>
+                  An inspiring celebration showcasing the creative talents of students from Mahamane and Sri Maddaneshwara institutions.
+                </p>
+                <p class="text-muted">
+                  Featuring traditional dance dramas, Vachana recitals, yoga exhibitions, and folk performances, culminating in scholastic felicitations for meritorious rural children.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -182,18 +307,37 @@
         <div class="vachana-card my-5">
           <div class="row align-items-center">
             <div class="col-lg-8">
-              <h4 class="fw-bold text-dark mb-2"><i class="bi bi-clock-history text-warning me-2"></i> ಶ್ರೀ ಮಠದ ದೈನಂದಿನ ಕಾರ್ಯಕ್ರಮಗಳ ವೇಳಾಪಟ್ಟಿ</h4>
-              <p class="text-muted mb-0">
-                • ಬೆಳಿಗ್ಗೆ 6:00 - ಮುಂಜಾನೆಯ ಉಷಃಕಾಲದ ಪೂಜೆ & ದರ್ಶನ ಆರಂಭ<br>
-                • ಬೆಳಿಗ್ಗೆ 8:30 - ವಿಶೇಷ ರುದ್ರಾಭಿಷೇಕ & ಮಂಗಳಾರತಿ<br>
-                • ಮಧ್ಯಾಹ್ನ 12:30 ರಿಂದ 2:30 - ಮಹಾ ದಾಸೋಹ ಪ್ರಸಾದ ವಿನಿಯೋಗ<br>
-                • ಸಂಜೆ 6:30 - ಸಂಧ್ಯಾ ಕಾಲದ ಆರತಿ & ಭಜನಾ ಕಾರ್ಯಕ್ರಮ<br>
-                • ರಾತ್ರಿ 8:30 - ಗದ್ದುಗೆ ಮಹಾಮಂಗಳಾರತಿ & ದರ್ಶನ ಮುಕ್ತಾಯ
-              </p>
+              <h4 class="fw-bold text-dark mb-2">
+                <i class="bi bi-clock-history text-warning me-2"></i> 
+                <span class="lang-kn">ಶ್ರೀ ಮಠದ ದೈನಂದಿನ ಕಾರ್ಯಕ್ರಮಗಳ ವೇಳಾಪಟ್ಟಿ</span>
+                <span class="lang-en">Daily Temple Program Schedule</span>
+              </h4>
+
+              <div class="lang-kn">
+                <p class="text-muted mb-0">
+                  • ಬೆಳಿಗ್ಗೆ 6:00 - ಮುಂಜಾನೆಯ ಉಷಃಕಾಲದ ಪೂಜೆ & ದರ್ಶನ ಆರಂಭ<br>
+                  • ಬೆಳಿಗ್ಗೆ 8:30 - ವಿಶೇಷ ರುದ್ರಾಭಿಷೇಕ & ಮಂಗಳಾರತಿ<br>
+                  • ಮಧ್ಯಾಹ್ನ 12:30 ರಿಂದ 2:30 - ಮಹಾ ದಾಸೋಹ ಪ್ರಸಾದ ವಿನಿಯೋಗ<br>
+                  • ಸಂಜೆ 6:30 - ಸಂಧ್ಯಾ ಕಾಲದ ಆರತಿ & ಭಜನಾ ಕಾರ್ಯಕ್ರಮ<br>
+                  • ರಾತ್ರಿ 8:30 - ಗದ್ದುಗೆ ಮಹಾಮಂಗಳಾರತಿ & ದರ್ಶನ ಮುಕ್ತಾಯ
+                </p>
+              </div>
+
+              <div class="lang-en">
+                <p class="text-muted mb-0">
+                  • 6:00 AM - Morning Pooja & Temple Doors Open<br>
+                  • 8:30 AM - Rudrabhisheka & Morning Mangalarati<br>
+                  • 12:30 PM to 2:30 PM - Mahadasoha (Free Noon Lunch Prasad)<br>
+                  • 6:30 PM - Evening Sandhya Arati & Devotional Chanting<br>
+                  • 8:30 PM - Night Maha Mangalarati & Temple Closes
+                </p>
+              </div>
             </div>
             <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
               <a href="contact.html" class="btn-primary-custom">
-                <span>ಮಠಕ್ಕೆ ಭೇಟಿ ನೀಡಿ</span> <i class="bi bi-arrow-right"></i>
+                <span class="lang-kn">ಮಠಕ್ಕೆ ಭೇಟಿ ನೀಡಿ</span>
+                <span class="lang-en">Plan Your Visit</span>
+                <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -211,10 +355,16 @@
         <div class="col-lg-4 col-md-6">
           <div class="d-flex align-items-center gap-2 mb-3">
             <img src="assets/img/logo1a.jpg" alt="ಶ್ರೀ ಅಡವಿಮಠ" class="rounded-circle border border-warning" width="45" height="45">
-            <h3 class="mb-0 text-white fs-4">ಶ್ರೀ ಅಡವಿಮಠ</h3>
+            <h3 class="mb-0 text-white fs-4">
+              <span class="lang-kn">ಶ್ರೀ ಅಡವಿಮಠ</span>
+              <span class="lang-en">Sri Adavimatha</span>
+            </h3>
           </div>
-          <p class="text-white-50">
+          <p class="text-white-50 lang-kn">
             ಪಡುಗೂರು ಗ್ರಾಮ, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ. ೫೦೦ ವರ್ಷಗಳ ಐತಿಹಾಸಿಕ ವೀರಶೈವ ಪರಂಪರೆಯ ಪವಿತ್ರ ತಾಣ, ಉಚಿತ ಶಿಕ್ಷಣ ಹಾಗೂ ನಿತ್ಯ ದಾಸೋಹದ ಕ್ಷೇತ್ರ.
+          </p>
+          <p class="text-white-50 lang-en">
+            Paduguru Village, Gundlupete Taluk, Chamarajanagar District. A sacred 500-year-old spiritual seat dedicated to free education and daily Dasoha.
           </p>
           <div class="footer-social mt-3">
             <a href="#" title="Facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
@@ -225,27 +375,33 @@
         </div>
 
         <div class="col-lg-4 col-md-6 footer-links">
-          <h4>ಉಪಯುಕ್ತ ಕೊಂಡಿಗಳು</h4>
+          <h4 class="lang-kn">ಉಪಯುಕ್ತ ಕೊಂಡಿಗಳು</h4>
+          <h4 class="lang-en">Quick Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="index.html">ಮುಖಪುಟ</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="about.html">ಇತಿಹಾಸ ಮತ್ತು ಪರಂಪರೆ</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="our-instituitions.html">ವಿದ್ಯಾಸಂಸ್ಥೆಗಳು & ಮಹಾಮನೆ</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="social-services.html">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="activities.html">ಚಟುವಟಿಕೆಗಳು & ಉತ್ಸವಗಳು</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="gallery.html">ಫೋಟೋ ಗ್ಯಾಲರಿ</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="contact.html">ಸಂಪರ್ಕಿಸಿ & ವಿಳಾಸ</a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="index.html"><span class="lang-kn">ಮುಖಪುಟ</span><span class="lang-en">Home</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="about.html"><span class="lang-kn">ಇತಿಹಾಸ ಮತ್ತು ಪರಂಪರೆ</span><span class="lang-en">History & Lineage</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="our-instituitions.html"><span class="lang-kn">ವಿದ್ಯಾಸಂಸ್ಥೆಗಳು & ಮಹಾಮನೆ</span><span class="lang-en">Institutions & Mahamane</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="social-services.html"><span class="lang-kn">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</span><span class="lang-en">Social Services</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="activities.html"><span class="lang-kn">ಚಟುವಟಿಕೆಗಳು & ಉತ್ಸವಗಳು</span><span class="lang-en">Activities & Festivals</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="gallery.html"><span class="lang-kn">ಫೋಟೋ ಗ್ಯಾಲರಿ</span><span class="lang-en">Photo Gallery</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="contact.html"><span class="lang-kn">ಸಂಪರ್ಕಿಸಿ & ವಿಳಾಸ</span><span class="lang-en">Contact & Location</span></a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-6 footer-contact">
-          <h4>ಸಂಪರ್ಕ ವಿಳಾಸ</h4>
+          <h4 class="lang-kn">ಸಂಪರ್ಕ ವಿಳಾಸ</h4>
+          <h4 class="lang-en">Contact Details</h4>
           <p>
-            <strong>ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು</strong><br>
-            ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ<br>
-            ಕರ್ನಾಟಕ - ೫೭೧೧೨೩<br><br>
-            <strong>ದೂರವಾಣಿ:</strong> <a href="tel:+91-9448602867" class="text-white">+91-9448602867</a><br>
-            <strong>ಇ-ಮೇಲ್:</strong> <a href="mailto:adavimata@gmail.com" class="text-white">adavimata@gmail.com</a><br>
-            <strong>ವೆಬ್‌ಸೈಟ್:</strong> <span class="text-warning">www.adavimata.com</span>
+            <strong class="lang-kn">ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು</strong>
+            <strong class="lang-en">Sri Adavimatha, Paduguru</strong><br>
+            <span class="lang-kn">ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ<br>ಕರ್ನಾಟಕ - ೫೭೧೧೨೩</span>
+            <span class="lang-en">Gundlupete Taluk, Chamarajanagar District<br>Karnataka - 571123</span><br><br>
+            <strong class="lang-kn">ದೂರವಾಣಿ:</strong><strong class="lang-en">Phone:</strong> 
+            <a href="tel:+91-9448602867" class="text-white">+91-9448602867</a><br>
+            <strong class="lang-kn">ಇ-ಮೇಲ್:</strong><strong class="lang-en">Email:</strong> 
+            <a href="mailto:adavimata@gmail.com" class="text-white">adavimata@gmail.com</a><br>
+            <strong class="lang-kn">ವೆಬ್‌ಸೈಟ್:</strong><strong class="lang-en">Website:</strong> 
+            <span class="text-warning">www.adavimata.com</span>
           </p>
         </div>
       </div>

@@ -1478,3 +1478,83 @@ section {
     grid-template-columns: 1fr;
   }
 }
+
+/* -------------------------------------------------------------
+ * 18. Language Switcher (Kannada / English)
+ * ----------------------------------------------------------- */
+/* Default is Kannada: when html/body is lang-kn or default, hide .lang-en */
+html[data-lang="kn"] .lang-en,
+body.lang-kn .lang-en,
+body:not(.lang-en) .lang-en {
+  display: none !important;
+}
+
+/* When English is selected: hide .lang-kn */
+html[data-lang="en"] .lang-kn,
+body.lang-en .lang-kn {
+  display: none !important;
+}
+
+/* Show correct language elements when active */
+html[data-lang="en"] .lang-en,
+body.lang-en .lang-en {
+  display: block;
+}
+html[data-lang="en"] span.lang-en,
+body.lang-en span.lang-en,
+html[data-lang="en"] a.lang-en,
+body.lang-en a.lang-en,
+html[data-lang="en"] strong.lang-en,
+body.lang-en strong.lang-en,
+html[data-lang="en"] small.lang-en,
+body.lang-en small.lang-en {
+  display: inline;
+}
+html[data-lang="en"] div.lang-en.d-flex,
+body.lang-en div.lang-en.d-flex {
+  display: flex !important;
+}
+
+/* Switcher UI Pill */
+.lang-switcher-pill {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(28, 25, 23, 0.08);
+  border: 1px solid rgba(217, 119, 6, 0.35);
+  border-radius: var(--radius-full);
+  padding: 3px;
+  gap: 2px;
+  user-select: none;
+}
+
+#topbar .lang-switcher-pill {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(245, 158, 11, 0.45);
+}
+
+.lang-btn {
+  border: none;
+  background: transparent;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  color: #a8a29e;
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#topbar .lang-btn {
+  color: #d6d3d1;
+}
+
+#topbar .lang-btn:hover {
+  color: #ffffff;
+}
+
+.lang-btn.active {
+  background: var(--grad-primary);
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(194, 65, 12, 0.4);
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kn">
+<html lang="kn" data-lang="kn">
 
 <head>
   <meta charset="utf-8">
@@ -7,6 +7,16 @@
   <title>ಸಂಪರ್ಕಿಸಿ & ವಿಳಾಸ | ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು</title>
   <meta content="ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ. ದೂರವಾಣಿ: +91-9448602867. ದರ್ಶನ ಮತ್ತು ದಾಸೋಹ ಸಮಯಗಳು ಹಾಗೂ ಗೂಗಲ್ ಮ್ಯಾಪ್ ಮಾರ್ಗಸೂಚಿ." name="description">
   <meta content="Contact Adavimata, Paduguru address, phone number, Gundlupete matha contact, Google Maps location" name="keywords">
+
+  <!-- Immediate Language Check -->
+  <script>
+    (function() {
+      var savedLang = 'kn';
+      try { savedLang = localStorage.getItem('adavimata_lang') || 'kn'; } catch (e) {}
+      document.documentElement.setAttribute('data-lang', savedLang);
+      document.documentElement.lang = savedLang;
+    })();
+  </script>
 
   <!-- Favicons -->
   <link href="assets/img/logo1a.jpg" rel="icon" type="image/jpeg">
@@ -25,7 +35,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="lang-kn">
 
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-none d-md-block">
@@ -33,11 +43,26 @@
       <div class="contact-info d-flex align-items-center">
         <a href="tel:+91-9448602867"><i class="bi bi-telephone-fill"></i> +91-9448602867</a>
         <a href="mailto:adavimata@gmail.com"><i class="bi bi-envelope-fill"></i> adavimata@gmail.com</a>
-        <span class="badge-temple ms-2"><i class="bi bi-geo-alt-fill"></i> ಪಡುಗೂರು, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು</span>
+        <span class="badge-temple ms-2">
+          <i class="bi bi-geo-alt-fill"></i> 
+          <span class="lang-kn">ಪಡುಗೂರು, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು</span>
+          <span class="lang-en">Paduguru, Gundlupete Taluk</span>
+        </span>
       </div>
-      <div class="d-flex align-items-center">
-        <span class="badge-temple me-3"><i class="bi bi-clock-fill"></i> ದರ್ಶನ ಸಮಯ: 6:00 AM - 8:30 PM</span>
-        <div class="social-links d-flex align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <span class="badge-temple">
+          <i class="bi bi-clock-fill"></i> 
+          <span class="lang-kn">ದರ್ಶನ ಸಮಯ: 6:00 AM - 8:30 PM</span>
+          <span class="lang-en">Darshan: 6:00 AM - 8:30 PM</span>
+        </span>
+
+        <!-- Language Switcher -->
+        <div class="lang-switcher-pill" aria-label="Language Selector">
+          <button class="lang-btn active" data-lang="kn">ಕನ್ನಡ</button>
+          <button class="lang-btn" data-lang="en">English</button>
+        </div>
+
+        <div class="social-links d-flex align-items-center ms-2">
           <a href="#" title="Facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" title="Instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
           <a href="#" title="YouTube" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
@@ -54,23 +79,41 @@
         <a href="index.html">
           <img src="assets/img/logo1a.jpg" alt="ಶ್ರೀ ಅಡವಿಮಠ ಲಾಂಛನ" width="50" height="50">
           <div class="logo-text">
-            <span class="logo-title">ಶ್ರೀ ಅಡವಿಮಠ</span>
-            <span class="logo-subtitle">ಪಡುಗೂರು | ಶ್ರೀ ಕ್ಷೇತ್ರ</span>
+            <span class="logo-title lang-kn">ಶ್ರೀ ಅಡವಿಮಠ</span>
+            <span class="logo-title lang-en">Sri Adavimatha</span>
+            <span class="logo-subtitle lang-kn">ಪಡುಗೂರು | ಶ್ರೀ ಕ್ಷೇತ್ರ</span>
+            <span class="logo-subtitle lang-en">Paduguru | Holy Shrine</span>
           </div>
         </a>
       </div>
 
-      <!-- Navigation Bar -->
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">ಮುಖಪುಟ</a></li>
-          <li><a href="about.html">ಇತಿಹಾಸ & ಪರಂಪರೆ</a></li>
-          <li><a href="our-instituitions.html">ಸಂಸ್ಥೆಗಳು</a></li>
-          <li><a href="social-services.html">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</a></li>
-          <li><a href="activities.html">ಚಟುವಟಿಕೆಗಳು</a></li>
-          <li><a href="gallery.html">ಗ್ಯಾಲರಿ</a></li>
-          <li><a class="active" href="contact.html">ಸಂಪರ್ಕಿಸಿ</a></li>
-          <li><a href="contact.html" class="btn-nav-highlight"><i class="bi bi-heart-fill me-1"></i> ದಾಸೋಹ ಸೇವೆ</a></li>
+          <li><a href="index.html"><span class="lang-kn">ಮುಖಪುಟ</span><span class="lang-en">Home</span></a></li>
+          <li><a href="about.html"><span class="lang-kn">ಇತಿಹಾಸ & ಪರಂಪರೆ</span><span class="lang-en">History & Heritage</span></a></li>
+          <li><a href="our-instituitions.html"><span class="lang-kn">ಸಂಸ್ಥೆಗಳು</span><span class="lang-en">Institutions</span></a></li>
+          <li><a href="social-services.html"><span class="lang-kn">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</span><span class="lang-en">Social Services</span></a></li>
+          <li><a href="activities.html"><span class="lang-kn">ಚಟುವಟಿಕೆಗಳು</span><span class="lang-en">Activities</span></a></li>
+          <li><a href="gallery.html"><span class="lang-kn">ಗ್ಯಾಲರಿ</span><span class="lang-en">Gallery</span></a></li>
+          <li><a class="active" href="contact.html"><span class="lang-kn">ಸಂಪರ್ಕಿಸಿ</span><span class="lang-en">Contact</span></a></li>
+          <li>
+            <a href="contact.html" class="btn-nav-highlight">
+              <i class="bi bi-heart-fill me-1"></i> 
+              <span class="lang-kn">ದಾಸೋಹ ಸೇವೆ</span>
+              <span class="lang-en">Dasoha Seva</span>
+            </a>
+          </li>
+
+          <!-- Mobile Switcher -->
+          <li class="d-lg-none mt-3 pt-3 border-top border-light">
+            <div class="d-flex align-items-center justify-content-between px-3">
+              <span class="text-muted fw-bold">ಭಾಷೆ / Language:</span>
+              <div class="lang-switcher-pill">
+                <button class="lang-btn active" data-lang="kn">ಕನ್ನಡ</button>
+                <button class="lang-btn" data-lang="en">English</button>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav>
 
@@ -83,11 +126,13 @@
   <!-- ======= Page Hero Banner ======= -->
   <section class="page-hero-banner">
     <div class="container">
-      <h1>ಶ್ರೀ ಮಠವನ್ನು ಸಂಪರ್ಕಿಸಿ</h1>
+      <h1 class="lang-kn">ಶ್ರೀ ಮಠವನ್ನು ಸಂಪರ್ಕಿಸಿ</h1>
+      <h1 class="lang-en">Contact Sri Adavimatha</h1>
       <div class="breadcrumbs-nav">
-        <a href="index.html">ಮುಖಪುಟ</a>
+        <a href="index.html"><span class="lang-kn">ಮುಖಪುಟ</span><span class="lang-en">Home</span></a>
         <i class="bi bi-chevron-right"></i>
-        <span>ಸಂಪರ್ಕಿಸಿ</span>
+        <span class="lang-kn">ಸಂಪರ್ಕಿಸಿ</span>
+        <span class="lang-en">Contact</span>
       </div>
     </div>
   </section>
@@ -107,11 +152,17 @@
                 <i class="bi bi-geo-alt-fill"></i>
               </div>
               <div>
-                <h4 class="fw-bold fs-5 mb-1">ವಿಳಾಸ</h4>
-                <p class="mb-0 text-muted" style="font-size: 14.5px;">
+                <h4 class="fw-bold fs-5 mb-1 lang-kn">ವಿಳಾಸ</h4>
+                <h4 class="fw-bold fs-5 mb-1 lang-en">Address</h4>
+                <p class="mb-0 text-muted lang-kn" style="font-size: 14.5px;">
                   ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು ಗ್ರಾಮ,<br>
                   ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು,<br>
                   ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ - ೫೭೧೧೨೩
+                </p>
+                <p class="mb-0 text-muted lang-en" style="font-size: 14.5px;">
+                  Sri Adavimatha, Paduguru Village,<br>
+                  Gundlupete Taluk,<br>
+                  Chamarajanagar Dist - 571123
                 </p>
               </div>
             </div>
@@ -124,12 +175,13 @@
                 <i class="bi bi-telephone-inbound-fill"></i>
               </div>
               <div>
-                <h4 class="fw-bold fs-5 mb-1">ದೂರವಾಣಿ</h4>
+                <h4 class="fw-bold fs-5 mb-1 lang-kn">ದೂರವಾಣಿ</h4>
+                <h4 class="fw-bold fs-5 mb-1 lang-en">Phone</h4>
                 <p class="mb-1 text-muted">
                   <a href="tel:+91-9448602867" class="fw-bold text-dark">+91-9448602867</a>
                 </p>
                 <a href="https://wa.me/919448602867" target="_blank" rel="noopener noreferrer" class="badge bg-success text-white py-1 px-2 text-decoration-none">
-                  <i class="bi bi-whatsapp"></i> WhatsApp ಸಂಪರ್ಕ
+                  <i class="bi bi-whatsapp"></i> WhatsApp <span class="lang-kn">ಸಂಪರ್ಕ</span><span class="lang-en">Chat</span>
                 </a>
               </div>
             </div>
@@ -142,11 +194,13 @@
                 <i class="bi bi-envelope-open-fill"></i>
               </div>
               <div>
-                <h4 class="fw-bold fs-5 mb-1">ಇ-ಮೇಲ್</h4>
+                <h4 class="fw-bold fs-5 mb-1 lang-kn">ಇ-ಮೇಲ್</h4>
+                <h4 class="fw-bold fs-5 mb-1 lang-en">Email</h4>
                 <p class="mb-0 text-muted">
                   <a href="mailto:adavimata@gmail.com" class="text-primary fw-semibold">adavimata@gmail.com</a>
                 </p>
-                <small class="text-muted d-block mt-1">ಯಾವುದೇ ವಿಚಾರಣೆಗೆ ಬರೆಯಿರಿ</small>
+                <small class="text-muted d-block mt-1 lang-kn">ಯಾವುದೇ ವಿಚಾರಣೆಗೆ ಬರೆಯಿರಿ</small>
+                <small class="text-muted d-block mt-1 lang-en">Write for any queries</small>
               </div>
             </div>
           </div>
@@ -158,11 +212,17 @@
                 <i class="bi bi-clock-history"></i>
               </div>
               <div>
-                <h4 class="fw-bold fs-5 mb-1">ದರ್ಶನ & ದಾಸೋಹ</h4>
-                <p class="mb-0 text-muted" style="font-size: 13.5px;">
+                <h4 class="fw-bold fs-5 mb-1 lang-kn">ದರ್ಶನ & ದಾಸೋಹ</h4>
+                <h4 class="fw-bold fs-5 mb-1 lang-en">Timings</h4>
+                <p class="mb-0 text-muted lang-kn" style="font-size: 13.5px;">
                   • ದರ್ಶನ: 6:00 AM - 8:30 PM<br>
                   • ಅನ್ನದಾಸೋಹ: 12:30 PM - 2:30 PM<br>
                   • ವಾರದ ಎಲ್ಲ ದಿನಗಳಲ್ಲೂ ತೆರೆದಿರುತ್ತದೆ
+                </p>
+                <p class="mb-0 text-muted lang-en" style="font-size: 13.5px;">
+                  • Darshan: 6:00 AM - 8:30 PM<br>
+                  • Annadasoha: 12:30 PM - 2:30 PM<br>
+                  • Open all days of the week
                 </p>
               </div>
             </div>
@@ -175,39 +235,59 @@
           <!-- Contact Form Column -->
           <div class="col-lg-6">
             <div class="contact-form-wrap">
-              <span class="badge-tag mb-2"><i class="bi bi-chat-heart-fill me-1"></i> ಸಂದೇಶ ಕಳುಹಿಸಿ</span>
-              <h3 class="fw-bold mb-2">ನಿಮ್ಮ ಪ್ರಶ್ನೆ ಅಥವಾ ಸೇವಾ ವಿಚಾರಣೆ</h3>
-              <p class="text-muted mb-4">ಮಹಾಮನೆ ಪ್ರವೇಶ, ಹಿರಿಯರ ಮನೆ, ಅನ್ನದಾಸೋಹ ಅಥವಾ ಪೂಜೆಗಳ ಬಗ್ಗೆ ವಿಚಾರಿಸಲು ಕೆಳಗಿನ ಫಾರಂ ಭರ್ತಿ ಮಾಡಿ:</p>
+              <span class="badge-tag mb-2">
+                <i class="bi bi-chat-heart-fill me-1"></i> 
+                <span class="lang-kn">ಸಂದೇಶ ಕಳುಹಿಸಿ</span>
+                <span class="lang-en">Send a Message</span>
+              </span>
+              <h3 class="fw-bold mb-2 lang-kn">ನಿಮ್ಮ ಪ್ರಶ್ನೆ ಅಥವಾ ಸೇವಾ ವಿಚಾರಣೆ</h3>
+              <h3 class="fw-bold mb-2 lang-en">Inquiry & Seva Request</h3>
+              <p class="text-muted mb-4 lang-kn">ಮಹಾಮನೆ ಪ್ರವೇಶ, ಹಿರಿಯರ ಮನೆ, ಅನ್ನದಾಸೋಹ ಅಥವಾ ಪೂಜೆಗಳ ಬಗ್ಗೆ ವಿಚಾರಿಸಲು ಕೆಳಗಿನ ಫಾರಂ ಭರ್ತಿ ಮಾಡಿ:</p>
+              <p class="text-muted mb-4 lang-en">Fill in the form below for admissions, elder home inquiries, pooja sevas, or general information:</p>
 
               <form id="adavimathaContactForm">
                 <div class="mb-3">
-                  <label for="contactName" class="form-label fw-semibold text-dark">ನಿಮ್ಮ ಹೆಸರು (Full Name) *</label>
-                  <input type="text" class="form-control-custom" id="contactName" placeholder="ಉದಾ: ಬಸವರಾಜು" required>
+                  <label for="contactName" class="form-label fw-semibold text-dark">
+                    <span class="lang-kn">ನಿಮ್ಮ ಹೆಸರು (Full Name) *</span>
+                    <span class="lang-en">Your Full Name *</span>
+                  </label>
+                  <input type="text" class="form-control-custom" id="contactName" placeholder="Your Name" required>
                 </div>
 
                 <div class="mb-3">
-                  <label for="contactPhone" class="form-label fw-semibold text-dark">ದೂರವಾಣಿ ಸಂಖ್ಯೆ / ಮೊಬೈಲ್ *</label>
+                  <label for="contactPhone" class="form-label fw-semibold text-dark">
+                    <span class="lang-kn">ದೂರವಾಣಿ ಸಂಖ್ಯೆ / ಮೊಬೈಲ್ *</span>
+                    <span class="lang-en">Mobile / Phone Number *</span>
+                  </label>
                   <input type="tel" class="form-control-custom" id="contactPhone" placeholder="+91 9876543210" required>
                 </div>
 
                 <div class="mb-3">
-                  <label for="contactSubject" class="form-label fw-semibold text-dark">ವಿಷಯ (Subject)</label>
+                  <label for="contactSubject" class="form-label fw-semibold text-dark">
+                    <span class="lang-kn">ವಿಷಯ (Subject)</span>
+                    <span class="lang-en">Subject</span>
+                  </label>
                   <select class="form-control-custom" id="contactSubject">
-                    <option value="ಸಾಮಾನ್ಯ ವಿಚಾರಣೆ">ಸಾಮಾನ್ಯ ವಿಚಾರಣೆ (General Inquiry)</option>
-                    <option value="ದಾಸೋಹ / ದೇಣಿಗೆ ಸೇವೆ">ದಾಸೋಹ / ದೇಣಿಗೆ ಸೇವೆ (Dasoha / Seva Donation)</option>
-                    <option value="ಮಹಾಮನೆ ಶಾಲೆ ಪ್ರವೇಶ">ಮಹಾಮನೆ ಶಾಲೆ ಪ್ರವೇಶ (School Admission)</option>
-                    <option value="ಹಿರಿಯರ ಮನೆ ವಿಚಾರಣೆ">ಹಿರಿಯರ ಮನೆ ವಿಚಾರಣೆ (Old Age Home Inquiry)</option>
-                    <option value="ಪೂಜಾ ಸೇವೆಗಳು">ಪೂಜಾ ಸೇವೆಗಳು (Pooja Services)</option>
+                    <option value="General Inquiry">ಸಾಮಾನ್ಯ ವಿಚಾರಣೆ / General Inquiry</option>
+                    <option value="Dasoha Donation">ದಾಸೋಹ / ದೇಣಿಗೆ ಸೇವೆ (Dasoha / Seva)</option>
+                    <option value="Mahamane Admission">ಮಹಾಮನೆ ಶಾಲೆ ಪ್ರವೇಶ (School Admission)</option>
+                    <option value="Old Age Home">ಹಿರಿಯರ ಮನೆ ವಿಚಾರಣೆ (Old Age Home)</option>
+                    <option value="Pooja Services">ಪೂಜಾ ಸೇವೆಗಳು (Pooja Services)</option>
                   </select>
                 </div>
 
                 <div class="mb-3">
-                  <label for="contactMessage" class="form-label fw-semibold text-dark">ನಿಮ್ಮ ಸಂದೇಶ (Your Message) *</label>
-                  <textarea class="form-control-custom" id="contactMessage" rows="4" placeholder="ದಯವಿಟ್ಟು ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ಇಲ್ಲಿ ಬರೆಯಿರಿ..." required></textarea>
+                  <label for="contactMessage" class="form-label fw-semibold text-dark">
+                    <span class="lang-kn">ನಿಮ್ಮ ಸಂದೇಶ (Your Message) *</span>
+                    <span class="lang-en">Your Message *</span>
+                  </label>
+                  <textarea class="form-control-custom" id="contactMessage" rows="4" placeholder="Write your message here..." required></textarea>
                 </div>
 
                 <button type="submit" class="btn-primary-custom w-100 justify-content-center py-3">
-                  <i class="bi bi-send-fill"></i> ಸಂದೇಶ ರವಾನಿಸಿ
+                  <i class="bi bi-send-fill"></i> 
+                  <span class="lang-kn">ಸಂದೇಶ ರವಾನಿಸಿ</span>
+                  <span class="lang-en">Submit Message</span>
                 </button>
 
                 <div id="contactFormFeedback"></div>
@@ -219,9 +299,13 @@
           <div class="col-lg-6">
             <div class="h-100 d-flex flex-column">
               <div class="d-flex justify-content-between align-items-center mb-3">
-                <h4 class="fw-bold mb-0"><i class="bi bi-map-fill text-warning me-2"></i> ಶ್ರೀ ಮಠದ ಸ್ಥಳ & ಮಾರ್ಗಸೂಚಿ</h4>
+                <h4 class="fw-bold mb-0">
+                  <i class="bi bi-map-fill text-warning me-2"></i> 
+                  <span class="lang-kn">ಶ್ರೀ ಮಠದ ಸ್ಥಳ & ಮಾರ್ಗಸೂಚಿ</span>
+                  <span class="lang-en">Location & Route Map</span>
+                </h4>
                 <a href="https://maps.google.com/?cid=11626244670008583270" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary rounded-pill">
-                  <i class="bi bi-box-arrow-up-right me-1"></i> Google Maps ನಲ್ಲಿ ತೆರೆಯಿರಿ
+                  <i class="bi bi-box-arrow-up-right me-1"></i> Google Maps
                 </a>
               </div>
               <div class="map-wrapper flex-grow-1" style="min-height: 420px;">
@@ -239,7 +323,8 @@
               <div class="p-3 bg-white rounded-3 shadow-sm border border-light mt-3">
                 <small class="text-muted d-block">
                   <i class="bi bi-signpost-2 text-warning me-1"></i>
-                  <strong>ತಲುಪುವ ಬಗೆ:</strong> ಗುಂಡ್ಲುಪೇಟೆ ಪಟ್ಟಣದಿಂದ ಪಡುಗೂರು ಗ್ರಾಮಕ್ಕೆ ಸುಲಭ ಬಸ್ಸು ಮತ್ತು ಆಟೋ ಸಾರಿಗೆ ಸಂಪರ್ಕವಿದೆ (ಸುಮಾರು ೮ ಕಿ.ಮೀ ಅಂತರ).
+                  <span class="lang-kn"><strong>ತಲುಪುವ ಬಗೆ:</strong> ಗುಂಡ್ಲುಪೇಟೆ ಪಟ್ಟಣದಿಂದ ಪಡುಗೂರು ಗ್ರಾಮಕ್ಕೆ ಸುಲಭ ಬಸ್ಸು ಮತ್ತು ಆಟೋ ಸಾರಿಗೆ ಸಂಪರ್ಕವಿದೆ (ಸುಮಾರು ೮ ಕಿ.ಮೀ ಅಂತರ).</span>
+                  <span class="lang-en"><strong>How to Reach:</strong> Paduguru village is located approximately 8 km from Gundlupete town, easily accessible via frequent local bus and auto connectivity.</span>
                 </small>
               </div>
             </div>
@@ -259,10 +344,16 @@
         <div class="col-lg-4 col-md-6">
           <div class="d-flex align-items-center gap-2 mb-3">
             <img src="assets/img/logo1a.jpg" alt="ಶ್ರೀ ಅಡವಿಮಠ" class="rounded-circle border border-warning" width="45" height="45">
-            <h3 class="mb-0 text-white fs-4">ಶ್ರೀ ಅಡವಿಮಠ</h3>
+            <h3 class="mb-0 text-white fs-4">
+              <span class="lang-kn">ಶ್ರೀ ಅಡವಿಮಠ</span>
+              <span class="lang-en">Sri Adavimatha</span>
+            </h3>
           </div>
-          <p class="text-white-50">
+          <p class="text-white-50 lang-kn">
             ಪಡುಗೂರು ಗ್ರಾಮ, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ. ೫೦೦ ವರ್ಷಗಳ ಐತಿಹಾಸಿಕ ವೀರಶೈವ ಪರಂಪರೆಯ ಪವಿತ್ರ ತಾಣ, ಉಚಿತ ಶಿಕ್ಷಣ ಹಾಗೂ ನಿತ್ಯ ದಾಸೋಹದ ಕ್ಷೇತ್ರ.
+          </p>
+          <p class="text-white-50 lang-en">
+            Paduguru Village, Gundlupete Taluk, Chamarajanagar District. A sacred 500-year-old spiritual seat dedicated to free education and daily Dasoha.
           </p>
           <div class="footer-social mt-3">
             <a href="#" title="Facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
@@ -273,27 +364,33 @@
         </div>
 
         <div class="col-lg-4 col-md-6 footer-links">
-          <h4>ಉಪಯುಕ್ತ ಕೊಂಡಿಗಳು</h4>
+          <h4 class="lang-kn">ಉಪಯುಕ್ತ ಕೊಂಡಿಗಳು</h4>
+          <h4 class="lang-en">Quick Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="index.html">ಮುಖಪುಟ</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="about.html">ಇತಿಹಾಸ ಮತ್ತು ಪರಂಪರೆ</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="our-instituitions.html">ವಿದ್ಯಾಸಂಸ್ಥೆಗಳು & ಮಹಾಮನೆ</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="social-services.html">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="activities.html">ಚಟುವಟಿಕೆಗಳು & ಉತ್ಸವಗಳು</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="gallery.html">ಫೋಟೋ ಗ್ಯಾಲರಿ</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="contact.html">ಸಂಪರ್ಕಿಸಿ & ವಿಳಾಸ</a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="index.html"><span class="lang-kn">ಮುಖಪುಟ</span><span class="lang-en">Home</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="about.html"><span class="lang-kn">ಇತಿಹಾಸ ಮತ್ತು ಪರಂಪರೆ</span><span class="lang-en">History & Lineage</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="our-instituitions.html"><span class="lang-kn">ವಿದ್ಯಾಸಂಸ್ಥೆಗಳು & ಮಹಾಮನೆ</span><span class="lang-en">Institutions & Mahamane</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="social-services.html"><span class="lang-kn">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</span><span class="lang-en">Social Services</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="activities.html"><span class="lang-kn">ಚಟುವಟಿಕೆಗಳು & ಉತ್ಸವಗಳು</span><span class="lang-en">Activities & Festivals</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="gallery.html"><span class="lang-kn">ಫೋಟೋ ಗ್ಯಾಲರಿ</span><span class="lang-en">Photo Gallery</span></a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="contact.html"><span class="lang-kn">ಸಂಪರ್ಕಿಸಿ & ವಿಳಾಸ</span><span class="lang-en">Contact & Location</span></a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-6 footer-contact">
-          <h4>ಸಂಪರ್ಕ ವಿಳಾಸ</h4>
+          <h4 class="lang-kn">ಸಂಪರ್ಕ ವಿಳಾಸ</h4>
+          <h4 class="lang-en">Contact Details</h4>
           <p>
-            <strong>ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು</strong><br>
-            ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ<br>
-            ಕರ್ನಾಟಕ - ೫೭೧೧೨೩<br><br>
-            <strong>ದೂರವಾಣಿ:</strong> <a href="tel:+91-9448602867" class="text-white">+91-9448602867</a><br>
-            <strong>ಇ-ಮೇಲ್:</strong> <a href="mailto:adavimata@gmail.com" class="text-white">adavimata@gmail.com</a><br>
-            <strong>ವೆಬ್‌ಸೈಟ್:</strong> <span class="text-warning">www.adavimata.com</span>
+            <strong class="lang-kn">ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು</strong>
+            <strong class="lang-en">Sri Adavimatha, Paduguru</strong><br>
+            <span class="lang-kn">ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ<br>ಕರ್ನಾಟಕ - ೫೭೧೧೨೩</span>
+            <span class="lang-en">Gundlupete Taluk, Chamarajanagar District<br>Karnataka - 571123</span><br><br>
+            <strong class="lang-kn">ದೂರವಾಣಿ:</strong><strong class="lang-en">Phone:</strong> 
+            <a href="tel:+91-9448602867" class="text-white">+91-9448602867</a><br>
+            <strong class="lang-kn">ಇ-ಮೇಲ್:</strong><strong class="lang-en">Email:</strong> 
+            <a href="mailto:adavimata@gmail.com" class="text-white">adavimata@gmail.com</a><br>
+            <strong class="lang-kn">ವೆಬ್‌ಸೈಟ್:</strong><strong class="lang-en">Website:</strong> 
+            <span class="text-warning">www.adavimata.com</span>
           </p>
         </div>
       </div>

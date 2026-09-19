@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kn">
+<html lang="kn" data-lang="kn">
 
 <head>
   <meta charset="utf-8">
@@ -7,6 +7,16 @@
   <title>ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು | ಅಧಿಕೃತ ತಾಣ | Sri Adavimatha Paduguru</title>
   <meta content="ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು ಗ್ರಾಮ, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ. 500 ವರ್ಷಗಳ ಐತಿಹಾಸಿಕ ವೀರಶೈವ ಮಠ, ಮಹಾಮನೆ ಉಚಿತ ಶಿಕ್ಷಣ, ಹಿರಿಯರ ಮನೆ ಹಾಗೂ ಗೋಶಾಲೆ." name="description">
   <meta content="Adavimata, Adavi Matha, Paduguru, Gundlupete, Maddaneshwara, Mahamane, Chamarajanagar, Shivalingendra Swamiji, Shivakumara Swamiji" name="keywords">
+
+  <!-- Immediate Language Check to Prevent Flicker -->
+  <script>
+    (function() {
+      var savedLang = 'kn';
+      try { savedLang = localStorage.getItem('adavimata_lang') || 'kn'; } catch (e) {}
+      document.documentElement.setAttribute('data-lang', savedLang);
+      document.documentElement.lang = savedLang;
+    })();
+  </script>
 
   <!-- Favicons -->
   <link href="assets/img/logo1a.jpg" rel="icon" type="image/jpeg">
@@ -17,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=Tiro+Kannada:ital@0;1&display=swap" rel="stylesheet">
 
-  <!-- Core Modern Libraries (CDN for high availability & GitHub Pages compatibility) -->
+  <!-- Core Modern Libraries (CDN) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
@@ -25,7 +35,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="lang-kn">
 
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-none d-md-block">
@@ -33,11 +43,26 @@
       <div class="contact-info d-flex align-items-center">
         <a href="tel:+91-9448602867"><i class="bi bi-telephone-fill"></i> +91-9448602867</a>
         <a href="mailto:adavimata@gmail.com"><i class="bi bi-envelope-fill"></i> adavimata@gmail.com</a>
-        <span class="badge-temple ms-2"><i class="bi bi-geo-alt-fill"></i> ಪಡುಗೂರು, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು</span>
+        <span class="badge-temple ms-2">
+          <i class="bi bi-geo-alt-fill"></i> 
+          <span class="lang-kn">ಪಡುಗೂರು, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು</span>
+          <span class="lang-en">Paduguru, Gundlupete Taluk</span>
+        </span>
       </div>
-      <div class="d-flex align-items-center">
-        <span class="badge-temple me-3"><i class="bi bi-clock-fill"></i> ದರ್ಶನ ಸಮಯ: 6:00 AM - 8:30 PM</span>
-        <div class="social-links d-flex align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <span class="badge-temple">
+          <i class="bi bi-clock-fill"></i> 
+          <span class="lang-kn">ದರ್ಶನ ಸಮಯ: 6:00 AM - 8:30 PM</span>
+          <span class="lang-en">Darshan: 6:00 AM - 8:30 PM</span>
+        </span>
+
+        <!-- Language Switcher Pill in Topbar -->
+        <div class="lang-switcher-pill" aria-label="Language Selector">
+          <button class="lang-btn active" data-lang="kn">ಕನ್ನಡ</button>
+          <button class="lang-btn" data-lang="en">English</button>
+        </div>
+
+        <div class="social-links d-flex align-items-center ms-2">
           <a href="#" title="Facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" title="Instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
           <a href="#" title="YouTube" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
@@ -54,8 +79,10 @@
         <a href="index.html">
           <img src="assets/img/logo1a.jpg" alt="ಶ್ರೀ ಅಡವಿಮಠ ಲಾಂಛನ" width="50" height="50">
           <div class="logo-text">
-            <span class="logo-title">ಶ್ರೀ ಅಡವಿಮಠ</span>
-            <span class="logo-subtitle">ಪಡುಗೂರು | ಶ್ರೀ ಕ್ಷೇತ್ರ</span>
+            <span class="logo-title lang-kn">ಶ್ರೀ ಅಡವಿಮಠ</span>
+            <span class="logo-title lang-en">Sri Adavimatha</span>
+            <span class="logo-subtitle lang-kn">ಪಡುಗೂರು | ಶ್ರೀ ಕ್ಷೇತ್ರ</span>
+            <span class="logo-subtitle lang-en">Paduguru | Holy Shrine</span>
           </div>
         </a>
       </div>
@@ -63,14 +90,66 @@
       <!-- Navigation Bar -->
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="active" href="index.html">ಮುಖಪುಟ</a></li>
-          <li><a href="about.html">ಇತಿಹಾಸ & ಪರಂಪರೆ</a></li>
-          <li><a href="our-instituitions.html">ಸಂಸ್ಥೆಗಳು</a></li>
-          <li><a href="social-services.html">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</a></li>
-          <li><a href="activities.html">ಚಟುವಟಿಕೆಗಳು</a></li>
-          <li><a href="gallery.html">ಗ್ಯಾಲರಿ</a></li>
-          <li><a href="contact.html">ಸಂಪರ್ಕಿಸಿ</a></li>
-          <li><a href="contact.html" class="btn-nav-highlight"><i class="bi bi-heart-fill me-1"></i> ದಾಸೋಹ ಸೇವೆ</a></li>
+          <li>
+            <a class="active" href="index.html">
+              <span class="lang-kn">ಮುಖಪುಟ</span>
+              <span class="lang-en">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+              <span class="lang-kn">ಇತಿಹಾಸ & ಪರಂಪರೆ</span>
+              <span class="lang-en">History & Heritage</span>
+            </a>
+          </li>
+          <li>
+            <a href="our-instituitions.html">
+              <span class="lang-kn">ಸಂಸ್ಥೆಗಳು</span>
+              <span class="lang-en">Institutions</span>
+            </a>
+          </li>
+          <li>
+            <a href="social-services.html">
+              <span class="lang-kn">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</span>
+              <span class="lang-en">Social Services</span>
+            </a>
+          </li>
+          <li>
+            <a href="activities.html">
+              <span class="lang-kn">ಚಟುವಟಿಕೆಗಳು</span>
+              <span class="lang-en">Activities</span>
+            </a>
+          </li>
+          <li>
+            <a href="gallery.html">
+              <span class="lang-kn">ಗ್ಯಾಲರಿ</span>
+              <span class="lang-en">Gallery</span>
+            </a>
+          </li>
+          <li>
+            <a href="contact.html">
+              <span class="lang-kn">ಸಂಪರ್ಕಿಸಿ</span>
+              <span class="lang-en">Contact</span>
+            </a>
+          </li>
+          <li>
+            <a href="contact.html" class="btn-nav-highlight">
+              <i class="bi bi-heart-fill me-1"></i> 
+              <span class="lang-kn">ದಾಸೋಹ ಸೇವೆ</span>
+              <span class="lang-en">Dasoha Seva</span>
+            </a>
+          </li>
+
+          <!-- Mobile Language Switcher Item -->
+          <li class="d-lg-none mt-3 pt-3 border-top border-light">
+            <div class="d-flex align-items-center justify-content-between px-3">
+              <span class="text-muted fw-bold">ಭಾಷೆ / Language:</span>
+              <div class="lang-switcher-pill">
+                <button class="lang-btn active" data-lang="kn">ಕನ್ನಡ</button>
+                <button class="lang-btn" data-lang="en">English</button>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav>
 
@@ -89,24 +168,51 @@
         <div class="container">
           <div class="hero-content-box">
             <div class="hero-badge">
-              <i class="bi bi-flower1"></i> ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರ ಕೃಪಾಶೀರ್ವಾದ
+              <i class="bi bi-flower1"></i> 
+              <span class="lang-kn">ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರ ಕೃಪಾಶೀರ್ವಾದ</span>
+              <span class="lang-en">Blessings of Sri Guru Maddaneshwara</span>
             </div>
-            <h1 class="hero-title">ಭಕ್ತರಿಗೆ <span>ಸುಸ್ವಾಗತ</span></h1>
-            <p class="hero-text">
-              ಕಳಬೇಡ ಕೊಲಬೇಡ ಹುಸಿಯ ನುಡಿಯಲು ಬೇಡ<br>
-              ಮುನಿಯಬೇಡ ಅನ್ಯರಿಗೆ ಅಸಹ್ಯಪಡಬೇಡ<br>
-              ತನ್ನ ಬಣ್ಣಿಸಬೇಡ ಇದಿರ ಹಳಿಯಲು ಬೇಡ.<br>
-              ಇದೇ ಅಂತರಂಗಶುದ್ಧಿ ಇದೇ ಬಹಿರಂಗಶುದ್ಧಿ<br>
-              ಇದೇ ನಮ್ಮ ಕೂಡಲಸಂಗಮದೇವರನೊಲಿಸುವ ಪರಿ
-            </p>
-            <div class="hero-cta-group">
-              <a href="#about-section" class="btn-primary-custom">
-                <span>ಶ್ರೀ ಮಠದ ಪರಿಚಯ</span> <i class="bi bi-arrow-down-circle"></i>
-              </a>
-              <a href="social-services.html" class="btn-outline-gold">
-                <span>ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</span> <i class="bi bi-arrow-right"></i>
-              </a>
+
+            <!-- Kannada Content -->
+            <div class="lang-kn">
+              <h1 class="hero-title">ಭಕ್ತರಿಗೆ <span>ಸುಸ್ವಾಗತ</span></h1>
+              <p class="hero-text">
+                ಕಳಬೇಡ ಕೊಲಬೇಡ ಹುಸಿಯ ನುಡಿಯಲು ಬೇಡ<br>
+                ಮುನಿಯಬೇಡ ಅನ್ಯರಿಗೆ ಅಸಹ್ಯಪಡಬೇಡ<br>
+                ತನ್ನ ಬಣ್ಣಿಸಬೇಡ ಇದಿರ ಹಳಿಯಲು ಬೇಡ.<br>
+                ಇದೇ ಅಂತರಂಗಶುದ್ಧಿ ಇದೇ ಬಹಿರಂಗಶುದ್ಧಿ<br>
+                ಇದೇ ನಮ್ಮ ಕೂಡಲಸಂಗಮದೇವರನೊಲಿಸುವ ಪರಿ
+              </p>
+              <div class="hero-cta-group">
+                <a href="#about-section" class="btn-primary-custom">
+                  <span>ಶ್ರೀ ಮಠದ ಪರಿಚಯ</span> <i class="bi bi-arrow-down-circle"></i>
+                </a>
+                <a href="social-services.html" class="btn-outline-gold">
+                  <span>ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</span> <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
             </div>
+
+            <!-- English Content -->
+            <div class="lang-en">
+              <h1 class="hero-title">Welcome to <span>Sri Adavimatha</span></h1>
+              <p class="hero-text">
+                Steal not, kill not, speak no falsehood,<br>
+                Be angry with none, nor disdain another.<br>
+                Praise not yourself, nor disparage your rival.<br>
+                This alone is inner purity, this alone is outer purity;<br>
+                This is the way to win our Kudalasangama Deva.
+              </p>
+              <div class="hero-cta-group">
+                <a href="#about-section" class="btn-primary-custom">
+                  <span>About Sri Matha</span> <i class="bi bi-arrow-down-circle"></i>
+                </a>
+                <a href="social-services.html" class="btn-outline-gold">
+                  <span>Our Social Services</span> <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -116,20 +222,41 @@
         <div class="container">
           <div class="hero-content-box">
             <div class="hero-badge">
-              <i class="bi bi-stars"></i> ಸಂಸ್ಥಾಪಕ ಜಗದ್ಗುರುಗಳು
+              <i class="bi bi-stars"></i> 
+              <span class="lang-kn">ಸಂಸ್ಥಾಪಕ ಜಗದ್ಗುರುಗಳು</span>
+              <span class="lang-en">Founding Spiritual Master</span>
             </div>
-            <h2 class="hero-title">ಶ್ರೀ <span>ಗುರುಮದ್ದಾನೇಶ್ವರರು</span></h2>
-            <p class="hero-text">
-              ಎಡೆಯೂರು ಶ್ರೀ ಸಿದ್ಧಲಿಂಗೇಶ್ವರರ ಕೃಪಾಪಾತ್ರರಾದ ೧೦೧ ವಿರಕ್ತರಲ್ಲಿ ಪ್ರಮುಖರಾಗಿ, ಮದಿಸಿದ ಆನೆಯನ್ನೇ ತಮ್ಮ ದಿವ್ಯ ಶಿವಯೋಗ ಶಕ್ತಿಯಿಂದ ಶರಣಾಗಿಸಿ ಧರ್ಮ ಜಾಗೃತಿ ಮೂಡಿಸಿದ ಪರಮಪುರುಷರು.
-            </p>
-            <div class="hero-cta-group">
-              <a href="about.html" class="btn-primary-custom">
-                <span>ಸಂಪೂರ್ಣ ಇತಿಹಾಸ</span> <i class="bi bi-book"></i>
-              </a>
-              <a href="gallery.html" class="btn-outline-gold">
-                <span>ಗದ್ದುಗೆ ಗ್ಯಾಲರಿ</span> <i class="bi bi-images"></i>
-              </a>
+
+            <div class="lang-kn">
+              <h2 class="hero-title">ಶ್ರೀ <span>ಗುರುಮದ್ದಾನೇಶ್ವರರು</span></h2>
+              <p class="hero-text">
+                ಎಡೆಯೂರು ಶ್ರೀ ಸಿದ್ಧಲಿಂಗೇಶ್ವರರ ಕೃಪಾಪಾತ್ರರಾದ ೧೦೧ ವಿರಕ್ತರಲ್ಲಿ ಪ್ರಮುಖರಾಗಿ, ಮದಿಸಿದ ಆನೆಯನ್ನೇ ತಮ್ಮ ದಿವ್ಯ ಶಿವಯೋಗ ಶಕ್ತಿಯಿಂದ ಶರಣಾಗಿಸಿ ಧರ್ಮ ಜಾಗೃತಿ ಮೂಡಿಸಿದ ಪರಮಪುರುಷರು.
+              </p>
+              <div class="hero-cta-group">
+                <a href="about.html" class="btn-primary-custom">
+                  <span>ಸಂಪೂರ್ಣ ಇತಿಹಾಸ</span> <i class="bi bi-book"></i>
+                </a>
+                <a href="gallery.html" class="btn-outline-gold">
+                  <span>ಗ್ಯಾಲರಿ ವೀಕ್ಷಿಸಿ</span> <i class="bi bi-images"></i>
+                </a>
+              </div>
             </div>
+
+            <div class="lang-en">
+              <h2 class="hero-title">Sri <span>Guru Maddaneshwara</span></h2>
+              <p class="hero-text">
+                Eminent spiritual luminary from the 101 viraktas of Edeyuru Sri Siddhalingeshwara, who miraculously subdued a raging royal elephant with yogic divinity and established the 500-year sacred seat in Paduguru.
+              </p>
+              <div class="hero-cta-group">
+                <a href="about.html" class="btn-primary-custom">
+                  <span>Complete History</span> <i class="bi bi-book"></i>
+                </a>
+                <a href="gallery.html" class="btn-outline-gold">
+                  <span>View Gallery</span> <i class="bi bi-images"></i>
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -139,22 +266,43 @@
         <div class="container">
           <div class="hero-content-box">
             <div class="hero-badge">
-              <i class="bi bi-mortarboard-fill"></i> ಕಾಯಕಯೋಗಿ ಪರಂಪರೆ
+              <i class="bi bi-mortarboard-fill"></i> 
+              <span class="lang-kn">ಕಾಯಕಯೋಗಿ ಪರಂಪರೆ</span>
+              <span class="lang-en">Pioneer of Kayaka & Education</span>
             </div>
-            <h2 class="hero-title">ಪರಮಪೂಜ್ಯ <span>ಶ್ರೀ ಶಿವಕುಮಾರಸ್ವಾಮಿಗಳವರು</span></h2>
-            <p class="hero-text">
-              ಚೈತನ್ಯಂ ಶಾಶ್ವತಂ ಶಾಂತಂ ವ್ಯೋಮಾತೀತಂ ನಿರಂಜನಂ |<br>
-              ನಾದ ಬಿಂದು ಕಲಾತೀತಂ ತಸ್ಮೈ ಶ್ರೀ ಗುರವೇ ನಮಃ ||<br>
-              ಬಡ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಕಬ್ಬಹಳ್ಳಿ, ಗುಂಡ್ಲುಪೇಟೆ ಹಾಗೂ ಮೈಸೂರಿನಲ್ಲಿ ವಿದ್ಯಾರ್ಥಿನಿಲಯಗಳನ್ನು ಸ್ಥಾಪಿಸಿ ಶಿಕ್ಷಣ ಕ್ರಾಂತಿ ತಂದ ಪುಣ್ಯಶ್ಲೋಕರು.
-            </p>
-            <div class="hero-cta-group">
-              <a href="our-instituitions.html" class="btn-primary-custom">
-                <span>ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳು</span> <i class="bi bi-building"></i>
-              </a>
-              <a href="contact.html" class="btn-outline-gold">
-                <span>ಸಂಪರ್ಕಿಸಿ</span> <i class="bi bi-telephone"></i>
-              </a>
+
+            <div class="lang-kn">
+              <h2 class="hero-title">ಪರಮಪೂಜ್ಯ <span>ಶ್ರೀ ಶಿವಕುಮಾರಸ್ವಾಮಿಗಳವರು</span></h2>
+              <p class="hero-text">
+                ಚೈತನ್ಯಂ ಶಾಶ್ವತಂ ಶಾಂತಂ ವ್ಯೋಮಾತೀತಂ ನಿರಂಜನಂ |<br>
+                ನಾದ ಬಿಂದು ಕಲಾತೀತಂ ತಸ್ಮೈ ಶ್ರೀ ಗುರವೇ ನಮಃ ||<br>
+                ಬಡ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಕಬ್ಬಹಳ್ಳಿ, ಗುಂಡ್ಲುಪೇಟೆ ಹಾಗೂ ಮೈಸೂರಿನಲ್ಲಿ ವಿದ್ಯಾರ್ಥಿನಿಲಯಗಳನ್ನು ಸ್ಥಾಪಿಸಿ ಶಿಕ್ಷಣ ಕ್ರಾಂತಿ ತಂದ ಪುಣ್ಯಶ್ಲೋಕರು.
+              </p>
+              <div class="hero-cta-group">
+                <a href="our-instituitions.html" class="btn-primary-custom">
+                  <span>ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳು</span> <i class="bi bi-building"></i>
+                </a>
+                <a href="contact.html" class="btn-outline-gold">
+                  <span>ಸಂಪರ್ಕಿಸಿ</span> <i class="bi bi-telephone"></i>
+                </a>
+              </div>
             </div>
+
+            <div class="lang-en">
+              <h2 class="hero-title">Revered Late <span>Sri Shivakumara Swamiji</span></h2>
+              <p class="hero-text">
+                Pioneering pontiff (1928-1995) who revitalized agricultural lands and established free student hostels in Kabbahalli (1939), Gundlupete, and Mysore, bringing transformative education to thousands.
+              </p>
+              <div class="hero-cta-group">
+                <a href="our-instituitions.html" class="btn-primary-custom">
+                  <span>Our Institutions</span> <i class="bi bi-building"></i>
+                </a>
+                <a href="contact.html" class="btn-outline-gold">
+                  <span>Contact Us</span> <i class="bi bi-telephone"></i>
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -164,20 +312,41 @@
         <div class="container">
           <div class="hero-content-box">
             <div class="hero-badge">
-              <i class="bi bi-award-fill"></i> ಮಹಾಮನೆ ಶಿಕ್ಷಣ ಯೋಜನೆ
+              <i class="bi bi-award-fill"></i> 
+              <span class="lang-kn">ಮಹಾಮನೆ ಶಿಕ್ಷಣ ಯೋಜನೆ</span>
+              <span class="lang-en">Mahamane Free Education Scheme</span>
             </div>
-            <h2 class="hero-title">ಉಚಿತ ಶಿಕ್ಷಣ <span>ಮಹಾಮನೆ</span></h2>
-            <p class="hero-text">
-              ಗ್ರಾಮೀಣ ಭಾಗದ ಪ್ರತಿಭಾವಂತ ಮತ್ತು ಬಡ ವಿದ್ಯಾರ್ಥಿಗಳಿಗಾಗಿ ೧ ರಿಂದ ೧೦ನೇ ತರಗತಿಯವರೆಗೆ ಉಚಿತ ಶಿಕ್ಷಣ, ಪೌಷ್ಟಿಕ ಆಹಾರ ಹಾಗೂ ವಸತಿಯನ್ನು ಒದಗಿಸುತ್ತಿರುವ ಪುಣ್ಯಕ್ಷೇತ್ರ.
-            </p>
-            <div class="hero-cta-group">
-              <a href="our-instituitions.html" class="btn-primary-custom">
-                <span>ಮಹಾಮನೆ ವಿವರ</span> <i class="bi bi-info-circle"></i>
-              </a>
-              <a href="social-services.html" class="btn-outline-gold">
-                <span>ಹಿರಿಯರ ಮನೆ & ಗೋಶಾಲೆ</span> <i class="bi bi-heart"></i>
-              </a>
+
+            <div class="lang-kn">
+              <h2 class="hero-title">ಉಚಿತ ಶಿಕ್ಷಣ <span>ಮಹಾಮನೆ</span></h2>
+              <p class="hero-text">
+                ಗ್ರಾಮೀಣ ಭಾಗದ ಪ್ರತಿಭಾವಂತ ಮತ್ತು ಬಡ ವಿದ್ಯಾರ್ಥಿಗಳಿಗಾಗಿ ೧ ರಿಂದ ೧೦ನೇ ತರಗತಿಯವರೆಗೆ ಉಚಿತ ಶಿಕ್ಷಣ, ಪೌಷ್ಟಿಕ ಆಹಾರ ಹಾಗೂ ವಸತಿಯನ್ನು ಒದಗಿಸುತ್ತಿರುವ ಪುಣ್ಯಕ್ಷೇತ್ರ.
+              </p>
+              <div class="hero-cta-group">
+                <a href="our-instituitions.html" class="btn-primary-custom">
+                  <span>ಮಹಾಮನೆ ವಿವರ</span> <i class="bi bi-info-circle"></i>
+                </a>
+                <a href="social-services.html" class="btn-outline-gold">
+                  <span>ಹಿರಿಯರ ಮನೆ & ಗೋಶಾಲೆ</span> <i class="bi bi-heart"></i>
+                </a>
+              </div>
             </div>
+
+            <div class="lang-en">
+              <h2 class="hero-title">Free Education <span>'Mahamane'</span></h2>
+              <p class="hero-text">
+                Providing comprehensive free residential education, meals, and value-based learning from 1st to 10th standard for 65+ talented rural and underprivileged children.
+              </p>
+              <div class="hero-cta-group">
+                <a href="our-instituitions.html" class="btn-primary-custom">
+                  <span>Mahamane Profile</span> <i class="bi bi-info-circle"></i>
+                </a>
+                <a href="social-services.html" class="btn-outline-gold">
+                  <span>Elder Home & Goshala</span> <i class="bi bi-heart"></i>
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -209,8 +378,9 @@
           <div class="stat-item">
             <div class="stat-icon"><i class="bi bi-clock-history"></i></div>
             <div>
-              <div class="stat-title">500+ ವರ್ಷ</div>
-              <p class="stat-desc">ಐತಿಹಾಸಿಕ ಧಾರ್ಮಿಕ ಹಾಗೂ ಸಾಂಸ್ಕೃತಿಕ ಪರಂಪರೆ</p>
+              <div class="stat-title">500+ <span class="lang-kn">ವರ್ಷ</span><span class="lang-en">Years</span></div>
+              <p class="stat-desc lang-kn">ಐತಿಹಾಸಿಕ ಧಾರ್ಮಿಕ ಹಾಗೂ ಸಾಂಸ್ಕೃತಿಕ ಪರಂಪರೆ</p>
+              <p class="stat-desc lang-en">Historic spiritual & cultural lineage</p>
             </div>
           </div>
         </div>
@@ -218,8 +388,9 @@
           <div class="stat-item">
             <div class="stat-icon"><i class="bi bi-mortarboard"></i></div>
             <div>
-              <div class="stat-title">ಮಹಾಮನೆ</div>
-              <p class="stat-desc">ಬಡ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಸಂಪೂರ್ಣ ಉಚಿತ ವಸತಿ ಶಿಕ್ಷಣ</p>
+              <div class="stat-title"><span class="lang-kn">ಮಹಾಮನೆ</span><span class="lang-en">Mahamane</span></div>
+              <p class="stat-desc lang-kn">ಬಡ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಸಂಪೂರ್ಣ ಉಚಿತ ವಸತಿ ಶಿಕ್ಷಣ</p>
+              <p class="stat-desc lang-en">Free residential schooling for students</p>
             </div>
           </div>
         </div>
@@ -227,8 +398,9 @@
           <div class="stat-item">
             <div class="stat-icon"><i class="bi bi-heart-pulse"></i></div>
             <div>
-              <div class="stat-title">ಹಿರಿಯರ ಮನೆ</div>
-              <p class="stat-desc">ಹಿರಿಯ ಜೀವಿಗಳ ನೆಮ್ಮದಿಯ ವೃದ್ಧಾಶ್ರಮ ಸೇವೆ</p>
+              <div class="stat-title"><span class="lang-kn">ಹಿರಿಯರ ಮನೆ</span><span class="lang-en">Elder Home</span></div>
+              <p class="stat-desc lang-kn">ಹಿರಿಯ ಜೀವಿಗಳ ನೆಮ್ಮದಿಯ ವೃದ್ಧಾಶ್ರಮ ಸೇವೆ</p>
+              <p class="stat-desc lang-en">Peaceful & caring elder care residence</p>
             </div>
           </div>
         </div>
@@ -236,8 +408,9 @@
           <div class="stat-item">
             <div class="stat-icon"><i class="bi bi-flower2"></i></div>
             <div>
-              <div class="stat-title">ಗೋ ಸಂರಕ್ಷಣೆ</div>
-              <p class="stat-desc">ದೇಶಿ ಗೋವಿನ ಪೋಷಣೆ & ಮಾದರಿ ಸಾವಯವ ಕೃಷಿ</p>
+              <div class="stat-title"><span class="lang-kn">ಗೋ ಸಂರಕ್ಷಣೆ</span><span class="lang-en">Goshala</span></div>
+              <p class="stat-desc lang-kn">ದೇಶಿ ಗೋವಿನ ಪೋಷಣೆ & ಮಾದರಿ ಸಾವಯವ ಕೃಷಿ</p>
+              <p class="stat-desc lang-en">Indigenous cow shelter & organic farming</p>
             </div>
           </div>
         </div>
@@ -251,14 +424,22 @@
     <section id="about-section" class="about">
       <div class="container">
         <div class="section-title-wrap">
-          <span class="section-badge"><i class="bi bi-geo-alt"></i> ಪುಣ್ಯಭೂಮಿ ಪಡುಗೂರು</span>
-          <h2 class="section-title">ಶ್ರೀ ಮಠದ ಐತಿಹಾಸಿಕ ಪರಿಚಯ</h2>
+          <span class="section-badge">
+            <i class="bi bi-geo-alt"></i> 
+            <span class="lang-kn">ಪುಣ್ಯಭೂಮಿ ಪಡುಗೂರು</span>
+            <span class="lang-en">Holy Land of Paduguru</span>
+          </span>
+          <h2 class="section-title">
+            <span class="lang-kn">ಶ್ರೀ ಮಠದ ಐತಿಹಾಸಿಕ ಪರಿಚಯ</span>
+            <span class="lang-en">Historical Profile of Sri Matha</span>
+          </h2>
           <div class="section-divider">
             <span></span>
             <i class="bi bi-gem"></i>
             <span></span>
           </div>
-          <p class="section-subtitle">ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕಿನ ಪ್ರಕೃತಿ ರಮಣೀಯ ಪಡುಗೂರು ಗ್ರಾಮದಲ್ಲಿರುವ ಶ್ರೀ ಅಡವಿಮಠದ ದಿವ್ಯ ಇತಿಹಾಸ</p>
+          <p class="section-subtitle lang-kn">ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕಿನ ಪ್ರಕೃತಿ ರಮಣೀಯ ಪಡುಗೂರು ಗ್ರಾಮದಲ್ಲಿರುವ ಶ್ರೀ ಅಡವಿಮಠದ ದಿವ್ಯ ಇತಿಹಾಸ</p>
+          <p class="section-subtitle lang-en">The divine 500-year history of Sri Adavimatha situated in the scenic village of Paduguru, Gundlupete Taluk, Chamarajanagar District.</p>
         </div>
 
         <div class="row align-items-center g-5">
@@ -269,8 +450,10 @@
                 <div class="d-flex align-items-center gap-3">
                   <i class="bi bi-bank fs-2 text-warning"></i>
                   <div>
-                    <strong class="d-block text-dark">ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರ ಗದ್ದುಗೆ</strong>
-                    <small class="text-muted">ಜಾಗೃತ ತಪೋಕ್ಷೇತ್ರ ಮತ್ತು ಸನ್ನಿಧಿ</small>
+                    <strong class="d-block text-dark lang-kn">ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರ ಗದ್ದುಗೆ</strong>
+                    <strong class="d-block text-dark lang-en">Shrine of Sri Maddaneshwara</strong>
+                    <small class="text-muted lang-kn">ಜಾಗೃತ ತಪೋಕ್ಷೇತ್ರ ಮತ್ತು ಸನ್ನಿಧಿ</small>
+                    <small class="text-muted lang-en">Holy Shrine of Divine Grace</small>
                   </div>
                 </div>
               </div>
@@ -278,35 +461,66 @@
           </div>
 
           <div class="col-lg-6">
-            <h3 class="fw-bold mb-3 text-dark">೫ ಶತಮಾನಗಳ ಭವ್ಯ ಧಾರ್ಮಿಕ ಪರಂಪರೆ</h3>
-            <p>
-              ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು ಪಡುಗೂರು ಗ್ರಾಮದಲ್ಲಿರುವ <strong>ಶ್ರೀ ಅಡವಿಮಠವು</strong> ಸುಮಾರು ೫೦೦ ವರ್ಷಗಳ ಹಿಂದೆ <strong>ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರಿಂದ</strong> ಸ್ಥಾಪನೆಗೊಂಡಿದೆ. ವಿಜಯನಗರ ಸಾಮ್ರಾಜ್ಯದ ಆಗಿನ ದೊರೆಯಾಗಿದ್ದ ಪ್ರೌಢದೇವರಾಯನ ಆಸ್ಥಾನದಲ್ಲಿ ಎಡೆಯೂರು ಶ್ರೀ ಸಿದ್ಧಲಿಂಗೇಶ್ವರರಿಂದ ಧರ್ಮ ಪ್ರಚಾರದ ದೀಕ್ಷೆ ಸ್ವೀಕರಿಸಿದ ನೂರೊಂದು (೧೦೧) ವಿರಕ್ತರಲ್ಲಿ ಶ್ರೀ ಮದ್ದಾನ ಶಿವಯೋಗಿಗಳು ಹಾಗೂ ಕರಸ್ಥಲ ನಾಗಲಿಂಗದೇವರು ಈಗಿನ ಮೈಸೂರು ಪ್ರಾಂತ್ಯಕ್ಕೆ ಆಗಮಿಸುತ್ತಾರೆ.
-            </p>
-            <p>
-              ಶ್ರೀ ಮದ್ದಾನ ಶಿವಯೋಗಿಗಳು ಕರ್ನಾಟಕ, ಕೇರಳ ಹಾಗೂ ತಮಿಳುನಾಡಿನ ಗಡಿ ಪ್ರದೇಶಗಳಲ್ಲಿ ಧರ್ಮ ಪ್ರಚಾರ ಕೈಗೊಂಡು ಜನರಲ್ಲಿದ್ದ ಮೂಢನಂಬಿಕೆ, ಅಜ್ಞಾನಗಳನ್ನು ಹೋಗಲಾಡಿಸುತ್ತಾ ತೇರಕಣಾಂಬಿಗೆ ಆಗಮಿಸಿದಾಗ, ಅಲ್ಲಿಯ ದೊರೆ ಮದಿಸಿದ ಆನೆಯನ್ನು ಬಿಟ್ಟು ಪರೀಕ್ಷಿಸಲು ಯತ್ನಿಸುತ್ತಾನೆ. ಶಿವಯೋಗಿಗಳು ಆ ಮದಿಸಿದ ಆನೆಯನ್ನೇ ಶಾಂತವಾಗಿಸಿ ಮಂಡಿಯೂರುವಂತೆ ಮಾಡಿ, ಅದರ ಮೇಲೆ ಕುಳಿತು ನಗರದಲ್ಲಿ ಸಂಚರಿಸಿದ ಪವಾಡವನ್ನು ಕಂಡು ಜಗಪತಿರಾಯ ಶರಣಾಗುತ್ತಾನೆ.
-            </p>
-            <p>
-              ನಂತರ ಶಿವಯೋಗಿಗಳು 'ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರರು' ಎಂಬ ಹೆಸರಿನಿಂದ ಪಡುಗೂರು ಗ್ರಾಮದಲ್ಲಿ ನೆಲೆ ನಿಂತು ಧರ್ಮ ಜಾಗೃತಿ ಮೂಡಿಸಿ ಲಿಂಗೈಕ್ಯರಾದರು. ಇಂದಿಗೂ ಅವರ ಗದ್ದುಗೆಯು ಜಾಗೃತ ಶಕ್ತಿಪೀಠವಾಗಿದ್ದು ಲಕ್ಷಾಂತರ ಭಕ್ತರಿಗೆ ಆಶ್ರಯ ತಾಣವಾಗಿದೆ.
-            </p>
-            <div class="mt-4">
-              <a href="about.html" class="btn-primary-custom me-3">
-                <span>ಸಂಪೂರ್ಣ ಇತಿಹಾಸ ಓದಿ</span> <i class="bi bi-chevron-right"></i>
-              </a>
-              <a href="gallery.html" class="btn btn-outline-secondary rounded-pill px-4 py-2">
-                <span>ಫೋಟೋ ಗ್ಯಾಲರಿ</span>
-              </a>
+            <!-- Kannada Text -->
+            <div class="lang-kn">
+              <h3 class="fw-bold mb-3 text-dark">೫ ಶತಮಾನಗಳ ಭವ್ಯ ಧಾರ್ಮಿಕ ಪರಂಪರೆ</h3>
+              <p>
+                ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು ಪಡುಗೂರು ಗ್ರಾಮದಲ್ಲಿರುವ <strong>ಶ್ರೀ ಅಡವಿಮಠವು</strong> ಸುಮಾರು ೫೦೦ ವರ್ಷಗಳ ಹಿಂದೆ <strong>ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರಿಂದ</strong> ಸ್ಥಾಪನೆಗೊಂಡಿದೆ. ವಿಜಯನಗರ ಸಾಮ್ರಾಜ್ಯದ ಆಗಿನ ದೊರೆಯಾಗಿದ್ದ ಪ್ರೌಢದೇವರಾಯನ ಆಸ್ಥಾನದಲ್ಲಿ ಎಡೆಯೂರು ಶ್ರೀ ಸಿದ್ಧಲಿಂಗೇಶ್ವರರಿಂದ ಧರ್ಮ ಪ್ರಚಾರದ ದೀಕ್ಷೆ ಸ್ವೀಕರಿಸಿದ ನೂರೊಂದು (೧೦೧) ವಿರಕ್ತರಲ್ಲಿ ಶ್ರೀ ಮದ್ದಾನ ಶಿವಯೋಗಿಗಳು ಹಾಗೂ ಕರಸ್ಥಲ ನಾಗಲಿಂಗದೇವರು ಈಗಿನ ಮೈಸೂರು ಪ್ರಾಂತ್ಯಕ್ಕೆ ಆಗಮಿಸುತ್ತಾರೆ.
+              </p>
+              <p>
+                ಶ್ರೀ ಮದ್ದಾನ ಶಿವಯೋಗಿಗಳು ಕರ್ನಾಟಕ, ಕೇರಳ ಹಾಗೂ ತಮಿಳುನಾಡಿನ ಗಡಿ ಪ್ರದೇಶಗಳಲ್ಲಿ ಧರ್ಮ ಪ್ರಚಾರ ಕೈಗೊಂಡು ಜನರಲ್ಲಿದ್ದ ಮೂಢನಂಬಿಕೆ, ಅಜ್ಞಾನಗಳನ್ನು ಹೋಗಲಾಡಿಸುತ್ತಾ ತೇರಕಣಾಂಬಿಗೆ ಆಗಮಿಸಿದಾಗ, ಅಲ್ಲಿಯ ದೊರೆ ಮದಿಸಿದ ಆನೆಯನ್ನು ಬಿಟ್ಟು ಪರೀಕ್ಷಿಸಲು ಯತ್ನಿಸುತ್ತಾನೆ. ಶಿವಯೋಗಿಗಳು ಆ ಮದಿಸಿದ ಆನೆಯನ್ನೇ ಶಾಂತವಾಗಿಸಿ ಮಂಡಿಯೂರುವಂತೆ ಮಾಡಿ, ಅದರ ಮೇಲೆ ಕುಳಿತು ನಗರದಲ್ಲಿ ಸಂಚರಿಸಿದ ಪವಾಡವನ್ನು ಕಂಡು ಜಗಪತಿರಾಯ ಶರಣಾಗುತ್ತಾನೆ.
+              </p>
+              <p>
+                ನಂತರ ಶಿವಯೋಗಿಗಳು 'ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರರು' ಎಂಬ ಹೆಸರಿನಿಂದ ಪಡುಗೂರು ಗ್ರಾಮದಲ್ಲಿ ನೆಲೆ ನಿಂತು ಧರ್ಮ ಜಾಗೃತಿ ಮೂಡಿಸಿ ಲಿಂಗೈಕ್ಯರಾದರು. ಇಂದಿಗೂ ಅವರ ಗದ್ದುಗೆಯು ಜಾಗೃತ ಶಕ್ತಿಪೀಠವಾಗಿದ್ದು ಲಕ್ಷಾಂತರ ಭಕ್ತರಿಗೆ ಆಶ್ರಯ ತಾಣವಾಗಿದೆ.
+              </p>
+              <div class="mt-4">
+                <a href="about.html" class="btn-primary-custom me-3">
+                  <span>ಸಂಪೂರ್ಣ ಇತಿಹಾಸ ಓದಿ</span> <i class="bi bi-chevron-right"></i>
+                </a>
+                <a href="gallery.html" class="btn btn-outline-secondary rounded-pill px-4 py-2">
+                  <span>ಫೋಟೋ ಗ್ಯಾಲರಿ</span>
+                </a>
+              </div>
             </div>
+
+            <!-- English Text -->
+            <div class="lang-en">
+              <h3 class="fw-bold mb-3 text-dark">5 Centuries of Glorious Heritage</h3>
+              <p>
+                Located in Paduguru village of Gundlupete Taluk, Chamarajanagar District, <strong>Sri Adavimatha</strong> was founded over 500 years ago by the divine saint <strong>Sri Guru Maddaneshwara</strong>. Initiated into spiritual propagation by the revered Edeyuru Sri Siddhalingeshwara during the Vijayanagara Empire, Sri Maddana Shivayogi and Karasthala Nagalinga Devaru journeyed to the Mysuru region.
+              </p>
+              <p>
+                As Sri Maddana Shivayogi spread universal spiritual awareness across Karnataka, Kerala, and Tamil Nadu borderlands dispelling superstitions, he arrived in Terakanambi. The reigning king, Jagapathiraya, attempted to test and persecute him by releasing a fierce, rogue wild elephant. Through his divine spiritual presence, the sage calmed the elephant into kneeling before him, mounted it, and rode gracefully through the streets!
+              </p>
+              <p>
+                Awestruck by this miracle, King Jagapathiraya and Queen Ambike surrendered at his feet. The saint settled in Paduguru, became revered as 'Sri Maddaneshwara', and his holy shrine continues to be a sacred haven of peace and blessings for devotees.
+              </p>
+              <div class="mt-4">
+                <a href="about.html" class="btn-primary-custom me-3">
+                  <span>Read Full History</span> <i class="bi bi-chevron-right"></i>
+                </a>
+                <a href="gallery.html" class="btn btn-outline-secondary rounded-pill px-4 py-2">
+                  <span>Photo Gallery</span>
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
 
         <!-- Devotional Vachana Card -->
         <div class="vachana-card mt-5">
-          <p class="vachana-content">
+          <p class="vachana-content lang-kn">
             "ಶರಣು ಮದ್ದಾನೆಶಾಂತನೆ ಪ್ರೌಢರಾಜೇಂದ್ರ ಗುರುವ ನಿಮ್ಮಯ ನಾಮ ಕೇಳು ಮದ್ದಾನೆಯಂ ತರಿಸಿ ನಿಮ್ಮಯ ಸತ್ವ ನೋಳ್ಪೆನೆಂಬುತ ಬಂದ ಪರಮಪುರುಷನೆ...<br>
             ಮುಂದೆ ನಮ್ಮನು ಪ್ರಕಟಮಾಡಿದ ಶಿವನಪ್ಪಣೆ ಇಂದಾಯಿತೆಮಗೆ ನಾಗೇಶನೊಳು ಕೂಡುವೆವು ಎಂದು ಬಯಲಾಗಿ ಪೋದ||"
           </p>
+          <p class="vachana-content lang-en">
+            "Salutations to Maddane Shantane! The emperor summoned the rogue elephant to test your spiritual fortitude, O supreme soul... As the divine command arrived, you pacified the beast, united in the divine void, spreading light throughout the land."
+          </p>
           <div class="vachana-author">
-            <i class="bi bi-flower1"></i> ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರ ಚರಿತ್ರೆ ಮತ್ತು ಸ್ತುತಿ
+            <i class="bi bi-flower1"></i> 
+            <span class="lang-kn">ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರ ಚರಿತ್ರೆ ಮತ್ತು ಸ್ತುತಿ</span>
+            <span class="lang-en">Eulogy & Hymns of Sri Guru Maddaneshwara</span>
           </div>
         </div>
 
@@ -317,14 +531,22 @@
     <section id="guru-parampara" class="bg-light">
       <div class="container">
         <div class="section-title-wrap">
-          <span class="section-badge"><i class="bi bi-people-fill"></i> ಗುರು ಪರಂಪರೆ</span>
-          <h2 class="section-title">ಮಠಾಧೀಶರ ಪುಣ್ಯ ಪರಂಪರೆ</h2>
+          <span class="section-badge">
+            <i class="bi bi-people-fill"></i> 
+            <span class="lang-kn">ಗುರು ಪರಂಪರೆ</span>
+            <span class="lang-en">Spiritual Lineage</span>
+          </span>
+          <h2 class="section-title">
+            <span class="lang-kn">ಮಠಾಧೀಶರ ಪುಣ್ಯ ಪರಂಪರೆ</span>
+            <span class="lang-en">Sacred Guru Lineage</span>
+          </h2>
           <div class="section-divider">
             <span></span>
             <i class="bi bi-gem"></i>
             <span></span>
           </div>
-          <p class="section-subtitle">ಶ್ರೀ ಮಠವನ್ನು ಮುನ್ನಡೆಸಿ ಸಮಾಜಕ್ಕೆ ಕಾಯಕ, ದಾಸೋಹ ಹಾಗೂ ಜ್ಞಾನದ ಬೆಳಕು ನೀಡಿದ ಮಹಾಪುರುಷರು</p>
+          <p class="section-subtitle lang-kn">ಶ್ರೀ ಮಠವನ್ನು ಮುನ್ನಡೆಸಿ ಸಮಾಜಕ್ಕೆ ಕಾಯಕ, ದಾಸೋಹ ಹಾಗೂ ಜ್ಞಾನದ ಬೆಳಕು ನೀಡಿದ ಮಹಾಪುರುಷರು</p>
+          <p class="section-subtitle lang-en">The revered seers who guided Sri Matha and illuminated society through selfless work, food offering, and wisdom</p>
         </div>
 
         <div class="row g-4">
@@ -333,13 +555,19 @@
             <div class="guru-card">
               <div class="guru-img-wrap">
                 <img src="assets/img/portfolio/Gaddige1.jpg" alt="ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರು">
-                <span class="guru-badge">ಸಂಸ್ಥಾಪಕರು</span>
+                <span class="guru-badge lang-kn">ಸಂಸ್ಥಾಪಕರು</span>
+                <span class="guru-badge lang-en">Founder</span>
               </div>
               <div class="guru-body">
-                <h3 class="guru-name">ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರು</h3>
-                <span class="guru-role">ಆದಿ ಸಂಸ್ಥಾಪಕ ಶಿವಯೋಗಿಗಳು (೧೬ನೇ ಶತಮಾನ)</span>
-                <p class="guru-desc">
+                <h3 class="guru-name lang-kn">ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರು</h3>
+                <h3 class="guru-name lang-en">Sri Guru Maddaneshwara</h3>
+                <span class="guru-role lang-kn">ಆದಿ ಸಂಸ್ಥಾಪಕ ಶಿವಯೋಗಿಗಳು (೧೬ನೇ ಶತಮಾನ)</span>
+                <span class="guru-role lang-en">Founding Shivayogi (16th Century)</span>
+                <p class="guru-desc lang-kn">
                   ಎಡೆಯೂರು ಸಿದ್ಧಲಿಂಗೇಶ್ವರರ ಶಿಷ್ಯ ಪರಂಪರೆಯ ವಿರಕ್ತ ಶ್ರೇಷ್ಠರು. ಜನಮಾನಸದಲ್ಲಿ ಕಾಯಕ, ಸದ್ವಿಚಾರ ಮೂಡಿಸಿ ಪಡುಗೂರಿನ ಪುಣ್ಯಭೂಮಿಯಲ್ಲಿ ನೆಲೆನಿಂತ ದಿವ್ಯ ಚೇತನ.
+                </p>
+                <p class="guru-desc lang-en">
+                  Revered sage of the Edeyuru Siddhalingeshwara tradition who instilled noble values, compassion, and founded the spiritual sanctuary at Paduguru.
                 </p>
               </div>
             </div>
@@ -350,13 +578,19 @@
             <div class="guru-card">
               <div class="guru-img-wrap">
                 <img src="assets/img/about.jpg" alt="ಲಿಂಗೈಕ್ಯ ಶ್ರೀ ಶಿವಕುಮಾರ ಸ್ವಾಮಿಗಳವರು">
-                <span class="guru-badge">ಕಾಯಕಯೋಗಿಗಳು</span>
+                <span class="guru-badge lang-kn">ಕಾಯಕಯೋಗಿಗಳು</span>
+                <span class="guru-badge lang-en">Karma Yogi</span>
               </div>
               <div class="guru-body">
-                <h3 class="guru-name">ಲಿಂ. ಶ್ರೀ ಶಿವಕುಮಾರಸ್ವಾಮಿಗಳವರು</h3>
-                <span class="guru-role">ಪೀಠಾಧಿಕಾರಿಗಳು (1928 - 1995)</span>
-                <p class="guru-desc">
+                <h3 class="guru-name lang-kn">ಲಿಂ. ಶ್ರೀ ಶಿವಕುಮಾರಸ್ವಾಮಿಗಳವರು</h3>
+                <h3 class="guru-name lang-en">Late Sri Shivakumara Swamiji</h3>
+                <span class="guru-role lang-kn">ಪೀಠಾಧಿಕಾರಿಗಳು (1928 - 1995)</span>
+                <span class="guru-role lang-en">Pontiff (1928 - 1995)</span>
+                <p class="guru-desc lang-kn">
                   ಮಠದ ಭೂಮಿಯನ್ನು ಕೃಷಿಯೋಗ್ಯವಾಗಿಸಿ, 1939ರಲ್ಲೇ ಕಬ್ಬಹಳ್ಳಿಯಲ್ಲಿ ಹಾಗೂ ನಂತರ ಗುಂಡ್ಲುಪೇಟೆ, ಮೈಸೂರಿನಲ್ಲಿ ವಿದ್ಯಾರ್ಥಿನಿಲಯಗಳನ್ನು ಸ್ಥಾಪಿಸಿದ ಶಿಕ್ಷಣ ತಪಸ್ವಿಗಳು.
+                </p>
+                <p class="guru-desc lang-en">
+                  Visionary leader who pioneered free student hostels in Kabbahalli (1939), Gundlupete, and Mysuru, while establishing model agriculture.
                 </p>
               </div>
             </div>
@@ -367,13 +601,19 @@
             <div class="guru-card">
               <div class="guru-img-wrap">
                 <img src="assets/img/portfolio/Mahamane.jpg" alt="ಪೂಜ್ಯ ಶ್ರೀ ಶಿವಲಿಂಗೇಂದ್ರಸ್ವಾಮಿಗಳವರು">
-                <span class="guru-badge">ಪ್ರಸ್ತುತ ಪೀಠಾಧ್ಯಕ್ಷರು</span>
+                <span class="guru-badge lang-kn">ಪ್ರಸ್ತುತ ಪೀಠಾಧ್ಯಕ್ಷರು</span>
+                <span class="guru-badge lang-en">Present Pontiff</span>
               </div>
               <div class="guru-body">
-                <h3 class="guru-name">ಶ್ರೀ ಶಿವಲಿಂಗೇಂದ್ರಸ್ವಾಮಿಗಳು</h3>
-                <span class="guru-role">ಹಾಲಿ ಮಠಾಧೀಶರು</span>
-                <p class="guru-desc">
+                <h3 class="guru-name lang-kn">ಶ್ರೀ ಶಿವಲಿಂಗೇಂದ್ರಸ್ವಾಮಿಗಳು</h3>
+                <h3 class="guru-name lang-en">H.H. Sri Shivalingendra Swamiji</h3>
+                <span class="guru-role lang-kn">ಹಾಲಿ ಮಠಾಧೀಶರು</span>
+                <span class="guru-role lang-en">Current Head of the Matha</span>
+                <p class="guru-desc lang-kn">
                   ಸಂಸ್ಕೃತ ಸ್ನಾತಕೋತ್ತರ ಪದವೀಧರರು. ಗುಂಡ್ಲುಪೇಟೆಯಲ್ಲಿ ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರ ವಿದ್ಯಾಸಂಸ್ಥೆ, ಮಹಾಮನೆ ಉಚಿತ ವಸತಿ ಶಾಲೆ, ಹಿರಿಯರ ಮನೆ ಹಾಗೂ ಗೋಶಾಲೆಯನ್ನು ಮುನ್ನಡೆಸುತ್ತಿರುವ ಮಾರ್ಗದರ್ಶಕರು.
+                </p>
+                <p class="guru-desc lang-en">
+                  Sanskrit scholar and dynamic leader steering Sri Maddaneshwara educational institutions, Mahamane free residential school, Elder Home, and Goshala.
                 </p>
               </div>
             </div>
@@ -386,14 +626,22 @@
     <section id="services-preview">
       <div class="container">
         <div class="section-title-wrap">
-          <span class="section-badge"><i class="bi bi-hands"></i> ಸೇವಾ ಚಟುವಟಿಕೆಗಳು</span>
-          <h2 class="section-title">ಶ್ರೀ ಮಠದ ಸಮಾಜಮುಖಿ ಸೇವೆಗಳು</h2>
+          <span class="section-badge">
+            <i class="bi bi-hands"></i> 
+            <span class="lang-kn">ಸೇವಾ ಚಟುವಟಿಕೆಗಳು</span>
+            <span class="lang-en">Community Services</span>
+          </span>
+          <h2 class="section-title">
+            <span class="lang-kn">ಶ್ರೀ ಮಠದ ಸಮಾಜಮುಖಿ ಸೇವೆಗಳು</span>
+            <span class="lang-en">Key Pillars of Social Service</span>
+          </h2>
           <div class="section-divider">
             <span></span>
             <i class="bi bi-gem"></i>
             <span></span>
           </div>
-          <p class="section-subtitle">ಶಿಕ್ಷಣ, ಅನ್ನದಾಸೋಹ, ಹಿರಿಯರ ಸೇವೆ ಮತ್ತು ಪ್ರಕೃತಿ-ಗೋ ಸಂರಕ್ಷಣೆಯ ಮಹೋನ್ನತ ಕಾರ್ಯಗಳು</p>
+          <p class="section-subtitle lang-kn">ಶಿಕ್ಷಣ, ಅನ್ನದಾಸೋಹ, ಹಿರಿಯರ ಸೇವೆ ಮತ್ತು ಪ್ರಕೃತಿ-ಗೋ ಸಂರಕ್ಷಣೆಯ ಮಹೋನ್ನತ ಕಾರ್ಯಗಳು</p>
+          <p class="section-subtitle lang-en">Dedication to education, food distribution, elder care, and nature-cow preservation</p>
         </div>
 
         <div class="row g-4">
@@ -403,12 +651,18 @@
               <div class="feature-icon-wrap">
                 <i class="bi bi-book-half"></i>
               </div>
-              <h3 class="feature-title">ಉಚಿತ ಶಿಕ್ಷಣ - ಮಹಾಮನೆ</h3>
-              <p class="feature-desc">
+              <h3 class="feature-title lang-kn">ಉಚಿತ ಶಿಕ್ಷಣ - ಮಹಾಮನೆ</h3>
+              <h3 class="feature-title lang-en">Free Education - Mahamane</h3>
+              <p class="feature-desc lang-kn">
                 ೨೦೦೭ರಲ್ಲಿ ಆರಂಭಗೊಂಡ 'ಮಹಾಮನೆ' ಯೋಜನೆಯಡಿ ಗ್ರಾಮೀಣ ಬಡ ಮತ್ತು ಪ್ರತಿಭಾವಂತ ಮಕ್ಕಳಿಗೆ ೧ ರಿಂದ ೧೦ನೇ ತರಗತಿಯವರೆಗೆ ಸಂಪೂರ್ಣ ಉಚಿತ ಶಿಕ್ಷಣ, ಊಟ ಹಾಗೂ ವಸತಿ ಒದಗಿಸಲಾಗುತ್ತಿದೆ.
               </p>
+              <p class="feature-desc lang-en">
+                Established in 2007, Mahamane provides 100% free residential schooling, nutritious meals, and values-based education from 1st to 10th standard for underprivileged students.
+              </p>
               <a href="our-instituitions.html" class="feature-link">
-                ಸಂಸ್ಥೆಗಳ ವಿವರ <i class="bi bi-arrow-right"></i>
+                <span class="lang-kn">ಸಂಸ್ಥೆಗಳ ವಿವರ</span>
+                <span class="lang-en">Institutions Details</span>
+                <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -419,12 +673,18 @@
               <div class="feature-icon-wrap">
                 <i class="bi bi-house-heart"></i>
               </div>
-              <h3 class="feature-title">ಹಿರಿಯರ ಮನೆ (ವೃದ್ಧಾಶ್ರಮ)</h3>
-              <p class="feature-desc">
+              <h3 class="feature-title lang-kn">ಹಿರಿಯರ ಮನೆ (ವೃದ್ಧಾಶ್ರಮ)</h3>
+              <h3 class="feature-title lang-en">Elder Home (Old Age Home)</h3>
+              <p class="feature-desc lang-kn">
                 ಜೀವನದ ಸಂಧ್ಯಾಕಾಲದಲ್ಲಿ ನೆಮ್ಮದಿ, ಪೌಷ್ಟಿಕ ಆಹಾರ ಹಾಗೂ ಗೌರವಯುತ ಆರೈಕೆ ಬಯಸುವ ಹಿರಿಯ ಜೀವಿಗಳಿಗಾಗಿ ೨೦೨೨ರಲ್ಲಿ ಮಠದ ಪ್ರಶಾಂತ ಆವರಣದಲ್ಲಿ ಸುಸಜ್ಜಿತ ಹಿರಿಯರ ಮನೆಯನ್ನು ನಿರ್ಮಿಸಲಾಗಿದೆ.
               </p>
+              <p class="feature-desc lang-en">
+                Inaugurated in 2022 within the serene matha campus, offering peaceful living, nutritious diet, medical support, and loving care for senior citizens.
+              </p>
               <a href="social-services.html" class="feature-link">
-                ಸೇವೆಗಳ ವಿವರ <i class="bi bi-arrow-right"></i>
+                <span class="lang-kn">ಸೇವೆಗಳ ವಿವರ</span>
+                <span class="lang-en">Services Details</span>
+                <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -435,12 +695,18 @@
               <div class="feature-icon-wrap">
                 <i class="bi bi-flower2"></i>
               </div>
-              <h3 class="feature-title">ಗೋಶಾಲೆ & ಸಾವಯವ ಕೃಷಿ</h3>
-              <p class="feature-desc">
+              <h3 class="feature-title lang-kn">ಗೋಶಾಲೆ & ಸಾವಯವ ಕೃಷಿ</h3>
+              <h3 class="feature-title lang-en">Goshala & Organic Farming</h3>
+              <p class="feature-desc lang-kn">
                 ಸ್ಥಳೀಯ ದೇಸಿ ಗೋವುಗಳ ಸಂರಕ್ಷಣೆಗಾಗಿ ಶ್ರೀ ಮಠದಲ್ಲಿ ಸುಸಜ್ಜಿತ ಗೋಶಾಲೆಯಿದ್ದು, ಸುತ್ತಮುತ್ತಲಿನ ರೈತರಿಗೆ ಸಾವಯವ ಕೃಷಿ ಮತ್ತು ಕಾಯಕದ ಮಹತ್ವವನ್ನು ತಿಳಿಸಲಾಗುತ್ತಿದೆ.
               </p>
+              <p class="feature-desc lang-en">
+                Protecting indigenous cattle breeds with a dedicated dairy shelter, promoting toxic-free organic agriculture as an inspiring model for regional farmers.
+              </p>
               <a href="social-services.html" class="feature-link">
-                ಗೋಶಾಲೆ ಮಾಹಿತಿ <i class="bi bi-arrow-right"></i>
+                <span class="lang-kn">ಗೋಶಾಲೆ ಮಾಹಿತಿ</span>
+                <span class="lang-en">Goshala Info</span>
+                <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -452,56 +718,72 @@
     <section id="gallery-preview" class="bg-light">
       <div class="container">
         <div class="section-title-wrap">
-          <span class="section-badge"><i class="bi bi-images"></i> ಛಾಯಾಂಕಣ</span>
-          <h2 class="section-title">ಶ್ರೀ ಮಠದ ದರ್ಶನ ಚಿತ್ರಾವಳಿ</h2>
+          <span class="section-badge">
+            <i class="bi bi-images"></i> 
+            <span class="lang-kn">ಛಾಯಾಂಕಣ</span>
+            <span class="lang-en">Photo Gallery</span>
+          </span>
+          <h2 class="section-title">
+            <span class="lang-kn">ಶ್ರೀ ಮಠದ ದರ್ಶನ ಚಿತ್ರಾವಳಿ</span>
+            <span class="lang-en">Glimpses of Sri Matha</span>
+          </h2>
           <div class="section-divider">
             <span></span>
             <i class="bi bi-gem"></i>
             <span></span>
           </div>
-          <p class="section-subtitle">ಪಡುಗೂರು ಶ್ರೀ ಅಡವಿಮಠದ ದೇಗುಲ, ಗದ್ದುಗೆ, ಪುಷ್ಕರಣಿ ಹಾಗೂ ವಿದ್ಯಾಸಂಸ್ಥೆಗಳ ನೋಟಗಳು</p>
+          <p class="section-subtitle lang-kn">ಪಡುಗೂರು ಶ್ರೀ ಅಡವಿಮಠದ ದೇಗುಲ, ಗದ್ದುಗೆ, ಪುಷ್ಕರಣಿ ಹಾಗೂ ವಿದ್ಯಾಸಂಸ್ಥೆಗಳ ನೋಟಗಳು</p>
+          <p class="section-subtitle lang-en">Visual highlights of Sri Adavimatha shrine, historical entrance, holy pond, and school buildings</p>
         </div>
 
         <div class="row g-4">
           <div class="col-lg-3 col-md-6">
-            <div class="gallery-item lightbox-trigger" data-title="ಬಸವನ ಬಾಗಿಲು">
+            <div class="gallery-item lightbox-trigger" data-title="ಬಸವನ ಬಾಗಿಲು / Basavana Bagilu">
               <img src="assets/img/portfolio/BasavanaBagilu.jpg" alt="ಬಸವನ ಬಾಗಿಲು">
               <div class="gallery-overlay">
-                <div class="gallery-item-title">ಬಸವನ ಬಾಗಿಲು</div>
-                <div class="gallery-item-cat">ಪ್ರವೇಶ ದ್ವಾರ</div>
+                <div class="gallery-item-title lang-kn">ಬಸವನ ಬಾಗಿಲು</div>
+                <div class="gallery-item-title lang-en">Basavana Bagilu</div>
+                <div class="gallery-item-cat lang-kn">ಪ್ರವೇಶ ದ್ವಾರ</div>
+                <div class="gallery-item-cat lang-en">Main Archway</div>
               </div>
               <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
-            <div class="gallery-item lightbox-trigger" data-title="ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರರ ಪವಿತ್ರ ಗದ್ದುಗೆ">
+            <div class="gallery-item lightbox-trigger" data-title="ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರರ ಪವಿತ್ರ ಗದ್ದುಗೆ / Holy Shrine">
               <img src="assets/img/portfolio/Gaddige1.jpg" alt="ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರರ ಪವಿತ್ರ ಗದ್ದುಗೆ">
               <div class="gallery-overlay">
-                <div class="gallery-item-title">ಪವಿತ್ರ ಗದ್ದುಗೆ</div>
-                <div class="gallery-item-cat">ಶ್ರೀ ಕ್ಷೇತ್ರ ಸನ್ನಿಧಿ</div>
+                <div class="gallery-item-title lang-kn">ಪವಿತ್ರ ಗದ್ದುಗೆ</div>
+                <div class="gallery-item-title lang-en">Holy Shrine</div>
+                <div class="gallery-item-cat lang-kn">ಶ್ರೀ ಕ್ಷೇತ್ರ ಸನ್ನಿಧಿ</div>
+                <div class="gallery-item-cat lang-en">Sanctum Sanctorum</div>
               </div>
               <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
-            <div class="gallery-item lightbox-trigger" data-title="ಮಹಾಮನೆ ವಿದ್ಯಾಸಂಸ್ಥೆ">
+            <div class="gallery-item lightbox-trigger" data-title="ಮಹಾಮನೆ ವಿದ್ಯಾಸಂಸ್ಥೆ / Mahamane School">
               <img src="assets/img/portfolio/Mahamane.jpg" alt="ಮಹಾಮನೆ ವಿದ್ಯಾಸಂಸ್ಥೆ">
               <div class="gallery-overlay">
-                <div class="gallery-item-title">ಮಹಾಮನೆ ಕಟ್ಟಡ</div>
-                <div class="gallery-item-cat">ವಿದ್ಯಾಸಂಸ್ಥೆ</div>
+                <div class="gallery-item-title lang-kn">ಮಹಾಮನೆ ಕಟ್ಟಡ</div>
+                <div class="gallery-item-title lang-en">Mahamane Building</div>
+                <div class="gallery-item-cat lang-kn">ವಿದ್ಯಾಸಂಸ್ಥೆ</div>
+                <div class="gallery-item-cat lang-en">School Campus</div>
               </div>
               <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
-            <div class="gallery-item lightbox-trigger" data-title="ಹಿರಿಯರ ಮನೆ (ವೃದ್ಧಾಶ್ರಮ)">
+            <div class="gallery-item lightbox-trigger" data-title="ಹಿರಿಯರ ಮನೆ (ವೃದ್ಧಾಶ್ರಮ) / Old Age Home">
               <img src="assets/img/portfolio/OldAgeHome.jpg" alt="ಹಿರಿಯರ ಮನೆ">
               <div class="gallery-overlay">
-                <div class="gallery-item-title">ಹಿರಿಯರ ಮನೆ</div>
-                <div class="gallery-item-cat">ಸಾಮಾಜಿಕ ಸೇವೆ</div>
+                <div class="gallery-item-title lang-kn">ಹಿರಿಯರ ಮನೆ</div>
+                <div class="gallery-item-title lang-en">Elder Home</div>
+                <div class="gallery-item-cat lang-kn">ಸಾಮಾಜಿಕ ಸೇವೆ</div>
+                <div class="gallery-item-cat lang-en">Social Care</div>
               </div>
               <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
             </div>
@@ -510,7 +792,9 @@
 
         <div class="text-center mt-5">
           <a href="gallery.html" class="btn-primary-custom">
-            <span>ಸಂಪೂರ್ಣ ಗ್ಯಾಲರಿ ವೀಕ್ಷಿಸಿ</span> <i class="bi bi-arrow-right"></i>
+            <span class="lang-kn">ಸಂಪೂರ್ಣ ಗ್ಯಾಲರಿ ವೀಕ್ಷಿಸಿ</span>
+            <span class="lang-en">View Complete Gallery</span>
+            <i class="bi bi-arrow-right"></i>
           </a>
         </div>
       </div>
@@ -521,29 +805,53 @@
       <div class="container">
         <div class="row align-items-center justify-content-between g-4">
           <div class="col-lg-7">
-            <span class="badge-temple mb-2"><i class="bi bi-bell-fill me-1"></i> ಭಕ್ತರ ಗಮನಕ್ಕೆ</span>
-            <h3 class="text-white fw-bold mt-2">ಶ್ರೀ ಮಠದ ದರ್ಶನ ಮತ್ತು ದಾಸೋಹ ಸಮಯಗಳು</h3>
-            <p class="text-white-50 mb-0">
+            <span class="badge-temple mb-2">
+              <i class="bi bi-bell-fill me-1"></i> 
+              <span class="lang-kn">ಭಕ್ತರ ಗಮನಕ್ಕೆ</span>
+              <span class="lang-en">Devotee Notice</span>
+            </span>
+            <h3 class="text-white fw-bold mt-2">
+              <span class="lang-kn">ಶ್ರೀ ಮಠದ ದರ್ಶನ ಮತ್ತು ದಾಸೋಹ ಸಮಯಗಳು</span>
+              <span class="lang-en">Temple Darshan & Dasoha Timings</span>
+            </h3>
+            <p class="text-white-50 mb-0 lang-kn">
               ಶ್ರೀ ಮಠಕ್ಕೆ ಆಗಮಿಸುವ ಸಕಲ ಭಕ್ತಾದಿಗಳಿಗೆ ಪ್ರತಿದಿನವೂ ಪವಿತ್ರ ಗದ್ದುಗೆ ದರ್ಶನ ಹಾಗೂ ಮಧ್ಯಾಹ್ನ ಪ್ರಸಾದ ದಾಸೋಹದ ವ್ಯವಸ್ಥೆ ಇರುತ್ತದೆ.
+            </p>
+            <p class="text-white-50 mb-0 lang-en">
+              Darshan of the holy shrine is available daily, along with sacred food offerings (Prasada Dasoha) for all visiting pilgrims.
             </p>
             <div class="d-flex flex-wrap gap-4 mt-3">
               <div>
-                <strong class="text-warning d-block"><i class="bi bi-sunrise"></i> ಬೆಳಗಿನ ದರ್ಶನ:</strong>
+                <strong class="text-warning d-block">
+                  <i class="bi bi-sunrise"></i> 
+                  <span class="lang-kn">ಬೆಳಗಿನ ದರ್ಶನ:</span>
+                  <span class="lang-en">Morning Darshan:</span>
+                </strong>
                 <span>6:00 AM - 1:30 PM</span>
               </div>
               <div>
-                <strong class="text-warning d-block"><i class="bi bi-cup-hot"></i> ಅನ್ನದಾಸೋಹ ಪ್ರಸಾದ:</strong>
+                <strong class="text-warning d-block">
+                  <i class="bi bi-cup-hot"></i> 
+                  <span class="lang-kn">ಅನ್ನದಾಸೋಹ ಪ್ರಸಾದ:</span>
+                  <span class="lang-en">Lunch Dasoha:</span>
+                </strong>
                 <span>12:30 PM - 2:30 PM</span>
               </div>
               <div>
-                <strong class="text-warning d-block"><i class="bi bi-sunset"></i> ಸಂಜೆಯ ದರ್ಶನ:</strong>
+                <strong class="text-warning d-block">
+                  <i class="bi bi-sunset"></i> 
+                  <span class="lang-kn">ಸಂಜೆಯ ದರ್ಶನ:</span>
+                  <span class="lang-en">Evening Darshan:</span>
+                </strong>
                 <span>5:30 PM - 8:30 PM</span>
               </div>
             </div>
           </div>
           <div class="col-lg-4 text-lg-end">
             <a href="contact.html" class="btn-primary-custom d-inline-block">
-              <i class="bi bi-geo-alt-fill"></i> ಮಠಕ್ಕೆ ಮಾರ್ಗ & ಸಂಪರ್ಕ
+              <i class="bi bi-geo-alt-fill"></i> 
+              <span class="lang-kn">ಮಠಕ್ಕೆ ಮಾರ್ಗ & ಸಂಪರ್ಕ</span>
+              <span class="lang-en">Route & Contact Details</span>
             </a>
           </div>
         </div>
@@ -560,10 +868,16 @@
         <div class="col-lg-4 col-md-6">
           <div class="d-flex align-items-center gap-2 mb-3">
             <img src="assets/img/logo1a.jpg" alt="ಶ್ರೀ ಅಡವಿಮಠ" class="rounded-circle border border-warning" width="45" height="45">
-            <h3 class="mb-0 text-white fs-4">ಶ್ರೀ ಅಡವಿಮಠ</h3>
+            <h3 class="mb-0 text-white fs-4">
+              <span class="lang-kn">ಶ್ರೀ ಅಡವಿಮಠ</span>
+              <span class="lang-en">Sri Adavimatha</span>
+            </h3>
           </div>
-          <p class="text-white-50">
+          <p class="text-white-50 lang-kn">
             ಪಡುಗೂರು ಗ್ರಾಮ, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ. ೫೦೦ ವರ್ಷಗಳ ಐತಿಹಾಸಿಕ ವೀರಶೈವ ಪರಂಪರೆಯ ಪವಿತ್ರ ತಾಣ, ಉಚಿತ ಶಿಕ್ಷಣ ಹಾಗೂ ನಿತ್ಯ ದಾಸೋಹದ ಕ್ಷೇತ್ರ.
+          </p>
+          <p class="text-white-50 lang-en">
+            Paduguru Village, Gundlupete Taluk, Chamarajanagar District. A sacred 500-year-old Veerashaiva spiritual seat dedicated to free education and daily Dasoha.
           </p>
           <div class="footer-social mt-3">
             <a href="#" title="Facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
@@ -575,28 +889,55 @@
 
         <!-- Col 2: Useful Links -->
         <div class="col-lg-4 col-md-6 footer-links">
-          <h4>ಉಪಯುಕ್ತ ಕೊಂಡಿಗಳು</h4>
+          <h4 class="lang-kn">ಉಪಯುಕ್ತ ಕೊಂಡಿಗಳು</h4>
+          <h4 class="lang-en">Quick Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="index.html">ಮುಖಪುಟ</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="about.html">ಇತಿಹಾಸ ಮತ್ತು ಪರಂಪರೆ</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="our-instituitions.html">ವಿದ್ಯಾಸಂಸ್ಥೆಗಳು & ಮಹಾಮನೆ</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="social-services.html">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="activities.html">ಚಟುವಟಿಕೆಗಳು & ಉತ್ಸವಗಳು</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="gallery.html">ಫೋಟೋ ಗ್ಯಾಲರಿ</a></li>
-            <li><i class="bi bi-chevron-right text-warning"></i> <a href="contact.html">ಸಂಪರ್ಕಿಸಿ & ವಿಳಾಸ</a></li>
+            <li>
+              <i class="bi bi-chevron-right text-warning"></i> 
+              <a href="index.html"><span class="lang-kn">ಮುಖಪುಟ</span><span class="lang-en">Home</span></a>
+            </li>
+            <li>
+              <i class="bi bi-chevron-right text-warning"></i> 
+              <a href="about.html"><span class="lang-kn">ಇತಿಹಾಸ ಮತ್ತು ಪರಂಪರೆ</span><span class="lang-en">History & Lineage</span></a>
+            </li>
+            <li>
+              <i class="bi bi-chevron-right text-warning"></i> 
+              <a href="our-instituitions.html"><span class="lang-kn">ವಿದ್ಯಾಸಂಸ್ಥೆಗಳು & ಮಹಾಮನೆ</span><span class="lang-en">Institutions & Mahamane</span></a>
+            </li>
+            <li>
+              <i class="bi bi-chevron-right text-warning"></i> 
+              <a href="social-services.html"><span class="lang-kn">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</span><span class="lang-en">Social Services</span></a>
+            </li>
+            <li>
+              <i class="bi bi-chevron-right text-warning"></i> 
+              <a href="activities.html"><span class="lang-kn">ಚಟುವಟಿಕೆಗಳು & ಉತ್ಸವಗಳು</span><span class="lang-en">Activities & Festivals</span></a>
+            </li>
+            <li>
+              <i class="bi bi-chevron-right text-warning"></i> 
+              <a href="gallery.html"><span class="lang-kn">ಫೋಟೋ ಗ್ಯಾಲರಿ</span><span class="lang-en">Photo Gallery</span></a>
+            </li>
+            <li>
+              <i class="bi bi-chevron-right text-warning"></i> 
+              <a href="contact.html"><span class="lang-kn">ಸಂಪರ್ಕಿಸಿ & ವಿಳಾಸ</span><span class="lang-en">Contact & Location</span></a>
+            </li>
           </ul>
         </div>
 
         <!-- Col 3: Contact Info -->
         <div class="col-lg-4 col-md-6 footer-contact">
-          <h4>ಸಂಪರ್ಕ ವಿಳಾಸ</h4>
+          <h4 class="lang-kn">ಸಂಪರ್ಕ ವಿಳಾಸ</h4>
+          <h4 class="lang-en">Contact Details</h4>
           <p>
-            <strong>ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು</strong><br>
-            ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ<br>
-            ಕರ್ನಾಟಕ - ೫೭೧೧೨೩<br><br>
-            <strong>ದೂರವಾಣಿ:</strong> <a href="tel:+91-9448602867" class="text-white">+91-9448602867</a><br>
-            <strong>ಇ-ಮೇಲ್:</strong> <a href="mailto:adavimata@gmail.com" class="text-white">adavimata@gmail.com</a><br>
-            <strong>ವೆಬ್‌ಸೈಟ್:</strong> <span class="text-warning">www.adavimata.com</span>
+            <strong class="lang-kn">ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು</strong>
+            <strong class="lang-en">Sri Adavimatha, Paduguru</strong><br>
+            <span class="lang-kn">ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ<br>ಕರ್ನಾಟಕ - ೫೭೧೧೨೩</span>
+            <span class="lang-en">Gundlupete Taluk, Chamarajanagar District<br>Karnataka - 571123</span><br><br>
+            <strong class="lang-kn">ದೂರವಾಣಿ:</strong><strong class="lang-en">Phone:</strong> 
+            <a href="tel:+91-9448602867" class="text-white">+91-9448602867</a><br>
+            <strong class="lang-kn">ಇ-ಮೇಲ್:</strong><strong class="lang-en">Email:</strong> 
+            <a href="mailto:adavimata@gmail.com" class="text-white">adavimata@gmail.com</a><br>
+            <strong class="lang-kn">ವೆಬ್‌ಸೈಟ್:</strong><strong class="lang-en">Website:</strong> 
+            <span class="text-warning">www.adavimata.com</span>
           </p>
         </div>
       </div>
@@ -615,7 +956,7 @@
     <i class="bi bi-arrow-up-short"></i>
   </a>
 
-  <!-- Modern JS Bundle (Bootstrap 5.3 CDN + Custom Vanilla JS) -->
+  <!-- Modern JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>
 

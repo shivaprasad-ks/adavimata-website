@@ -377,4 +377,55 @@
     }
   });
 
+  /* -------------------------------------------------------------
+   * 8. Language Switcher (Kannada <-> English)
+   * ----------------------------------------------------------- */
+  const setLanguage = (lang) => {
+    if (lang !== 'en' && lang !== 'kn') lang = 'kn';
+    try {
+      localStorage.setItem('adavimata_lang', lang);
+    } catch (e) {
+      console.warn('localStorage unavailable', e);
+    }
+
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.lang = lang;
+    if (document.body) {
+      document.body.classList.remove('lang-kn', 'lang-en');
+      document.body.classList.add(`lang-${lang}`);
+    }
+
+    // Update all switcher buttons
+    select('.lang-btn', true).forEach(btn => {
+      const btnLang = btn.getAttribute('data-lang');
+      btn.classList.toggle('active', btnLang === lang);
+    });
+  };
+
+  const initLanguage = () => {
+    let savedLang = 'kn';
+    try {
+      savedLang = localStorage.getItem('adavimata_lang') || 'kn';
+    } catch (e) {
+      savedLang = 'kn';
+    }
+    setLanguage(savedLang);
+
+    // Bind click events to all language buttons
+    select('.lang-btn', true).forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetLang = btn.getAttribute('data-lang');
+        setLanguage(targetLang);
+      });
+    });
+  };
+
+  // Run on ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLanguage);
+  } else {
+    initLanguage();
+  }
+
 })();
