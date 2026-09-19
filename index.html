@@ -1,267 +1,623 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kn">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>ಶ್ರೀ ಅಡವಿಮಠ - ಮುಖಪುಟ</title>
-  <meta content="Adavimata, Padaguru" name="description">
-  <meta content="Adavimata Padaguru, mata, Adavimata, Gundlupete, maddaneshwara" name="keywords">
-  <link href="assets/img/logo1a.jpg" rel="icon">
+  <title>ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು | ಅಧಿಕೃತ ತಾಣ | Sri Adavimatha Paduguru</title>
+  <meta content="ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು ಗ್ರಾಮ, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ. 500 ವರ್ಷಗಳ ಐತಿಹಾಸಿಕ ವೀರಶೈವ ಮಠ, ಮಹಾಮನೆ ಉಚಿತ ಶಿಕ್ಷಣ, ಹಿರಿಯರ ಮನೆ ಹಾಗೂ ಗೋಶಾಲೆ." name="description">
+  <meta content="Adavimata, Adavi Matha, Paduguru, Gundlupete, Maddaneshwara, Mahamane, Chamarajanagar, Shivalingendra Swamiji, Shivakumara Swamiji" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo1a.jpg" rel="icon" type="image/jpeg">
   <link href="assets/img/logo1a.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts: Noto Sans Kannada, Tiro Kannada & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-<link href="node_modules/animate.css/animate.min.css" rel="stylesheet">
-<link href="node_modules/boxicons/css/boxicons.min.css" rel="stylesheet">
-<link href="node_modules/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
-<link href="node_modules/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=Tiro+Kannada:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Core Modern Libraries (CDN for high availability & GitHub Pages compatibility) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Theme Stylesheet -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <section id="topbar" class="d-none align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-md-block">
+    <div class="container d-flex justify-content-between align-items-center">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        <a href="tel:+91-9448602867"><i class="bi bi-telephone-fill"></i> +91-9448602867</a>
+        <a href="mailto:adavimata@gmail.com"><i class="bi bi-envelope-fill"></i> adavimata@gmail.com</a>
+        <span class="badge-temple ms-2"><i class="bi bi-geo-alt-fill"></i> ಪಡುಗೂರು, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು</span>
       </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      <div class="d-flex align-items-center">
+        <span class="badge-temple me-3"><i class="bi bi-clock-fill"></i> ದರ್ಶನ ಸಮಯ: 6:00 AM - 8:30 PM</span>
+        <div class="social-links d-flex align-items-center">
+          <a href="#" title="Facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" title="Instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" title="YouTube" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="https://wa.me/919448602867" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
       </div>
     </div>
   </section>
-  <header id="header" class="d-flex align-items-center">
+
+  <!-- ======= Main Header ======= -->
+  <header id="header">
     <div class="container d-flex justify-content-between align-items-center">
       <div class="logo">
-        <h1><img src="assets/img/logo1a.jpg" alt="Adavimata logo"/><a href="index.html">ಶ್ರೀ ಅಡವಿಮಠ</a></h1>
+        <a href="index.html">
+          <img src="assets/img/logo1a.jpg" alt="ಶ್ರೀ ಅಡವಿಮಠ ಲಾಂಛನ" width="50" height="50">
+          <div class="logo-text">
+            <span class="logo-title">ಶ್ರೀ ಅಡವಿಮಠ</span>
+            <span class="logo-subtitle">ಪಡುಗೂರು | ಶ್ರೀ ಕ್ಷೇತ್ರ</span>
+          </div>
+        </a>
       </div>
+
+      <!-- Navigation Bar -->
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="active" href="index.html">ಮುಖಪುಟ</a></li>
-            <!-- <li><a href="#about">About Us</a></li> -->
-            <li><a href="our-instituitions.html">ಸಂಸ್ಥೆಗಳು</a></li>
-            <li><a href="social-services.html">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</a></li>
-            <li><a href="gallery.html">ಗ್ಯಾಲರಿ</a></li>
-            <li><a href="contact.html">ಸಂಪರ್ಕಿಸಿ</a></li>
+          <li><a href="about.html">ಇತಿಹಾಸ & ಪರಂಪರೆ</a></li>
+          <li><a href="our-instituitions.html">ಸಂಸ್ಥೆಗಳು</a></li>
+          <li><a href="social-services.html">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</a></li>
+          <li><a href="activities.html">ಚಟುವಟಿಕೆಗಳು</a></li>
+          <li><a href="gallery.html">ಗ್ಯಾಲರಿ</a></li>
+          <li><a href="contact.html">ಸಂಪರ್ಕಿಸಿ</a></li>
+          <li><a href="contact.html" class="btn-nav-highlight"><i class="bi bi-heart-fill me-1"></i> ದಾಸೋಹ ಸೇವೆ</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======= Modern Hero Slider ======= -->
+  <section id="hero" class="p-0">
+    <div class="hero-slider-wrapper">
+
+      <!-- Slide 1: Welcome & Basavanna Vachana -->
+      <div class="hero-slide hero-slide-1 active">
+        <div class="container">
+          <div class="hero-content-box">
+            <div class="hero-badge">
+              <i class="bi bi-flower1"></i> ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರ ಕೃಪಾಶೀರ್ವಾದ
+            </div>
+            <h1 class="hero-title">ಭಕ್ತರಿಗೆ <span>ಸುಸ್ವಾಗತ</span></h1>
+            <p class="hero-text">
+              ಕಳಬೇಡ ಕೊಲಬೇಡ ಹುಸಿಯ ನುಡಿಯಲು ಬೇಡ<br>
+              ಮುನಿಯಬೇಡ ಅನ್ಯರಿಗೆ ಅಸಹ್ಯಪಡಬೇಡ<br>
+              ತನ್ನ ಬಣ್ಣಿಸಬೇಡ ಇದಿರ ಹಳಿಯಲು ಬೇಡ.<br>
+              ಇದೇ ಅಂತರಂಗಶುದ್ಧಿ ಇದೇ ಬಹಿರಂಗಶುದ್ಧಿ<br>
+              ಇದೇ ನಮ್ಮ ಕೂಡಲಸಂಗಮದೇವರನೊಲಿಸುವ ಪರಿ
+            </p>
+            <div class="hero-cta-group">
+              <a href="#about-section" class="btn-primary-custom">
+                <span>ಶ್ರೀ ಮಠದ ಪರಿಚಯ</span> <i class="bi bi-arrow-down-circle"></i>
+              </a>
+              <a href="social-services.html" class="btn-outline-gold">
+                <span>ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</span> <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Sri Guru Maddaneshwara -->
+      <div class="hero-slide hero-slide-2">
+        <div class="container">
+          <div class="hero-content-box">
+            <div class="hero-badge">
+              <i class="bi bi-stars"></i> ಸಂಸ್ಥಾಪಕ ಜಗದ್ಗುರುಗಳು
+            </div>
+            <h2 class="hero-title">ಶ್ರೀ <span>ಗುರುಮದ್ದಾನೇಶ್ವರರು</span></h2>
+            <p class="hero-text">
+              ಎಡೆಯೂರು ಶ್ರೀ ಸಿದ್ಧಲಿಂಗೇಶ್ವರರ ಕೃಪಾಪಾತ್ರರಾದ ೧೦೧ ವಿರಕ್ತರಲ್ಲಿ ಪ್ರಮುಖರಾಗಿ, ಮದಿಸಿದ ಆನೆಯನ್ನೇ ತಮ್ಮ ದಿವ್ಯ ಶಿವಯೋಗ ಶಕ್ತಿಯಿಂದ ಶರಣಾಗಿಸಿ ಧರ್ಮ ಜಾಗೃತಿ ಮೂಡಿಸಿದ ಪರಮಪುರುಷರು.
+            </p>
+            <div class="hero-cta-group">
+              <a href="about.html" class="btn-primary-custom">
+                <span>ಸಂಪೂರ್ಣ ಇತಿಹಾಸ</span> <i class="bi bi-book"></i>
+              </a>
+              <a href="gallery.html" class="btn-outline-gold">
+                <span>ಗದ್ದುಗೆ ಗ್ಯಾಲರಿ</span> <i class="bi bi-images"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Sri Shivakumara Swamiji -->
+      <div class="hero-slide hero-slide-3">
+        <div class="container">
+          <div class="hero-content-box">
+            <div class="hero-badge">
+              <i class="bi bi-mortarboard-fill"></i> ಕಾಯಕಯೋಗಿ ಪರಂಪರೆ
+            </div>
+            <h2 class="hero-title">ಪರಮಪೂಜ್ಯ <span>ಶ್ರೀ ಶಿವಕುಮಾರಸ್ವಾಮಿಗಳವರು</span></h2>
+            <p class="hero-text">
+              ಚೈತನ್ಯಂ ಶಾಶ್ವತಂ ಶಾಂತಂ ವ್ಯೋಮಾತೀತಂ ನಿರಂಜನಂ |<br>
+              ನಾದ ಬಿಂದು ಕಲಾತೀತಂ ತಸ್ಮೈ ಶ್ರೀ ಗುರವೇ ನಮಃ ||<br>
+              ಬಡ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಕಬ್ಬಹಳ್ಳಿ, ಗುಂಡ್ಲುಪೇಟೆ ಹಾಗೂ ಮೈಸೂರಿನಲ್ಲಿ ವಿದ್ಯಾರ್ಥಿನಿಲಯಗಳನ್ನು ಸ್ಥಾಪಿಸಿ ಶಿಕ್ಷಣ ಕ್ರಾಂತಿ ತಂದ ಪುಣ್ಯಶ್ಲೋಕರು.
+            </p>
+            <div class="hero-cta-group">
+              <a href="our-instituitions.html" class="btn-primary-custom">
+                <span>ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳು</span> <i class="bi bi-building"></i>
+              </a>
+              <a href="contact.html" class="btn-outline-gold">
+                <span>ಸಂಪರ್ಕಿಸಿ</span> <i class="bi bi-telephone"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Mahamane Free Education Scheme -->
+      <div class="hero-slide hero-slide-4">
+        <div class="container">
+          <div class="hero-content-box">
+            <div class="hero-badge">
+              <i class="bi bi-award-fill"></i> ಮಹಾಮನೆ ಶಿಕ್ಷಣ ಯೋಜನೆ
+            </div>
+            <h2 class="hero-title">ಉಚಿತ ಶಿಕ್ಷಣ <span>ಮಹಾಮನೆ</span></h2>
+            <p class="hero-text">
+              ಗ್ರಾಮೀಣ ಭಾಗದ ಪ್ರತಿಭಾವಂತ ಮತ್ತು ಬಡ ವಿದ್ಯಾರ್ಥಿಗಳಿಗಾಗಿ ೧ ರಿಂದ ೧೦ನೇ ತರಗತಿಯವರೆಗೆ ಉಚಿತ ಶಿಕ್ಷಣ, ಪೌಷ್ಟಿಕ ಆಹಾರ ಹಾಗೂ ವಸತಿಯನ್ನು ಒದಗಿಸುತ್ತಿರುವ ಪುಣ್ಯಕ್ಷೇತ್ರ.
+            </p>
+            <div class="hero-cta-group">
+              <a href="our-instituitions.html" class="btn-primary-custom">
+                <span>ಮಹಾಮನೆ ವಿವರ</span> <i class="bi bi-info-circle"></i>
+              </a>
+              <a href="social-services.html" class="btn-outline-gold">
+                <span>ಹಿರಿಯರ ಮನೆ & ಗೋಶಾಲೆ</span> <i class="bi bi-heart"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Controls -->
+      <div class="hero-controls">
+        <button class="hero-btn-arrow hero-prev" aria-label="Previous Slide">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <div class="hero-dots">
+          <button class="hero-dot active" aria-label="Go to Slide 1"></button>
+          <button class="hero-dot" aria-label="Go to Slide 2"></button>
+          <button class="hero-dot" aria-label="Go to Slide 3"></button>
+          <button class="hero-dot" aria-label="Go to Slide 4"></button>
+        </div>
+        <button class="hero-btn-arrow hero-next" aria-label="Next Slide">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
 
     </div>
-  </header><!-- End Header -->
-  <section id="hero">
-    <div class="hero-container">
-      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  </section>
 
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active slide-1">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown"><span>ಭಕ್ತರಿಗೆ ಸುಸ್ವಾಗತ</span></h2>
-                <p class="animate__animated animate__fadeInUp">ಕಳಬೇಡ ಕೊಲಬೇಡ ಹುಸಿಯ ನುಡಿಯಲು ಬೇಡ <br/>ಮುನಿಯಬೇಡ ಅನ್ಯರಿಗೆ ಅಸಹ್ಯಪಡಬೇಡ<br/> ತನ್ನ ಬಣ್ಣಿಸಬೇಡ ಇದಿರ ಹಳಿಯಲು ಬೇಡ. <br/>ಇದೇ ಅಂತರಂಗಶುದ್ಧಿ ಇದೇ ಬಹಿರಂಗಶುದ್ಧಿ ಇದೇ ನಮ್ಮ ಕೂಡಲಸಂಗಮದೇವರನೊಲಿಸುವ ಪರಿ</p>
-               <!--- <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a> -->
-              </div>
+  <!-- ======= Quick Highlights Strip ======= -->
+  <div class="container position-relative">
+    <div class="highlights-strip">
+      <div class="row g-3">
+        <div class="col-lg-3 col-md-6">
+          <div class="stat-item">
+            <div class="stat-icon"><i class="bi bi-clock-history"></i></div>
+            <div>
+              <div class="stat-title">500+ ವರ್ಷ</div>
+              <p class="stat-desc">ಐತಿಹಾಸಿಕ ಧಾರ್ಮಿಕ ಹಾಗೂ ಸಾಂಸ್ಕೃತಿಕ ಪರಂಪರೆ</p>
             </div>
           </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item slide-2">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated fanimate__adeInDown"> <span>ಶ್ರೀ ಗುರುಮದ್ದಾನೇಶ್ವರರು</span></span></h2>
-                <p class="animate__animated animate__fadeInUp">ಶರಣು ಮದ್ದಾನೆಶಾಂತನೆ ಪ್ರವುಡರಾಜೇಂದ್ರ<br/>
-ಗುರುವ ನಿಮ್ಮಯ ನಾಮ ಕೇಳು ಮದ್ದಾನೆಯಂ
-ತರಿಸಿ ನಿಮ್ಮಯ ಸತ್ವ ನೋನೆಂಬುತ ಬಂದ ಪರಮಪುರುಷನೆ ಕೇಳೆನೆ
-ಹರಹರಾ ಭಿಕ್ಷುಕರ ಸತ್ವವನು ನೋಳ್ಳಡೇ<br/>
-ಹರುಷವಾಯಿತು ನಮಗೆ ಅವನರ್ತಿ ಸಲಿಸುವೆನು
-ತರಿಸ ಹೇಳಯ್ಯ ಮದದಂತಿಯನ್ನು ನೋಡುವೆನು ವೀರಣ್ಣ ಕೇಳೆಂದೆನು ||24</p>
-<p class="animate__animated animate__fadeInUp">ಎಂದ ಶಾಂತನ ನುಡಿಗೆ ಮದದಾನೆ ತರಿಸುತಂ<br/>
-ಮುಂದೆ ನಿಲಿಸಲು ನೋಡಿ ಸೊಂಡಿಲವ ಪಿಡಿಕೊಂಡು
-ನಿಂದು ಝಂಕಿಸಲು ಗಡಗಡನೆ ಕಂಪಿಸುತ ಗಜ ಕೆಡೆದು ಭೂಮಿಗೆ ಬೀಳಲು
-ಇಂದ್ರ ನೋಡೆ ನಿನ್ನ ಅರ್ತಿಯನ್ನು ಸಲ್ಲಿಸಿದೆನು<br/>
-ಮುಂದೆ ನಮ್ಮನು ಪ್ರಕಟಮಾಡಿದ ಶಿವನಪ್ಪಣೆ
-ಇಂದಾಯಿತೆಮಗೆ ನಾಗೇಶನೊಳು ಕೂಡುವೆವು ಎಂದು ಬಯಲಾಗಿ ಪೋದ||
-</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item slide-3">
-            <div class="carousel-container">
-              <div class="carousel-content">
-              <h2 class="animate__animated animate__fadeInDown"><span>ಶ್ರೀ ಶಿವಕುಮಾರಸ್ವಾಮಿಗಳವರು</span></h2>
-                <p class="animate__animated animate__fadeInUp"> ಚೈತನ್ಯಂ ಶಾಶ್ವತಂ ಶಾಂತಂ ಪ್ರೋಮಾತೀತಂ ನಿರಂಜನಂ<br/>
-ನಾದ ಬಿಂದು ಕಲಾತೀತಂ ತಸ್ಯೆ ಶ್ರೀ ಗುರವೇ ನಮಃ ||</p>
-<p class="animate__animated animate__fadeInUp">
-ನಿರಂಜನ ಪ್ರಣವ ಸ್ವರೂಪಿಗಳಾದ ಶ್ರೀ ಶಿವಕುಮಾರ ಸ್ವಾಮಿಗಳು ಪಡುಗೂರು
-ಅಡವೀಮಠದ ಗುರುಗಳು. ಈ ಮಹಾನುಭಾವರು ಮೂಡುಗೂರು ಮಠದ ಶಾಂತವೀರ
-ದೇವರು ಮತ್ತು ಗಿರಿಜಮ್ಮನವರ ಸುಪುತ್ರರಾಗಿ 25-6-1917ರಂದು ಜನಿಸಿದರು. ಬುದ್ದಿಯವರ
-11ನೆಯ ವಯಸ್ಸಿನಲ್ಲಿ ಎಂದರೆ 1928ನೆಯ ಇಸವಿ ಫೆಬ್ರವರಿ ತಿಂಗಳಿನಲ್ಲಿ ಪಡುಗೂರು ಶ್ರೀ
-ಅಡವೀ ಮಠದ ವಿರಕ್ತಾಶ್ರಮಾಧಿಕಾರವನ್ನು ವಹಿಸಿಕೊಂಡರು.   
-</p>
-               <!-- <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>-->
-              </div>
-            </div>
-          </div>
-
         </div>
-
-        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-
-        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
+        <div class="col-lg-3 col-md-6">
+          <div class="stat-item">
+            <div class="stat-icon"><i class="bi bi-mortarboard"></i></div>
+            <div>
+              <div class="stat-title">ಮಹಾಮನೆ</div>
+              <p class="stat-desc">ಬಡ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಸಂಪೂರ್ಣ ಉಚಿತ ವಸತಿ ಶಿಕ್ಷಣ</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="stat-item">
+            <div class="stat-icon"><i class="bi bi-heart-pulse"></i></div>
+            <div>
+              <div class="stat-title">ಹಿರಿಯರ ಮನೆ</div>
+              <p class="stat-desc">ಹಿರಿಯ ಜೀವಿಗಳ ನೆಮ್ಮದಿಯ ವೃದ್ಧಾಶ್ರಮ ಸೇವೆ</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="stat-item">
+            <div class="stat-icon"><i class="bi bi-flower2"></i></div>
+            <div>
+              <div class="stat-title">ಗೋ ಸಂರಕ್ಷಣೆ</div>
+              <p class="stat-desc">ದೇಶಿ ಗೋವಿನ ಪೋಷಣೆ & ಮಾದರಿ ಸಾವಯವ ಕೃಷಿ</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section><!-- End Hero -->
+  </div>
 
   <main id="main">
+
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" id="about">
-        <h2 class="mb-4 red-text">‌<strong>ಶ್ರೀ ಮಠದ ಪರಿಚಯ</strong></h2>
-        <div class="row">
+    <section id="about-section" class="about">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge"><i class="bi bi-geo-alt"></i> ಪುಣ್ಯಭೂಮಿ ಪಡುಗೂರು</span>
+          <h2 class="section-title">ಶ್ರೀ ಮಠದ ಐತಿಹಾಸಿಕ ಪರಿಚಯ</h2>
+          <div class="section-divider">
+            <span></span>
+            <i class="bi bi-gem"></i>
+            <span></span>
+          </div>
+          <p class="section-subtitle">ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕಿನ ಪ್ರಕೃತಿ ರಮಣೀಯ ಪಡುಗೂರು ಗ್ರಾಮದಲ್ಲಿರುವ ಶ್ರೀ ಅಡವಿಮಠದ ದಿವ್ಯ ಇತಿಹಾಸ</p>
+        </div>
+
+        <div class="row align-items-center g-5">
           <div class="col-lg-6">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <div class="position-relative">
+              <img src="assets/img/about.jpg" class="img-fluid rounded-4 shadow-lg border border-2 border-warning-subtle" alt="ಶ್ರೀ ಅಡವಿಮಠದ ಮುಖ್ಯ ದ್ವಾರ">
+              <div class="p-3 bg-white rounded-3 shadow position-absolute bottom-0 start-0 m-3 border border-warning">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-bank fs-2 text-warning"></i>
+                  <div>
+                    <strong class="d-block text-dark">ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರ ಗದ್ದುಗೆ</strong>
+                    <small class="text-muted">ಜಾಗೃತ ತಪೋಕ್ಷೇತ್ರ ಮತ್ತು ಸನ್ನಿಧಿ</small>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content">
-           <p>ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು ಪಡುಗೂರು ಗ್ರಾಮದಲ್ಲಿರುವ ಶ್ರೀ ಅಡವಿಮಠವು
-            ಸುಮಾರು 500 ವರ್ಷಗಳ ಹಿಂದೆ ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರಿಂದ ಸ್ಥಾಪನೆಗೊಂಡಿದೆ. ವಿಜಯನಗರ ಸಾಮ್ರಾಜ್ಯದ
-            ಆಗಿನ ದೊರೆಯಾಗಿದ್ದ ಪ್ರೌಢದೇವರಾಯನ ಆಸ್ಥಾನದಲ್ಲಿ ಎಡೆಯೂರು ಶ್ರೀ ಸಿದ್ಧಲಿಂಗೇಶ್ವರರಿಂದ ಧರ್ಮ ಪ್ರಚಾರದ ದೀಕ್ಷೆ
-            ಸ್ವೀಕರಿಸಿದ ನೂರೊಂದು (101) ವಿರಕ್ತರಲ್ಲಿ ಶ್ರೀ ಮದ್ದಾನ ಶಿವಯೋಗಿಗಳು ಹಾಗೂ ಕರಸ್ಥಲ ನಾಗಲಿಂಗದೇವರು ಈಗಿನ
-            ಮೈಸೂರು ಪ್ರಾಂತ್ಯಕ್ಕೆ ಆಗಮಿಸುತ್ತಾರೆ. ಕರಸ್ಥಲದ ನಾಗಲಿಂಗ ದೇವರು ವಯೋಸಹಜದಿಂದ ಪ್ರಯಾಣ ಬೆಳೆಸಲಾಗದೆ
-            ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕಿನ ಮಂಚಹಳ್ಳಿಯ ಪ್ರಕೃತಿಯ ಮಡಿಲಲ್ಲಿ ಇರುವ ಗವಿಯೊಂದರಲ್ಲಿ ಲಿಂಗಾನುಷ್ಠಾನ ಮಾಡುತ್ತಾ
-            ಅಲ್ಲೇ ಲಿಂಗದೊಳಗೆ ಬಯಲಾಗುತ್ತಾರೆ. ಶ್ರೀ ಮದ್ದಾನ ಶಿವಯೋಗಿಗಳು ತಮ್ಮ ಪ್ರಯಾಣವನ್ನು ಮುಂದುವರಿಸುತ್ತಾ
-            ಕರ್ನಾಟಕದ ಪಕ್ಕದಲ್ಲಿರುವ ಕೇರಳ ಹಾಗೂ ತಮಿಳುನಾಡಿನ ಗಡಿ ಪ್ರದೇಶಗಳಲ್ಲಿ ಧರ್ಮ ಪ್ರಚಾರ ಕೈಗೊಂಡು
-            ಜನರಲ್ಲಿದ್ದ ಮೂಢನಂಬಿಕೆ, ಕಂದಾಚಾರ, ಅಜ್ಞಾನಗಳನ್ನು ಹೋಗಲಾಡಿಸುತ್ತಾ ತೆರಕಣಾಂಬಿಗೆ ಆಗಮಿಸುತ್ತಾರೆ. ಆಗ
-            ತೆರಕಣಾಂಬಿಯಲ್ಲಿ ಆಳ್ವಿಕೆ ಮಾಡುತ್ತಿದ್ದವನು ಜಗಪತಿರಾಯ ಎಂಬ ದೊರೆ. ಆತ ವೈಷ್ಣವ ಮತಾವಲಂಬಿ, ಶ್ರೀ ಮದ್ದಾನ
-            ಶಿವಯೋಗಿಗಳು ಶರಣ ಧರ್ಮವನ್ನು ಪ್ರಚಾರ ಮಾಡುತ್ತಿದ್ದುದು ಆತನಿಗೆ ಸಹಿಸಲಸಾಧ್ಯವಾಯಿತು. ಆ ಕಾರಣದಿಂದ ಆತ</p>
-          </div>
-          <div class="row pt-4"> 
-            <p>ಶಿವಯೋಗಿಗಳಿಗೆ ಇನ್ನಿಲ್ಲದ ಹಿಂಸೆ ಕೊಡುತ್ತಾನೆ. ಆದರೆ ಶಿವಯೋಗಿಗಳು ಇದಾವುದಕ್ಕೂ ಜಗ್ಗದೇ ಇದ್ದಾಗ ಅವರ
-              ಮೇಲೆ ಮದಿಸಿದ ಆನೆಯನ್ನು ಬಿಟ್ಟು ಕೊಲ್ಲಲು ಪ್ರಯತ್ನಿಸುತ್ತಾನೆ. ಆದರೆ ಶಿವಯೋಗಿಗಳು ಆ ಮದಿಸಿದ ಆನೆಯನ್ನೇ
-              ತಮ್ಮ ದಿವ್ಯ ಶಕ್ತಿಯಿಂದ ಶಾಂತವಾಗಿಸಿ ತಮ್ಮ ಮುಂದೆ ಮಂಡಿಯೂರಿ ಕುಳಿತುಕೊಳ್ಳುವಂತೆ ಮಾಡಿ, ಅದರ ಮೇಲೆ
-              ಕುಳಿತು ತೆರಕಣಾಂಬಿಯ ರಾಜ ಬೀದಿಗಳಲ್ಲಿ ಸಂಚರಿಸುವುದನ್ನು ಕಂಡು ಜಗಪತಿರಾಯ ದಿ‌ಗ್ಭ್ರಮೆಗ್ಗ್ಗೊಳ್ಳುತ್ತಾನೆ.
-              ಶಿವಯೋಗಿಯ ಶಕ್ತಿ ಕಂಡು ಜಗಪತಿರಾಯನೂ ಹಾಗೂ ಆತನ ಧರ್ಮಪತ್ನಿಯಾದ ರಾಣಿ ಅಂಬಿಕೆ (ಈಕೆ ಗುಪ್ತವಾಗಿ
-              ಶಿವಭಕ್ತೆ) ಯೂ ಶರಣ ಧರ್ಮವಲಂಬಿಯಾಗಿ ದೀಕ್ಷೆ ಸ್ವೀಕರಿಸುತ್ತಾರೆ. ಶಿವಯೋಗಿಗಳು ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರರು ಎಂಬ
-              ಹೆಸರಿನಿಂದ ಪರಿಚಿತರಾಗುತ್ತಾ ಈಗಿನ ಪಡುಗೂರು ಗ್ರಾಮದ ಉತ್ತರಕ್ಕೆ ಇರುವ ಪ್ರದೇಶದಲ್ಲಿ ನೆಲೆ ನಿಲ್ಲುತ್ತಾರೆ. </p>
-            <p>ನಂತರ ಹತ್ತಾರು ವರ್ಷಗಳ ಕಾಲ ಜೀವಿಸಿದ್ದ ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರರು ಜನರಲ್ಲಿ ಧರ್ಮಜಾಗೃತಿಯನ್ನು ಮೂಡಿಸುತ್ತಾ ಅಲ್ಲೇ ಬಯಲಿನೊಳಗೆ ಬಯಲಾಗುತ್ತಾರೆ. ಈಗಲೂ ಸಹ ಅವರ ಗದ್ದುಗೆಯು ಜಾಗೃತ ಸ್ಥಳವಾಗಿದೆ. ಶ್ರೀ ಮಠಕ್ಕೆ ಸುತ್ತ
-            ಮುತ್ತಲಿನ ಜನರು ಶ್ರದ್ಧಾ ಭಕ್ತಿಗಳಿಂದ ನಡೆದುಕೊಳ್ಳುತ್ತಾರೆ.
-            ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರರ ನಂತರ ಶ್ರೀ ಮಠದ ವಿರಕ್ತ ಪರಂಪರೆಯ ಪೀಠವನ್ನಲಂಕರಿಸಿದ ಶ್ರೀ
-            ಶಿವಲಿಂಗಸ್ವಾಮಿಗಳು, ಶ್ರೀ ಜಡೆ ಸ್ವಾಮಿಗಳು, ಶ್ರೀ ಮಹಾಂತ ಸ್ವಾಮಿಗಳು, ಶ್ರೀ ವಿರಕ್ತ ಸ್ವಾಮಿಗಳು ಸಹ ಧರ್ಮ ಜಾಗೃತಿಯ ಕೈಂಕರ್ಯವನ್ನು ಮುಂದುವರಿಸಿಕೊಂಡು ಬಂದರು.
+
+          <div class="col-lg-6">
+            <h3 class="fw-bold mb-3 text-dark">೫ ಶತಮಾನಗಳ ಭವ್ಯ ಧಾರ್ಮಿಕ ಪರಂಪರೆ</h3>
+            <p>
+              ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು ಪಡುಗೂರು ಗ್ರಾಮದಲ್ಲಿರುವ <strong>ಶ್ರೀ ಅಡವಿಮಠವು</strong> ಸುಮಾರು ೫೦೦ ವರ್ಷಗಳ ಹಿಂದೆ <strong>ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರಿಂದ</strong> ಸ್ಥಾಪನೆಗೊಂಡಿದೆ. ವಿಜಯನಗರ ಸಾಮ್ರಾಜ್ಯದ ಆಗಿನ ದೊರೆಯಾಗಿದ್ದ ಪ್ರೌಢದೇವರಾಯನ ಆಸ್ಥಾನದಲ್ಲಿ ಎಡೆಯೂರು ಶ್ರೀ ಸಿದ್ಧಲಿಂಗೇಶ್ವರರಿಂದ ಧರ್ಮ ಪ್ರಚಾರದ ದೀಕ್ಷೆ ಸ್ವೀಕರಿಸಿದ ನೂರೊಂದು (೧೦೧) ವಿರಕ್ತರಲ್ಲಿ ಶ್ರೀ ಮದ್ದಾನ ಶಿವಯೋಗಿಗಳು ಹಾಗೂ ಕರಸ್ಥಲ ನಾಗಲಿಂಗದೇವರು ಈಗಿನ ಮೈಸೂರು ಪ್ರಾಂತ್ಯಕ್ಕೆ ಆಗಮಿಸುತ್ತಾರೆ.
             </p>
             <p>
-            ಕೆಲವು ವರ್ಷಗಳ ಕಾಲ ನಾನಾ ಕಾರಣಗಳಿಂದ ಯಾರೂ ಸ್ವಾಮಿಗಳು ಇಲ್ಲದೆ ಅನಾಯಕತ್ವದಿಂದ ಶ್ರೀ
-            ಮಠವು ಜರ್ಝರಿತಗೊಂಡಿತ್ತು. ಅತಂಹ ಸಂಕಷ್ಟದ ಕಾಲದಲ್ಲಿ ಶ್ರೀ ಮಠದ ಆಧಿಪತ್ಯವನ್ನು ವಹಿಸಿಕೊಂಡವರು
-            (1928ರಲ್ಲಿ) ಶ್ರೀ ಶಿವಕುಮಾರಸ್ವಾಮಿಗಳವರು, ಪೂಜ್ಯರು ಶ್ರೀ ಮಠಕ್ಕೆ ಸೇರಿದ ಭೂಮಿಯನ್ನು ಕೃಷಿಯೋಗ್ಯವನ್ನಾಗಿ
-            ಮಾಡಿ ಮಠಕ್ಕೆ ಆದಾಯ ಮೂಲವನ್ನು ಮಾಡಿದ್ದಷ್ಟೇ ಅಲ್ಲದೆ ಇತರ ಕೃಷಿಕರಿಗೆ ಆದರ್ಶ ಕೃಷಿಕರಾಗಿ ವ್ಯವಸಾಯ
-            ಮಾಡುತ್ತಿದ್ದರು. ಜೊತೆಗೆ ಎಲ್ಲಾ ವರ್ಗದ ಬಡ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಶಿಕ್ಷಣಕ್ಕೆ ಪೂರಕವಾಗುವಂತಹ ವಿದ್ಯಾರ್ಥಿನಿಲಯವನ್ನು
-            1939ರಲ್ಲೇ ಕಬ್ಬಹಳ್ಳಿಯಲ್ಲಿ ಆರಂಭಿಸಿದ ಕೀರ್ತಿಗೆ ಭಾಜನರಾದರು. ಈ ವಿದ್ಯಾರ್ಥಿ ನಿಲಯದಲ್ಲಿ ಓದಿದ ಅನೇಕ ಜನ
-            ಸಂಸ್ಕಾರವಂತರಾಗಿ, ಧರ್ಮವಂತರಾಗಿ ಬದುಕನ್ನು ಕಟ್ಟಿಕೊಂಡರು. ನಂತರ ಗುಂಡ್ಲುಪೇಟೆ ಮತ್ತು ಮೈಸೂರು
-            ನಗರದಲ್ಲಿ ವಿದ್ಯಾರ್ಥಿನಿಲಯವನ್ನು ಆರಂಭಿಸಿದರು. ಪೂಜ್ಯರು ಲಿಂಗಪೂಜಾನಿಷ್ಟರು, ಕಾಯಕಯೋಗಿಗಳು, ಶ್ರೀ ಮಠದ
-            ಭಕ್ತರ ಕಷ್ಟಗಳಿಗೆ ಸ್ಪಂದಿಸಿದವರು. ನಂತರ ಅನಾರೋಗ್ಯದಿಂದ 1995ರಲ್ಲಿ ಲಿಂಗೈಕ್ಯರಾಗುತ್ತಾರೆ.
+              ಶ್ರೀ ಮದ್ದಾನ ಶಿವಯೋಗಿಗಳು ಕರ್ನಾಟಕ, ಕೇರಳ ಹಾಗೂ ತಮಿಳುನಾಡಿನ ಗಡಿ ಪ್ರದೇಶಗಳಲ್ಲಿ ಧರ್ಮ ಪ್ರಚಾರ ಕೈಗೊಂಡು ಜನರಲ್ಲಿದ್ದ ಮೂಢನಂಬಿಕೆ, ಅಜ್ಞಾನಗಳನ್ನು ಹೋಗಲಾಡಿಸುತ್ತಾ ತೇರಕಣಾಂಬಿಗೆ ಆಗಮಿಸಿದಾಗ, ಅಲ್ಲಿಯ ದೊರೆ ಮದಿಸಿದ ಆನೆಯನ್ನು ಬಿಟ್ಟು ಪರೀಕ್ಷಿಸಲು ಯತ್ನಿಸುತ್ತಾನೆ. ಶಿವಯೋಗಿಗಳು ಆ ಮದಿಸಿದ ಆನೆಯನ್ನೇ ಶಾಂತವಾಗಿಸಿ ಮಂಡಿಯೂರುವಂತೆ ಮಾಡಿ, ಅದರ ಮೇಲೆ ಕುಳಿತು ನಗರದಲ್ಲಿ ಸಂಚರಿಸಿದ ಪವಾಡವನ್ನು ಕಂಡು ಜಗಪತಿರಾಯ ಶರಣಾಗುತ್ತಾನೆ.
             </p>
             <p>
-            ಲಿಂಗೈಕ್ಯ ಶ್ರೀ ಶಿವಕುಮಾರಸ್ವಾಮಿಗಳವರ ಕೃಪಾಕಟಾಕ್ಷಕ್ಕೆ ಒಳಗಾಗಿ ಅವರ ಶಿಷ್ಯರಾಗಿ ಶ್ರೀಮಠದ
-            ಪರಂಪರೆಯನ್ನು ಮುದುವರಿಸಲು ಕಟಿಬದ್ದರಾಗಿ ಪೀಠವನ್ನಲಂಕರಿಸಿದವರು ಶ್ರೀ ಶಿವಲಿಂಗೇಂದ್ರಸ್ವಾಮಿಗಳವರು.
-            ಇವರು ಸಂಸ್ಕೃತ ವಿಷಯದಲ್ಲಿ ಸ್ನಾತಕೋತ್ತರ ಪದವಿಯನ್ನು ಪಡೆದವರು. 1987 ಫೆಬ್ರವರಿ 11ರಂದು ಸಿದ್ದಗಂಗೆಯ
-            ಪರಮ ಪೂಜ್ಯ ಶ್ರೀ ಶ್ರೀ ಶಿವಕುಮಾರಸ್ವಾಮಿಗಳವರ ಹಾಗೂ ಸುತ್ತೂರು ಜಗದ್ಗುರು ಪರಮಪೂಜ್ಯ ಶ್ರೀ ಶ್ರೀ
-            ಶಿವರಾತ್ರಿದೇಶಿಕೇಂದ್ರಮಹಾಸ್ವಾಮಿಗಳವರ ದಿವ್ಯ ಸಾನ್ನಿಧ್ಯದಲ್ಲಿ, ಮಠಾಧೀಶರ ಸಮ್ಮುಖದಲ್ಲಿ, ನಾಡಿನ ಗಣ್ಯ
-            ಮಹಾನೀಯರ ಉಪಸ್ಥಿತಿಯಲ್ಲಿ ಶ್ರೀ ಮಠದ ಸಾವಿರಾರು ಭಕ್ತರ ಸಾಕ್ಷಿಯಾಗಿ ಪೂಜ್ಯ ಲಿಂಗೈಕ್ಯ ಶ್ರೀ
-            ಶಿವಕುಮಾರಸ್ವಾಮಿಗಳವರಿಂದ ನಿರಂಜನ ಜಂಗಮ ದೀಕ್ಷೆಯನ್ನು ಪಡೆದರು. ಇವರಿಗೆ ಹಿರಿಯ ಶ್ರೀಗಳು ಸುಮಾರು 9
-            ವರ್ಷಗಳ ಕಾಲ ಶಿವಯೋಗದ ನಾನಾ ಮಜಲುಗಳನ್ನು ಹೇಳಿಕೊಂಡು ಶ್ರೀ ಮಠದ ವ್ಯವಹಾರವನ್ನು ವಹಿಸಿಕೊಟ್ಟರು.
-            ಅಲ್ಲಿಂದೀಚಿಗೆ ಗುಂಡ್ಲುಪೇಟೆ ಪಟ್ಟಣದಲ್ಲಿ ಪೂರ್ವ ಪ್ರಾಥಮಿಕದಿಂದ ಪ್ರೌಢಶಾಲೆಯವರೆಗೆ (ಕನ್ನಡ & ಆಂಗ್ಲಮಾಧ್ಯಮ)
-            ಶಾಲೆ, ಪಬ್ಲಿಕ್ ಶಾಲೆ, ಕಬ್ಬಹಳ್ಳಿಯಲ್ಲಿ ಮಾಧ್ಯಮಿಕ ಶಾಲೆಗಳನ್ನು ತರೆದು ಗ್ರಾಮಾಂತರ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಅನುಕೂಲ
-            ಮಾಡಿಕೊಟ್ಟಿದ್ದು, ಶ್ರೀ ಮಠದಲ್ಲಿ ಜೀರ್ಣೋವಸ್ಥೆಯಲ್ಲದ ಗದ್ದುಗೆ ಹಾಗೂ ಹಳೆಯ ಕಟ್ಟಡಗಳನ್ನು ಪುನರ್ನಿರ್ಮಾಣ 
-            ಮಾಡಿದ್ದಾರೆ. ಇಲ್ಲಿ ಸ್ಥಳೀಯ ಗೋ ತಳಿಯನ್ನು ಅಭಿವೃದ್ಧಿ ಪಡಿಸಲು ಗೋ ಶಾಲೆಯೂ ಇದೆ. ಜೀವನದ ಸಂಧ್ಯಾಕಾಲದ
-            ನೆಮ್ಮದಿ, ಆಹಾರ, ಆರೋಗ್ಯ ಬಯಸುವ ಹಿರಿಯ ಜೀವಿಗಳಿಗೆ ಅನುಕೂಲವಾಗುವಂತೆ 'ಹಿರಿಯರ ಮನೆ' (ವೃದ್ದಾಶ್ರಮ)
-            ನಿರ್ಮಾಣ ಗೊಂಡಿದೆ
-            </p></div>
+              ನಂತರ ಶಿವಯೋಗಿಗಳು 'ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರರು' ಎಂಬ ಹೆಸರಿನಿಂದ ಪಡುಗೂರು ಗ್ರಾಮದಲ್ಲಿ ನೆಲೆ ನಿಂತು ಧರ್ಮ ಜಾಗೃತಿ ಮೂಡಿಸಿ ಲಿಂಗೈಕ್ಯರಾದರು. ಇಂದಿಗೂ ಅವರ ಗದ್ದುಗೆಯು ಜಾಗೃತ ಶಕ್ತಿಪೀಠವಾಗಿದ್ದು ಲಕ್ಷಾಂತರ ಭಕ್ತರಿಗೆ ಆಶ್ರಯ ತಾಣವಾಗಿದೆ.
+            </p>
+            <div class="mt-4">
+              <a href="about.html" class="btn-primary-custom me-3">
+                <span>ಸಂಪೂರ್ಣ ಇತಿಹಾಸ ಓದಿ</span> <i class="bi bi-chevron-right"></i>
+              </a>
+              <a href="gallery.html" class="btn btn-outline-secondary rounded-pill px-4 py-2">
+                <span>ಫೋಟೋ ಗ್ಯಾಲರಿ</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Devotional Vachana Card -->
+        <div class="vachana-card mt-5">
+          <p class="vachana-content">
+            "ಶರಣು ಮದ್ದಾನೆಶಾಂತನೆ ಪ್ರೌಢರಾಜೇಂದ್ರ ಗುರುವ ನಿಮ್ಮಯ ನಾಮ ಕೇಳು ಮದ್ದಾನೆಯಂ ತರಿಸಿ ನಿಮ್ಮಯ ಸತ್ವ ನೋಳ್ಪೆನೆಂಬುತ ಬಂದ ಪರಮಪುರುಷನೆ...<br>
+            ಮುಂದೆ ನಮ್ಮನು ಪ್ರಕಟಮಾಡಿದ ಶಿವನಪ್ಪಣೆ ಇಂದಾಯಿತೆಮಗೆ ನಾಗೇಶನೊಳು ಕೂಡುವೆವು ಎಂದು ಬಯಲಾಗಿ ಪೋದ||"
+          </p>
+          <div class="vachana-author">
+            <i class="bi bi-flower1"></i> ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರ ಚರಿತ್ರೆ ಮತ್ತು ಸ್ತುತಿ
+          </div>
         </div>
 
       </div>
     </section>
-  </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
+    <!-- ======= Guru Parampara Section ======= -->
+    <section id="guru-parampara" class="bg-light">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 footer-links">
-            <h4>ಉಪಯುಕ್ತ ಕೊಂಡಿಗಳು</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a class="active" href="index.html">ಮುಖಪುಟ</a></li>
-              <!-- <li><i class="bx bx-chevron-right"></i> <a href="our-instituitions.html">About Us</a></li> -->
-              <li><i class="bx bx-chevron-right"></i> <a href="our-instituitions.html">ಸಂಸ್ಥೆಗಳು</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="social-services.html">ಸಮಾಜಿಕ ಸೇವೆಗಳು</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="gallery.html">ಗ್ಯಾಲರಿ</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">ಸಂಪರ್ಕಿಸಿ</a></li>
-            </ul>
+        <div class="section-title-wrap">
+          <span class="section-badge"><i class="bi bi-people-fill"></i> ಗುರು ಪರಂಪರೆ</span>
+          <h2 class="section-title">ಮಠಾಧೀಶರ ಪುಣ್ಯ ಪರಂಪರೆ</h2>
+          <div class="section-divider">
+            <span></span>
+            <i class="bi bi-gem"></i>
+            <span></span>
           </div>
-          <div class="col-lg-4 col-md-6 footer-contact">
-            <h4>ಸಂಪರ್ಕಿಸಿ</h4>
-            <p>
-              ಅಡವಿಮಠ, ಪಡುಗೂರು<br />
-              ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು <br />
-              ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ - ೫೭೧೧೨೩<br /><br />
-              <span class="red-text"><strong>ಫೋನ್:</strong></span>
-              <a href="tel:+91-9448602867">+91-9448602867</a><br />
-              <span class="red-text"><strong>ಇ-ಮೇಲ್:</strong></span>
-              <a href="mailto:adavimata@gmail.com">adavimata@gmail.com</a><br />
-            </p>
-          </div>
+          <p class="section-subtitle">ಶ್ರೀ ಮಠವನ್ನು ಮುನ್ನಡೆಸಿ ಸಮಾಜಕ್ಕೆ ಕಾಯಕ, ದಾಸೋಹ ಹಾಗೂ ಜ್ಞಾನದ ಬೆಳಕು ನೀಡಿದ ಮಹಾಪುರುಷರು</p>
+        </div>
 
-          <div class="col-lg-4 col-md-6 footer-info">
-            <h3>ಶ್ರೀ ಅಡವಿಮಠ-ಸಾಮಾಜಿಕ ಜಾಲತಾಣಗಳು</h3>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <div class="row g-4">
+          <!-- Card 1: Sri Maddaneshwara -->
+          <div class="col-lg-4 col-md-6">
+            <div class="guru-card">
+              <div class="guru-img-wrap">
+                <img src="assets/img/portfolio/Gaddige1.jpg" alt="ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರು">
+                <span class="guru-badge">ಸಂಸ್ಥಾಪಕರು</span>
+              </div>
+              <div class="guru-body">
+                <h3 class="guru-name">ಶ್ರೀ ಗುರು ಮದ್ದಾನೇಶ್ವರರು</h3>
+                <span class="guru-role">ಆದಿ ಸಂಸ್ಥಾಪಕ ಶಿವಯೋಗಿಗಳು (೧೬ನೇ ಶತಮಾನ)</span>
+                <p class="guru-desc">
+                  ಎಡೆಯೂರು ಸಿದ್ಧಲಿಂಗೇಶ್ವರರ ಶಿಷ್ಯ ಪರಂಪರೆಯ ವಿರಕ್ತ ಶ್ರೇಷ್ಠರು. ಜನಮಾನಸದಲ್ಲಿ ಕಾಯಕ, ಸದ್ವಿಚಾರ ಮೂಡಿಸಿ ಪಡುಗೂರಿನ ಪುಣ್ಯಭೂಮಿಯಲ್ಲಿ ನೆಲೆನಿಂತ ದಿವ್ಯ ಚೇತನ.
+                </p>
+              </div>
             </div>
           </div>
 
+          <!-- Card 2: Sri Shivakumara Swamiji -->
+          <div class="col-lg-4 col-md-6">
+            <div class="guru-card">
+              <div class="guru-img-wrap">
+                <img src="assets/img/about.jpg" alt="ಲಿಂಗೈಕ್ಯ ಶ್ರೀ ಶಿವಕುಮಾರ ಸ್ವಾಮಿಗಳವರು">
+                <span class="guru-badge">ಕಾಯಕಯೋಗಿಗಳು</span>
+              </div>
+              <div class="guru-body">
+                <h3 class="guru-name">ಲಿಂ. ಶ್ರೀ ಶಿವಕುಮಾರಸ್ವಾಮಿಗಳವರು</h3>
+                <span class="guru-role">ಪೀಠಾಧಿಕಾರಿಗಳು (1928 - 1995)</span>
+                <p class="guru-desc">
+                  ಮಠದ ಭೂಮಿಯನ್ನು ಕೃಷಿಯೋಗ್ಯವಾಗಿಸಿ, 1939ರಲ್ಲೇ ಕಬ್ಬಹಳ್ಳಿಯಲ್ಲಿ ಹಾಗೂ ನಂತರ ಗುಂಡ್ಲುಪೇಟೆ, ಮೈಸೂರಿನಲ್ಲಿ ವಿದ್ಯಾರ್ಥಿನಿಲಯಗಳನ್ನು ಸ್ಥಾಪಿಸಿದ ಶಿಕ್ಷಣ ತಪಸ್ವಿಗಳು.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Present Swamiji -->
+          <div class="col-lg-4 col-md-6">
+            <div class="guru-card">
+              <div class="guru-img-wrap">
+                <img src="assets/img/portfolio/Mahamane.jpg" alt="ಪೂಜ್ಯ ಶ್ರೀ ಶಿವಲಿಂಗೇಂದ್ರಸ್ವಾಮಿಗಳವರು">
+                <span class="guru-badge">ಪ್ರಸ್ತುತ ಪೀಠಾಧ್ಯಕ್ಷರು</span>
+              </div>
+              <div class="guru-body">
+                <h3 class="guru-name">ಶ್ರೀ ಶಿವಲಿಂಗೇಂದ್ರಸ್ವಾಮಿಗಳು</h3>
+                <span class="guru-role">ಹಾಲಿ ಮಠಾಧೀಶರು</span>
+                <p class="guru-desc">
+                  ಸಂಸ್ಕೃತ ಸ್ನಾತಕೋತ್ತರ ಪದವೀಧರರು. ಗುಂಡ್ಲುಪೇಟೆಯಲ್ಲಿ ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರ ವಿದ್ಯಾಸಂಸ್ಥೆ, ಮಹಾಮನೆ ಉಚಿತ ವಸತಿ ಶಾಲೆ, ಹಿರಿಯರ ಮನೆ ಹಾಗೂ ಗೋಶಾಲೆಯನ್ನು ಮುನ್ನಡೆಸುತ್ತಿರುವ ಮಾರ್ಗದರ್ಶಕರು.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Seva Pillars & Services Preview ======= -->
+    <section id="services-preview">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge"><i class="bi bi-hands"></i> ಸೇವಾ ಚಟುವಟಿಕೆಗಳು</span>
+          <h2 class="section-title">ಶ್ರೀ ಮಠದ ಸಮಾಜಮುಖಿ ಸೇವೆಗಳು</h2>
+          <div class="section-divider">
+            <span></span>
+            <i class="bi bi-gem"></i>
+            <span></span>
+          </div>
+          <p class="section-subtitle">ಶಿಕ್ಷಣ, ಅನ್ನದಾಸೋಹ, ಹಿರಿಯರ ಸೇವೆ ಮತ್ತು ಪ್ರಕೃತಿ-ಗೋ ಸಂರಕ್ಷಣೆಯ ಮಹೋನ್ನತ ಕಾರ್ಯಗಳು</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Item 1: Mahamane -->
+          <div class="col-lg-4 col-md-6">
+            <div class="feature-card">
+              <div class="feature-icon-wrap">
+                <i class="bi bi-book-half"></i>
+              </div>
+              <h3 class="feature-title">ಉಚಿತ ಶಿಕ್ಷಣ - ಮಹಾಮನೆ</h3>
+              <p class="feature-desc">
+                ೨೦೦೭ರಲ್ಲಿ ಆರಂಭಗೊಂಡ 'ಮಹಾಮನೆ' ಯೋಜನೆಯಡಿ ಗ್ರಾಮೀಣ ಬಡ ಮತ್ತು ಪ್ರತಿಭಾವಂತ ಮಕ್ಕಳಿಗೆ ೧ ರಿಂದ ೧೦ನೇ ತರಗತಿಯವರೆಗೆ ಸಂಪೂರ್ಣ ಉಚಿತ ಶಿಕ್ಷಣ, ಊಟ ಹಾಗೂ ವಸತಿ ಒದಗಿಸಲಾಗುತ್ತಿದೆ.
+              </p>
+              <a href="our-instituitions.html" class="feature-link">
+                ಸಂಸ್ಥೆಗಳ ವಿವರ <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 2: Old Age Home -->
+          <div class="col-lg-4 col-md-6">
+            <div class="feature-card">
+              <div class="feature-icon-wrap">
+                <i class="bi bi-house-heart"></i>
+              </div>
+              <h3 class="feature-title">ಹಿರಿಯರ ಮನೆ (ವೃದ್ಧಾಶ್ರಮ)</h3>
+              <p class="feature-desc">
+                ಜೀವನದ ಸಂಧ್ಯಾಕಾಲದಲ್ಲಿ ನೆಮ್ಮದಿ, ಪೌಷ್ಟಿಕ ಆಹಾರ ಹಾಗೂ ಗೌರವಯುತ ಆರೈಕೆ ಬಯಸುವ ಹಿರಿಯ ಜೀವಿಗಳಿಗಾಗಿ ೨೦೨೨ರಲ್ಲಿ ಮಠದ ಪ್ರಶಾಂತ ಆವರಣದಲ್ಲಿ ಸುಸಜ್ಜಿತ ಹಿರಿಯರ ಮನೆಯನ್ನು ನಿರ್ಮಿಸಲಾಗಿದೆ.
+              </p>
+              <a href="social-services.html" class="feature-link">
+                ಸೇವೆಗಳ ವಿವರ <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 3: Goshala -->
+          <div class="col-lg-4 col-md-6">
+            <div class="feature-card">
+              <div class="feature-icon-wrap">
+                <i class="bi bi-flower2"></i>
+              </div>
+              <h3 class="feature-title">ಗೋಶಾಲೆ & ಸಾವಯವ ಕೃಷಿ</h3>
+              <p class="feature-desc">
+                ಸ್ಥಳೀಯ ದೇಸಿ ಗೋವುಗಳ ಸಂರಕ್ಷಣೆಗಾಗಿ ಶ್ರೀ ಮಠದಲ್ಲಿ ಸುಸಜ್ಜಿತ ಗೋಶಾಲೆಯಿದ್ದು, ಸುತ್ತಮುತ್ತಲಿನ ರೈತರಿಗೆ ಸಾವಯವ ಕೃಷಿ ಮತ್ತು ಕಾಯಕದ ಮಹತ್ವವನ್ನು ತಿಳಿಸಲಾಗುತ್ತಿದೆ.
+              </p>
+              <a href="social-services.html" class="feature-link">
+                ಗೋಶಾಲೆ ಮಾಹಿತಿ <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Featured Gallery Strip ======= -->
+    <section id="gallery-preview" class="bg-light">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge"><i class="bi bi-images"></i> ಛಾಯಾಂಕಣ</span>
+          <h2 class="section-title">ಶ್ರೀ ಮಠದ ದರ್ಶನ ಚಿತ್ರಾವಳಿ</h2>
+          <div class="section-divider">
+            <span></span>
+            <i class="bi bi-gem"></i>
+            <span></span>
+          </div>
+          <p class="section-subtitle">ಪಡುಗೂರು ಶ್ರೀ ಅಡವಿಮಠದ ದೇಗುಲ, ಗದ್ದುಗೆ, ಪುಷ್ಕರಣಿ ಹಾಗೂ ವಿದ್ಯಾಸಂಸ್ಥೆಗಳ ನೋಟಗಳು</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="gallery-item lightbox-trigger" data-title="ಬಸವನ ಬಾಗಿಲು">
+              <img src="assets/img/portfolio/BasavanaBagilu.jpg" alt="ಬಸವನ ಬಾಗಿಲು">
+              <div class="gallery-overlay">
+                <div class="gallery-item-title">ಬಸವನ ಬಾಗಿಲು</div>
+                <div class="gallery-item-cat">ಪ್ರವೇಶ ದ್ವಾರ</div>
+              </div>
+              <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="gallery-item lightbox-trigger" data-title="ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರರ ಪವಿತ್ರ ಗದ್ದುಗೆ">
+              <img src="assets/img/portfolio/Gaddige1.jpg" alt="ಶ್ರೀ ಮದ್ದಾನೇಶ್ವರರ ಪವಿತ್ರ ಗದ್ದುಗೆ">
+              <div class="gallery-overlay">
+                <div class="gallery-item-title">ಪವಿತ್ರ ಗದ್ದುಗೆ</div>
+                <div class="gallery-item-cat">ಶ್ರೀ ಕ್ಷೇತ್ರ ಸನ್ನಿಧಿ</div>
+              </div>
+              <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="gallery-item lightbox-trigger" data-title="ಮಹಾಮನೆ ವಿದ್ಯಾಸಂಸ್ಥೆ">
+              <img src="assets/img/portfolio/Mahamane.jpg" alt="ಮಹಾಮನೆ ವಿದ್ಯಾಸಂಸ್ಥೆ">
+              <div class="gallery-overlay">
+                <div class="gallery-item-title">ಮಹಾಮನೆ ಕಟ್ಟಡ</div>
+                <div class="gallery-item-cat">ವಿದ್ಯಾಸಂಸ್ಥೆ</div>
+              </div>
+              <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="gallery-item lightbox-trigger" data-title="ಹಿರಿಯರ ಮನೆ (ವೃದ್ಧಾಶ್ರಮ)">
+              <img src="assets/img/portfolio/OldAgeHome.jpg" alt="ಹಿರಿಯರ ಮನೆ">
+              <div class="gallery-overlay">
+                <div class="gallery-item-title">ಹಿರಿಯರ ಮನೆ</div>
+                <div class="gallery-item-cat">ಸಾಮಾಜಿಕ ಸೇವೆ</div>
+              </div>
+              <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="gallery.html" class="btn-primary-custom">
+            <span>ಸಂಪೂರ್ಣ ಗ್ಯಾಲರಿ ವೀಕ್ಷಿಸಿ</span> <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Temple Timings & Visiting Info Banner ======= -->
+    <section id="timings-banner" class="py-5" style="background: linear-gradient(135deg, #292524 0%, #1c1917 100%); color: #ffffff;">
+      <div class="container">
+        <div class="row align-items-center justify-content-between g-4">
+          <div class="col-lg-7">
+            <span class="badge-temple mb-2"><i class="bi bi-bell-fill me-1"></i> ಭಕ್ತರ ಗಮನಕ್ಕೆ</span>
+            <h3 class="text-white fw-bold mt-2">ಶ್ರೀ ಮಠದ ದರ್ಶನ ಮತ್ತು ದಾಸೋಹ ಸಮಯಗಳು</h3>
+            <p class="text-white-50 mb-0">
+              ಶ್ರೀ ಮಠಕ್ಕೆ ಆಗಮಿಸುವ ಸಕಲ ಭಕ್ತಾದಿಗಳಿಗೆ ಪ್ರತಿದಿನವೂ ಪವಿತ್ರ ಗದ್ದುಗೆ ದರ್ಶನ ಹಾಗೂ ಮಧ್ಯಾಹ್ನ ಪ್ರಸಾದ ದಾಸೋಹದ ವ್ಯವಸ್ಥೆ ಇರುತ್ತದೆ.
+            </p>
+            <div class="d-flex flex-wrap gap-4 mt-3">
+              <div>
+                <strong class="text-warning d-block"><i class="bi bi-sunrise"></i> ಬೆಳಗಿನ ದರ್ಶನ:</strong>
+                <span>6:00 AM - 1:30 PM</span>
+              </div>
+              <div>
+                <strong class="text-warning d-block"><i class="bi bi-cup-hot"></i> ಅನ್ನದಾಸೋಹ ಪ್ರಸಾದ:</strong>
+                <span>12:30 PM - 2:30 PM</span>
+              </div>
+              <div>
+                <strong class="text-warning d-block"><i class="bi bi-sunset"></i> ಸಂಜೆಯ ದರ್ಶನ:</strong>
+                <span>5:30 PM - 8:30 PM</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="contact.html" class="btn-primary-custom d-inline-block">
+              <i class="bi bi-geo-alt-fill"></i> ಮಠಕ್ಕೆ ಮಾರ್ಗ & ಸಂಪರ್ಕ
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= Modern Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: About & Logo -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="assets/img/logo1a.jpg" alt="ಶ್ರೀ ಅಡವಿಮಠ" class="rounded-circle border border-warning" width="45" height="45">
+            <h3 class="mb-0 text-white fs-4">ಶ್ರೀ ಅಡವಿಮಠ</h3>
+          </div>
+          <p class="text-white-50">
+            ಪಡುಗೂರು ಗ್ರಾಮ, ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ. ೫೦೦ ವರ್ಷಗಳ ಐತಿಹಾಸಿಕ ವೀರಶೈವ ಪರಂಪರೆಯ ಪವಿತ್ರ ತಾಣ, ಉಚಿತ ಶಿಕ್ಷಣ ಹಾಗೂ ನಿತ್ಯ ದಾಸೋಹದ ಕ್ಷೇತ್ರ.
+          </p>
+          <div class="footer-social mt-3">
+            <a href="#" title="Facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" title="Instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" title="YouTube" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://wa.me/919448602867" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Useful Links -->
+        <div class="col-lg-4 col-md-6 footer-links">
+          <h4>ಉಪಯುಕ್ತ ಕೊಂಡಿಗಳು</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="index.html">ಮುಖಪುಟ</a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="about.html">ಇತಿಹಾಸ ಮತ್ತು ಪರಂಪರೆ</a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="our-instituitions.html">ವಿದ್ಯಾಸಂಸ್ಥೆಗಳು & ಮಹಾಮನೆ</a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="social-services.html">ಸಾಮಾಜಿಕ ಸೇವೆಗಳು</a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="activities.html">ಚಟುವಟಿಕೆಗಳು & ಉತ್ಸವಗಳು</a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="gallery.html">ಫೋಟೋ ಗ್ಯಾಲರಿ</a></li>
+            <li><i class="bi bi-chevron-right text-warning"></i> <a href="contact.html">ಸಂಪರ್ಕಿಸಿ & ವಿಳಾಸ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact Info -->
+        <div class="col-lg-4 col-md-6 footer-contact">
+          <h4>ಸಂಪರ್ಕ ವಿಳಾಸ</h4>
+          <p>
+            <strong>ಶ್ರೀ ಅಡವಿಮಠ, ಪಡುಗೂರು</strong><br>
+            ಗುಂಡ್ಲುಪೇಟೆ ತಾಲ್ಲೂಕು, ಚಾಮರಾಜನಗರ ಜಿಲ್ಲೆ<br>
+            ಕರ್ನಾಟಕ - ೫೭೧೧೨೩<br><br>
+            <strong>ದೂರವಾಣಿ:</strong> <a href="tel:+91-9448602867" class="text-white">+91-9448602867</a><br>
+            <strong>ಇ-ಮೇಲ್:</strong> <a href="mailto:adavimata@gmail.com" class="text-white">adavimata@gmail.com</a><br>
+            <strong>ವೆಬ್‌ಸೈಟ್:</strong> <span class="text-warning">www.adavimata.com</span>
+          </p>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Adavimata</span></strong>. All Rights Reserved
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        &copy; Copyright <strong><span>ಶ್ರೀ ಅಡವಿಮಠ (Sri Adavimatha)</span></strong>. All Rights Reserved.
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Back to top button -->
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
+  <!-- Modern JS Bundle (Bootstrap 5.3 CDN + Custom Vanilla JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>

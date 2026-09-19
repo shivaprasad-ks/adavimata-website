@@ -1,21 +1,21 @@
 {
   "name": "adavimata-website",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Official modernized website for Sri Adavimatha, Paduguru, Gundlupete (adavimata.com)",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "test": "echo \"No test specified\" && exit 0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "animate.css": "^4.1.1",
-    "bootstrap": "^5.3.8",
-    "bootstrap-icons": "^1.13.1",
-    "boxicons": "^2.1.4",
-    "glightbox": "^3.3.1",
-    "isotope-layout": "^3.0.6",
-    "swiper": "^14.2.0"
-  }
+  "keywords": [
+    "adavimata",
+    "paduguru",
+    "gundlupete",
+    "maddaneshwara",
+    "kannada",
+    "website"
+  ],
+  "author": "Sri Adavimatha Paduguru",
+  "license": "ISC"
 }
