@@ -39,50 +39,183 @@
   }
 
   /* -------------------------------------------------------------
-   * 2. Mobile Navigation Drawer & Backdrop
+   * 2. Robust Mobile Navigation Drawer (Attached to body)
    * ----------------------------------------------------------- */
-  const navToggle = select('.mobile-nav-toggle');
-  const navbar = select('#navbar');
-
-  if (navToggle && navbar) {
-    // Create backdrop if not present
-    let backdrop = select('.mobile-nav-backdrop');
+  const initMobileNavigation = () => {
+    // 1. Create or get backdrop directly attached to body
+    let backdrop = document.getElementById('mobileNavBackdrop');
     if (!backdrop) {
       backdrop = document.createElement('div');
+      backdrop.id = 'mobileNavBackdrop';
       backdrop.className = 'mobile-nav-backdrop';
       document.body.appendChild(backdrop);
     }
 
-    const toggleNav = () => {
-      navbar.classList.toggle('navbar-mobile');
-      navbar.classList.toggle('active');
-      backdrop.classList.toggle('active');
-      navToggle.classList.toggle('bi-list');
-      navToggle.classList.toggle('bi-x');
-      document.body.style.overflow = navbar.classList.contains('active') ? 'hidden' : '';
+    // 2. Create or get drawer directly attached to body
+    let drawer = document.getElementById('mobileNavDrawer');
+    if (!drawer) {
+      drawer = document.createElement('aside');
+      drawer.id = 'mobileNavDrawer';
+      drawer.className = 'mobile-nav-drawer';
+      drawer.setAttribute('role', 'dialog');
+      drawer.setAttribute('aria-modal', 'true');
+      drawer.setAttribute('aria-label', 'Mobile Navigation');
+
+      const navLinksData = [
+        { href: 'index.html', icon: 'bi-house-door', kn: 'ಮುಖಪುಟ', en: 'Home' },
+        { href: 'about.html', icon: 'bi-journal-text', kn: 'ಇತಿಹಾಸ & ಪರಂಪರೆ', en: 'History & Heritage' },
+        { href: 'our-instituitions.html', icon: 'bi-buildings', kn: 'ಸಂಸ್ಥೆಗಳು', en: 'Institutions' },
+        { href: 'social-services.html', icon: 'bi-people', kn: 'ಸಾಮಾಜಿಕ ಸೇವೆಗಳು', en: 'Social Services' },
+        { href: 'activities.html', icon: 'bi-calendar-event', kn: 'ಚಟುವಟಿಕೆಗಳು', en: 'Activities' },
+        { href: 'gallery.html', icon: 'bi-images', kn: 'ಗ್ಯಾಲರಿ', en: 'Gallery' },
+        { href: 'contact.html', icon: 'bi-geo-alt', kn: 'ಸಂಪರ್ಕಿಸಿ', en: 'Contact' }
+      ];
+
+      const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+
+      const navItemsHtml = navLinksData.map(item => {
+        const isActive = (item.href === currentPath || (currentPath === '' && item.href === 'index.html'));
+        return `
+          <li>
+            <a href="${item.href}" class="${isActive ? 'active' : ''}">
+              <i class="bi ${item.icon}"></i>
+              <span class="lang-kn">${item.kn}</span>
+              <span class="lang-en">${item.en}</span>
+            </a>
+          </li>
+        `;
+      }).join('');
+
+      drawer.innerHTML = `
+        <div class="mobile-drawer-header">
+          <a href="index.html" class="drawer-brand">
+            <img src="assets/img/logo1a.jpg" alt="ಶ್ರೀ ಅಡವಿಮಠ ಲಾಂಛನ" width="42" height="42">
+            <div>
+              <div class="drawer-brand-title lang-kn">ಶ್ರೀ ಅಡವಿಮಠ</div>
+              <div class="drawer-brand-title lang-en">Sri Adavimatha</div>
+              <div class="drawer-brand-subtitle lang-kn">ಪಡುಗೂರು | ಶ್ರೀ ಕ್ಷೇತ್ರ</div>
+              <div class="drawer-brand-subtitle lang-en">Paduguru | Holy Shrine</div>
+            </div>
+          </a>
+          <button class="mobile-drawer-close" aria-label="Close Navigation Menu">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+
+        <div class="mobile-drawer-lang">
+          <div class="drawer-lang-label">
+            <i class="bi bi-translate"></i>
+            <span class="lang-kn">ಭಾಷೆ ಆಯ್ಕೆ:</span>
+            <span class="lang-en">Select Language:</span>
+          </div>
+          <div class="lang-switcher-pill w-100" aria-label="Mobile Drawer Language Selector">
+            <button class="lang-btn active w-50" data-lang="kn">ಕನ್ನಡ (KN)</button>
+            <button class="lang-btn w-50" data-lang="en">English (EN)</button>
+          </div>
+        </div>
+
+        <div class="mobile-drawer-body">
+          <ul class="mobile-drawer-nav">
+            ${navItemsHtml}
+          </ul>
+        </div>
+
+        <div class="mobile-drawer-footer">
+          <a href="contact.html" class="btn-drawer-dasoha">
+            <i class="bi bi-heart-fill"></i>
+            <span class="lang-kn">ದಾಸೋಹ ಸೇವೆ / ದೇಣಿಗೆ</span>
+            <span class="lang-en">Dasoha Seva / Donation</span>
+          </a>
+          <div class="d-flex gap-2">
+            <a href="tel:+919448602867" class="btn btn-sm btn-outline-secondary w-50 d-flex align-items-center justify-content-center gap-1">
+              <i class="bi bi-telephone-fill text-primary"></i> <span class="lang-kn">ಕರೆ ಮಾಡಿ</span><span class="lang-en">Call</span>
+            </a>
+            <a href="https://wa.me/919448602867" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success w-50 d-flex align-items-center justify-content-center gap-1">
+              <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+      `;
+
+      document.body.appendChild(drawer);
+    }
+
+    // Drawer Open / Close Functions
+    const openDrawer = () => {
+      drawer.classList.add('active');
+      backdrop.classList.add('active');
+      document.body.style.overflow = 'hidden';
+
+      select('.mobile-nav-toggle', true).forEach(btn => {
+        btn.setAttribute('aria-expanded', 'true');
+        const icon = btn.querySelector('i');
+        if (icon) {
+          icon.classList.remove('bi-list');
+          icon.classList.add('bi-x-lg');
+        }
+      });
     };
 
-    const closeNav = () => {
-      navbar.classList.remove('navbar-mobile');
-      navbar.classList.remove('active');
+    const closeDrawer = () => {
+      drawer.classList.remove('active');
       backdrop.classList.remove('active');
-      navToggle.classList.add('bi-list');
-      navToggle.classList.remove('bi-x');
       document.body.style.overflow = '';
+
+      select('.mobile-nav-toggle', true).forEach(btn => {
+        btn.setAttribute('aria-expanded', 'false');
+        const icon = btn.querySelector('i');
+        if (icon) {
+          icon.classList.remove('bi-x-lg');
+          icon.classList.add('bi-list');
+        }
+      });
     };
 
-    navToggle.addEventListener('click', toggleNav);
-    backdrop.addEventListener('click', closeNav);
-
-    // Close mobile nav when clicking on navigation links
-    select('#navbar a', true).forEach(link => {
-      link.addEventListener('click', () => {
-        if (navbar.classList.contains('active')) {
-          closeNav();
+    // Toggle button click listeners
+    select('.mobile-nav-toggle', true).forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (drawer.classList.contains('active')) {
+          closeDrawer();
+        } else {
+          openDrawer();
         }
       });
     });
-  }
+
+    // Backdrop click listener
+    backdrop.addEventListener('click', closeDrawer);
+
+    // Close button click listener
+    const closeBtn = drawer.querySelector('.mobile-drawer-close');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closeDrawer);
+    }
+
+    // Auto-close when clicking any drawer link
+    drawer.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        closeDrawer();
+      });
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && drawer.classList.contains('active')) {
+        closeDrawer();
+      }
+    });
+
+    // Close if resized to desktop screen
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 991 && drawer.classList.contains('active')) {
+        closeDrawer();
+      }
+    }, { passive: true });
+  };
+
+  initMobileNavigation();
 
   /* -------------------------------------------------------------
    * 3. Modern Hero Slider Carousel
@@ -411,13 +544,16 @@
     }
     setLanguage(savedLang);
 
-    // Bind click events to all language buttons
-    select('.lang-btn', true).forEach(btn => {
-      btn.addEventListener('click', (e) => {
+    // Document-level event delegation for all language switcher buttons
+    document.addEventListener('click', (e) => {
+      const langBtn = e.target.closest('.lang-btn');
+      if (langBtn) {
         e.preventDefault();
-        const targetLang = btn.getAttribute('data-lang');
-        setLanguage(targetLang);
-      });
+        const targetLang = langBtn.getAttribute('data-lang');
+        if (targetLang) {
+          setLanguage(targetLang);
+        }
+      }
     });
   };
 
